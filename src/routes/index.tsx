@@ -101,11 +101,11 @@ function Hero() {
         <div className="col-span-12 md:col-span-5 md:pt-16">
           <p className="eyebrow">Chuyên sơn giả gỗ — Kim loại & Tấm xi măng</p>
           <h1 className="font-display mt-8 text-balance text-[clamp(2.6rem,6vw,4.75rem)] font-400 leading-[0.98] text-ink">
-            Giả gỗ đúng nghề trên đúng <span className="italic text-accent">vật liệu nền.</span>
+            Giả gỗ đẹp không chỉ ở màu — mà ở <span className="italic text-accent">xử lý nền.</span>
           </h1>
           <p className="mt-8 max-w-md text-[15px] leading-relaxed text-ink-soft">
-            Hiệu ứng gỗ trên kim loại và tấm xi măng — cho cổng, lam, hàng rào, mặt dựng.
-            Xử lý nền đúng cách, chọn hệ sơn theo vị trí, kiểm soát độ đều vân giữa các tấm.
+            Sơn giả gỗ trên kim loại và tấm xi măng cho cổng, lam, hàng rào, mặt dựng.
+            Đọc vật liệu nền, chọn hệ sơn theo vị trí, kiểm soát độ đều vân giữa các tấm.
           </p>
           <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-4">
             <a
@@ -156,10 +156,10 @@ function PositioningStrip() {
         <div className="grid grid-cols-12 gap-x-6 py-12 md:py-20">
           <p className="eyebrow col-span-12 md:col-span-2">— Định vị</p>
           <p className="font-display col-span-12 mt-4 text-[clamp(1.55rem,3vw,2.5rem)] leading-[1.15] text-ink md:col-span-10 md:mt-0">
-            Tập trung vào hai hệ bề mặt:
+            Chỉ làm hai hệ bề mặt:
             <span className="text-ink-soft">
               {" "}
-              kim loại và tấm xi măng. Không nhận tràn ra ngoài hai mảng này.
+              kim loại và tấm xi măng. Đây là nơi chúng tôi hiểu sâu nhất.
             </span>
           </p>
         </div>
@@ -176,8 +176,8 @@ function Services() {
         <div className="grid grid-cols-12 gap-x-6">
           <p className="eyebrow col-span-12 md:col-span-2">— Hạng mục</p>
           <h2 className="font-display col-span-12 mt-4 text-[clamp(2rem,4.2vw,3.25rem)] leading-[1.05] text-ink md:col-span-10 md:mt-0">
-            Hai mảng thi công
-            <span className="text-ink-soft"> chuyên sâu.</span>
+            Hai hệ bề mặt
+            <span className="text-ink-soft"> chúng tôi làm.</span>
           </h2>
         </div>
 
@@ -201,8 +201,8 @@ function Services() {
               Sơn giả gỗ trên kim loại
             </h3>
             <p className="mt-5 max-w-md text-[15px] leading-relaxed text-ink-soft">
-              Cho sắt, hộp, thép hộp ngoại thất. Xử lý nền chống gỉ, dựng vân và lên màu
-              gỗ thật — bám đúng bề mặt kim loại, chịu được nắng mưa.
+              Cho sắt, hộp, thép hộp ngoại thất. Xử lý nền chống gỉ, dựng vân tay, lên màu từng lớp.
+              Bám đúng bề mặt kim loại, chịu được nắng mưa dài hạn.
             </p>
             <ul className="mt-6 grid grid-cols-2 gap-x-4 gap-y-2 text-[13px] text-ink">
               <li>Cổng sắt</li>
@@ -221,8 +221,8 @@ function Services() {
               Sơn giả gỗ trên tấm xi măng
             </h3>
             <p className="mt-5 max-w-md text-[15px] leading-relaxed text-ink-soft">
-              Smartboard, conwood, cemboard và các tấm thay thế gỗ. Hệ sơn chọn theo vị
-              trí trong nhà hay ngoài trời, kiểm soát chiều sâu vân và độ đều giữa các tấm.
+              Smartboard, conwood, cemboard và các tấm thay thế gỗ. Hệ sơn chọn theo vị trí,
+              xử lý mép tấm, kiểm soát chiều sâu vân và độ đều giữa các tấm.
             </p>
             <ul className="mt-6 grid grid-cols-2 gap-x-4 gap-y-2 text-[13px] text-ink">
               <li>Lam ngoài trời</li>
@@ -255,22 +255,22 @@ function WhyFauxWood() {
   const reasons = [
     {
       n: "01",
-      t: "Khi hạng mục nằm ngoài trời",
+      t: "Hạng mục nằm ngoài trời",
       b: "Gỗ thật ngoài trời nhanh xuống màu và cong vênh. Giả gỗ trên sắt hoặc tấm xi măng giữ được hình thức lâu hơn trong cùng điều kiện thời tiết.",
     },
     {
       n: "02",
-      t: "Khi đã có kết cấu sắt hoặc tấm xi măng",
+      t: "Đã có kết cấu sắt hoặc tấm xi măng",
       b: "Không cần đổi vật liệu nền. Giữ nguyên cổng, lam, mặt dựng đang có — chỉ thay phần hoàn thiện để có cảm giác gỗ.",
     },
     {
       n: "03",
-      t: "Khi muốn giảm bảo trì",
+      t: "Muốn giảm bảo trì",
       b: "Bề mặt sơn ổn định, ít phải làm lại định kỳ như gỗ tự nhiên. Phù hợp công trình cần vận hành lâu dài.",
     },
     {
       n: "04",
-      t: "Khi cần đồng đều cho kiến trúc hiện đại",
+      t: "Cần đồng đều cho kiến trúc hiện đại",
       b: "Vân và tone gỗ được kiểm soát theo bản vẽ. Các mảng lam, mặt dựng, cổng nhìn ăn nhập với nhau thay vì chênh màu từng tấm.",
     },
   ];
@@ -281,8 +281,8 @@ function WhyFauxWood() {
         <div className="grid grid-cols-12 gap-x-6">
           <p className="eyebrow col-span-12 md:col-span-2">— Khi nào chọn giả gỗ</p>
           <h2 className="font-display col-span-12 mt-4 text-[clamp(1.9rem,3.8vw,2.85rem)] leading-[1.1] text-ink md:col-span-10 md:mt-0">
-            Bốn tình huống công trình
-            <span className="text-ink-soft"> hợp với giả gỗ hơn gỗ thật.</span>
+            Bốn tình huống
+            <span className="text-ink-soft"> giả gỗ phù hợp hơn gỗ thật.</span>
           </h2>
         </div>
 
@@ -318,7 +318,7 @@ function Capability() {
     "Đọc vật liệu nền — sắt khác với tấm xi măng, và mỗi loại tấm cũng khác nhau.",
     "Xử lý nền đúng cách: chống gỉ cho kim loại, xử lý mép và bề mặt cho tấm xi măng.",
     "Chọn hệ sơn theo vị trí ngoài trời, trong nhà, mức độ tiếp xúc nắng mưa.",
-    "Kiểm soát chiều sâu vân và độ đều giữa các tấm — không cố ép một công thức cho mọi công trình.",
+    "Kiểm soát chiều sâu vân và độ đều giữa các tấm — không ép một công thức cho mọi công trình.",
   ];
   return (
     <section id="nang-luc" className="mt-32 md:mt-44">
@@ -334,9 +334,9 @@ function Capability() {
               <span className="italic text-accent">hai kết quả khác nhau.</span>
             </h2>
             <p className="mt-8 max-w-md text-[15px] leading-relaxed text-ink-soft">
-              Năng lực thật nằm ở chỗ chọn đúng hệ sơn cho từng bề mặt, xử lý nền đến nơi
-              và kiểm soát độ hoàn thiện giữa các tấm. Không có một công thức dùng được
-              cho mọi công trình.
+              Năng lực thật nằm ở chỗ đọc vật liệu nền, xử lý lớp nền đến nơi,
+              chọn hệ sơn theo vị trí và kiểm soát độ hoàn thiện giữa các tấm.
+              Không có công thức dùng được cho mọi công trình.
             </p>
           </div>
           <div className="col-span-12 md:col-span-6 md:col-start-7">
@@ -450,11 +450,11 @@ function Projects() {
           <div>
             <p className="eyebrow">— Dự án</p>
             <h2 className="font-display mt-4 text-[clamp(2rem,4.2vw,3.25rem)] leading-[1.05] text-ink">
-              Hạng mục đã thi công
+              Hạng mục đã triển khai
             </h2>
           </div>
           <p className="hidden max-w-xs text-right text-[13px] leading-relaxed text-ink-soft md:block">
-            Một phần các công trình đã làm cho chủ đầu tư, nhà thầu và đơn vị thiết kế.
+            Các công trình đã làm cho chủ đầu tư, nhà thầu và đơn vị thiết kế.
           </p>
         </div>
 
@@ -469,22 +469,22 @@ function Process() {
   const steps = [
     {
       n: "01",
-      title: "Gửi ảnh hạng mục qua Zalo.",
+      title: "Gửi ảnh hạng mục qua Zalo",
       body: "Ảnh hiện trạng sắt hoặc tấm xi măng cần làm, kèm bối cảnh công trình và tone gỗ mong muốn nếu có.",
     },
     {
       n: "02",
-      title: "Đọc vật liệu nền.",
+      title: "Đọc vật liệu nền",
       body: "Xem loại nền, tình trạng bề mặt, vị trí trong nhà hay ngoài trời và mức độ hoàn thiện cần đạt.",
     },
     {
       n: "03",
-      title: "Tư vấn hướng làm & báo giá.",
+      title: "Tư vấn hướng làm & báo giá",
       body: "Đề xuất hệ sơn, quy trình xử lý nền và mức hoàn thiện. Báo giá theo từng hạng mục thực tế.",
     },
     {
       n: "04",
-      title: "Khảo sát & triển khai.",
+      title: "Khảo sát & triển khai",
       body: "Khi đã thống nhất phương án, vào việc theo tiến độ công trình — phối hợp được với nhà thầu chủ trì.",
     },
   ];
@@ -494,7 +494,7 @@ function Process() {
         <div className="grid grid-cols-12 gap-x-6">
           <p className="eyebrow col-span-12 md:col-span-2">— Quy trình</p>
           <h2 className="font-display col-span-12 mt-4 text-[clamp(2rem,4.2vw,3.25rem)] leading-[1.05] text-ink md:col-span-10 md:mt-0">
-            Từ ảnh công trình đến báo giá
+            Từ ảnh đến báo giá
           </h2>
         </div>
 
@@ -530,11 +530,11 @@ function WhyPhoto() {
           Sắt và tấm xi măng không cùng một quy trình.
           <span className="text-ink-soft">
             {" "}
-            Xem ảnh trước giúp đề xuất đúng hệ sơn và báo giá sát công trình thật.
+            Xem ảnh trước giúp đề xuất đúng hệ sơn và báo giá sát hiện trạng.
           </span>
         </p>
         <p className="mt-8 text-center text-[15px] leading-relaxed text-ink-soft">
-          Không cần điền form. Một vài tấm ảnh hạng mục là đủ để bắt đầu cuộc trao đổi.
+          Không cần điền form. Một vài tấm ảnh hạng mục là đủ để bắt đầu trao đổi.
         </p>
       </div>
     </section>
@@ -545,7 +545,7 @@ function FAQ() {
   const items = [
     {
       q: "Có nhận thi công giả gỗ trên sắt ngoài trời không?",
-      a: "Có. Đây là một trong hai mảng chính. Quy trình bao gồm xử lý nền chống gỉ và chọn hệ sơn chịu được nắng mưa dài hạn.",
+      a: "Có. Đây là mảng chính. Quy trình bao gồm xử lý nền chống gỉ, dựng vân tay và chọn hệ sơn chịu được nắng mưa dài hạn.",
     },
     {
       q: "Có làm trên smartboard, conwood, cemboard không?",
@@ -580,7 +580,7 @@ function FAQ() {
           <div className="col-span-12 md:col-span-4">
             <p className="eyebrow">— FAQ</p>
             <h2 className="font-display mt-4 text-[clamp(2rem,3.6vw,2.75rem)] leading-[1.05] text-ink">
-              Câu hỏi thường gặp
+              Thắc mắc thường gặp
             </h2>
           </div>
           <div className="col-span-12 mt-10 md:col-span-7 md:col-start-6 md:mt-0">
@@ -637,8 +637,7 @@ function FinalCTA() {
               Công trình của bạn là <span className="italic text-accent">sắt</span> hay <span className="italic text-accent">tấm xi măng?</span>
             </h2>
             <p className="mt-10 max-w-2xl text-[16px] leading-relaxed text-ink-soft">
-              Gửi ảnh hạng mục cần hoàn thiện hiệu ứng gỗ qua Zalo — chúng tôi xem hiện
-              trạng, đề xuất hướng làm và báo giá theo công trình thật.
+              Gửi ảnh hạng mục qua Zalo — chúng tôi xem hiện trạng, đề xuất hướng làm và báo giá theo công trình thật.
             </p>
             <div className="mt-12 flex flex-wrap items-center gap-x-8 gap-y-4">
               <a
@@ -671,8 +670,7 @@ function Footer() {
               <span className="eyebrow">Studio</span>
             </div>
             <p className="mt-6 max-w-sm text-[14px] leading-relaxed text-ink-soft">
-              Chuyên thi công sơn giả gỗ trên kim loại và trên tấm xi măng cho công
-              trình ngoại thất và kiến trúc hiện đại.
+              Chuyên thi công sơn giả gỗ trên kim loại và tấm xi măng cho công trình ngoại thất và kiến trúc hiện đại.
             </p>
           </div>
           <div className="col-span-6 md:col-span-3">
