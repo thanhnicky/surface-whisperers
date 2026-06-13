@@ -100,12 +100,8 @@ function Hero() {
       <div className="mx-auto grid max-w-[1320px] grid-cols-12 gap-x-6 px-6 md:px-10">
         <div className="col-span-12 md:col-span-5 md:pt-16">
           <p className="eyebrow">Chuyên sơn giả gỗ — Kim loại & Tấm xi măng</p>
-          <h1 className="font-display mt-8 text-[clamp(2.6rem,6vw,4.75rem)] font-400 leading-[0.98] text-ink">
-            Giả gỗ đúng nghề,
-            <br />
-            trên đúng
-            <br />
-            <span className="italic text-accent">vật liệu nền.</span>
+          <h1 className="font-display mt-8 text-balance text-[clamp(2.6rem,6vw,4.75rem)] font-400 leading-[0.98] text-ink">
+            Giả gỗ đúng nghề trên đúng <span className="italic text-accent">vật liệu nền.</span>
           </h1>
           <p className="mt-8 max-w-md text-[15px] leading-relaxed text-ink-soft">
             Hiệu ứng gỗ trên kim loại và tấm xi măng — cho cổng, lam, hàng rào, mặt dựng.
@@ -637,7 +633,7 @@ function FinalCTA() {
         <div className="grid grid-cols-12 gap-x-6 border-t border-rule pt-24 md:pt-32">
           <div className="col-span-12 md:col-span-10 md:col-start-2">
             <p className="eyebrow">— Bắt đầu</p>
-            <h2 className="font-display mt-8 text-balance text-[clamp(2.4rem,5.5vw,4.5rem)] leading-[1.02] text-ink">
+            <h2 className="font-display mt-8 max-w-3xl text-balance text-[clamp(2.4rem,5.5vw,4.5rem)] leading-[1.02] text-ink">
               Công trình của bạn là <span className="italic text-accent">sắt</span> hay <span className="italic text-accent">tấm xi măng?</span>
             </h2>
             <p className="mt-10 max-w-2xl text-[16px] leading-relaxed text-ink-soft">
