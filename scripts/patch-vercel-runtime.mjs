@@ -36,10 +36,6 @@ if (existsSync(configPath)) {
     { handle: "filesystem" },
     { src: "/(.*)", dest: "/__server" },
   ];
-  // Ensure static files are handled correctly
-  if (!config.routes.some(r => r.handle === "filesystem")) {
-    config.routes.splice(1, 0, { handle: "filesystem" });
-  }
   writeFileSync(configPath, JSON.stringify(config, null, 2));
   console.log("[patch] Patched config.json routes");
 }
