@@ -108,9 +108,8 @@ function Hero() {
             <span className="italic text-accent">vật liệu nền.</span>
           </h1>
           <p className="mt-8 max-w-md text-[15px] leading-relaxed text-ink-soft">
-            Hiệu ứng gỗ trên sắt, kim loại và tấm xi măng — cho cổng, lam, hàng rào,
-            mặt dựng. Xử lý nền đúng cách, chọn hệ sơn theo vị trí, kiểm soát độ đều vân
-            giữa các tấm.
+            Hiệu ứng gỗ trên kim loại và tấm xi măng — cho cổng, lam, hàng rào, mặt dựng.
+            Xử lý nền đúng cách, chọn hệ sơn theo vị trí, kiểm soát độ đều vân giữa các tấm.
           </p>
           <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-4">
             <a
@@ -406,8 +405,8 @@ function Projects() {
     },
     {
       img: craftHand,
-      title: "Dựng vân tay, lên màu từng lớp",
-      meta: "Xưởng thi công",
+      title: "Cận cảnh dựng vân tay",
+      meta: "Chi tiết bề mặt hoàn thiện",
       ratio: "aspect-[4/5]",
       span: "md:col-span-6",
     },
@@ -639,10 +638,7 @@ function FinalCTA() {
           <div className="col-span-12 md:col-span-10 md:col-start-2">
             <p className="eyebrow">— Bắt đầu</p>
             <h2 className="font-display mt-8 text-balance text-[clamp(2.4rem,5.5vw,4.5rem)] leading-[1.02] text-ink">
-              Công trình của bạn là
-              <span className="italic text-accent"> sắt </span>
-              hay
-              <span className="italic text-accent"> tấm xi măng?</span>
+              Công trình của bạn là <span className="italic text-accent">sắt</span> hay <span className="italic text-accent">tấm xi măng?</span>
             </h2>
             <p className="mt-10 max-w-2xl text-[16px] leading-relaxed text-ink-soft">
               Gửi ảnh hạng mục cần hoàn thiện hiệu ứng gỗ qua Zalo — chúng tôi xem hiện
