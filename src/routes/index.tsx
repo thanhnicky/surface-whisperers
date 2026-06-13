@@ -7,6 +7,7 @@ import projectSteelGate from "@/assets/project-steel-gate.jpg";
 import projectSlatCeiling from "@/assets/project-slat-ceiling.jpg";
 import projectCementFacade from "@/assets/project-cement-facade.jpg";
 import craftHand from "@/assets/craft-hand.jpg";
+import mocDienMark from "@/assets/moc-dien-mark.svg";
 
 const ZALO_URL = "https://zalo.me/0000000000";
 
@@ -66,7 +67,8 @@ function Header() {
       }`}
     >
       <div className="mx-auto flex max-w-[1320px] items-center justify-between px-6 py-5 md:px-10 md:py-6">
-        <a href="#top" className="flex items-baseline gap-2">
+        <a href="#top" className="flex items-center gap-3">
+          <img src={mocDienMark} alt="Mộc Diện" className="h-6 w-6" />
           <span className="font-display text-xl tracking-tight text-ink">Mộc Diện</span>
         </a>
         <nav className="hidden items-center gap-7 md:flex">
@@ -667,7 +669,8 @@ function Footer() {
       <div className="mx-auto max-w-[1320px] px-6 md:px-10">
         <div className="grid grid-cols-12 gap-x-6 gap-y-12">
           <div className="col-span-12 md:col-span-5">
-            <div className="flex items-baseline gap-2">
+            <div className="flex items-center gap-3">
+              <img src={mocDienMark} alt="Mộc Diện" className="h-6 w-6" />
               <span className="font-display text-2xl text-ink">Mộc Diện</span>
             </div>
             <p className="mt-6 max-w-sm text-[14px] leading-relaxed text-ink-soft">
