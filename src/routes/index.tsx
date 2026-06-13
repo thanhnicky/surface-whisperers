@@ -1,12 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
-import heroSurface from "@/assets/hero-surface.jpg";
+import heroFauxWoodMetal from "@/assets/hero-faux-wood-metal.jpg";
 import projectIronLouvers from "@/assets/project-iron-louvers.jpg";
 import projectCementBoard from "@/assets/project-cement-board.jpg";
-import projectWoodPaneling from "@/assets/project-wood-paneling.jpg";
 import projectSteelGate from "@/assets/project-steel-gate.jpg";
 import projectSlatCeiling from "@/assets/project-slat-ceiling.jpg";
-import aestheticSamples from "@/assets/aesthetic-samples.jpg";
+import projectCementFacade from "@/assets/project-cement-facade.jpg";
 import craftHand from "@/assets/craft-hand.jpg";
 
 const ZALO_URL = "https://zalo.me/0000000000";
@@ -14,21 +13,27 @@ const ZALO_URL = "https://zalo.me/0000000000";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Studio Thi Công Hoàn Thiện Bề Mặt — Sơn Gỗ, Sơn Giả Gỗ, Hiệu Ứng Gỗ Trên Sắt" },
+      {
+        title:
+          "Surface Studio — Thi công sơn giả gỗ trên kim loại và tấm xi măng",
+      },
       {
         name: "description",
         content:
-          "Thi công sơn gỗ, sơn giả gỗ trên tấm xi măng và hiệu ứng gỗ trên sắt cho các công trình có yêu cầu cao về hoàn thiện và thẩm mỹ.",
+          "Chuyên thi công sơn giả gỗ trên sắt, kim loại và trên tấm xi măng (smartboard, conwood, cemboard) cho công trình ngoại thất và kiến trúc hiện đại. Gửi ảnh công trình qua Zalo để được tư vấn và báo giá.",
       },
-      { property: "og:title", content: "Studio Thi Công Hoàn Thiện Bề Mặt" },
+      {
+        property: "og:title",
+        content: "Surface Studio — Sơn giả gỗ cho kim loại & tấm xi măng",
+      },
       {
         property: "og:description",
         content:
-          "Sơn gỗ, sơn giả gỗ trên tấm xi măng, hiệu ứng gỗ trên sắt. Gửi ảnh công trình qua Zalo để nhận tư vấn và báo giá.",
+          "Chuyên một nhóm hạng mục: sơn giả gỗ trên sắt và trên tấm xi măng. Gửi ảnh công trình qua Zalo để được tư vấn và báo giá theo hiện trạng thật.",
       },
-      { property: "og:image", content: heroSurface },
+      { property: "og:image", content: heroFauxWoodMetal },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:image", content: heroSurface },
+      { name: "twitter:image", content: heroFauxWoodMetal },
     ],
   }),
   component: Index,
@@ -45,6 +50,7 @@ function Header() {
 
   const navItems = [
     { href: "#hang-muc", label: "Hạng mục" },
+    { href: "#vi-sao", label: "Vì sao giả gỗ" },
     { href: "#nang-luc", label: "Năng lực" },
     { href: "#du-an", label: "Dự án" },
     { href: "#quy-trinh", label: "Quy trình" },
@@ -64,7 +70,7 @@ function Header() {
           <span className="font-display text-xl tracking-tight text-ink">Surface</span>
           <span className="eyebrow text-ink-soft">Studio</span>
         </a>
-        <nav className="hidden items-center gap-8 md:flex">
+        <nav className="hidden items-center gap-7 md:flex">
           {navItems.map((item) => (
             <a
               key={item.href}
@@ -93,17 +99,18 @@ function Hero() {
     <section id="top" className="relative pt-32 md:pt-36">
       <div className="mx-auto grid max-w-[1320px] grid-cols-12 gap-x-6 px-6 md:px-10">
         <div className="col-span-12 md:col-span-5 md:pt-16">
-          <p className="eyebrow">Studio Thi Công Hoàn Thiện Bề Mặt</p>
+          <p className="eyebrow">Chuyên sơn giả gỗ — Kim loại & Tấm xi măng</p>
           <h1 className="font-display mt-8 text-[clamp(2.6rem,6vw,4.75rem)] font-400 leading-[0.98] text-ink">
-            Bề mặt đẹp
+            Giả gỗ đúng nghề,
             <br />
-            bắt đầu từ tay nghề
+            trên đúng
             <br />
-            <span className="italic text-accent">biết nhìn vật liệu.</span>
+            <span className="italic text-accent">vật liệu nền.</span>
           </h1>
           <p className="mt-8 max-w-md text-[15px] leading-relaxed text-ink-soft">
-            Thi công sơn gỗ, sơn giả gỗ trên tấm xi măng và hiệu ứng gỗ trên sắt — cho các công
-            trình cần hoàn thiện đúng và đẹp.
+            Thi công hiệu ứng gỗ trên sắt, kim loại và trên tấm xi măng — smartboard,
+            conwood, cemboard. Cho cổng, lam, hàng rào, mặt dựng và các hạng mục ngoại thất
+            cần bền màu, đều vân.
           </p>
           <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-4">
             <a
@@ -119,9 +126,9 @@ function Hero() {
               className="group inline-flex items-center gap-2 text-[13px] font-medium text-ink"
             >
               <span className="border-b border-ink/40 pb-0.5 transition-colors group-hover:border-accent group-hover:text-accent">
-                Xem hạng mục thi công
+                Xem hai mảng thi công
               </span>
-              <span className="transition-transform group-hover:translate-x-1">→</span>
+              <span className="transition-transform group-hover:translate-x-1">↓</span>
             </a>
           </div>
         </div>
@@ -129,15 +136,15 @@ function Hero() {
         <div className="col-span-12 mt-12 md:col-span-7 md:mt-0">
           <figure className="relative">
             <img
-              src={heroSurface}
-              alt="Cận cảnh bề mặt gỗ óc chó hoàn thiện dưới ánh sáng chiều"
+              src={heroFauxWoodMetal}
+              alt="Cận cảnh lam sắt hoàn thiện hiệu ứng gỗ óc chó dưới nắng chiều"
               width={1280}
               height={1600}
               className="aspect-[4/5] w-full object-cover"
             />
             <figcaption className="eyebrow mt-4 flex items-center justify-between">
-              <span>Walnut · Hand-finished</span>
-              <span>01 / 06</span>
+              <span>Lam sắt · Hiệu ứng gỗ óc chó</span>
+              <span>Ngoại thất</span>
             </figcaption>
           </figure>
         </div>
@@ -152,10 +159,13 @@ function PositioningStrip() {
       <div className="mx-auto max-w-[1320px] px-6 md:px-10">
         <div className="rule" />
         <div className="grid grid-cols-12 gap-x-6 py-12 md:py-20">
-          <p className="eyebrow col-span-12 md:col-span-2">— Cách làm việc</p>
+          <p className="eyebrow col-span-12 md:col-span-2">— Định vị</p>
           <p className="font-display col-span-12 mt-4 text-[clamp(1.55rem,3vw,2.5rem)] leading-[1.15] text-ink md:col-span-10 md:mt-0">
-            Không làm theo một công thức cho mọi công trình.
-            <span className="text-ink-soft"> Mỗi bề mặt được đọc trước khi được sơn.</span>
+            Chỉ làm một nhóm việc, và làm cho đúng.
+            <span className="text-ink-soft">
+              {" "}
+              Sơn giả gỗ trên kim loại và trên tấm xi măng — không nhận tràn ra ngoài hai mảng này.
+            </span>
           </p>
         </div>
         <div className="rule" />
@@ -165,106 +175,78 @@ function PositioningStrip() {
 }
 
 function Services() {
-  const services = [
-    {
-      n: "01",
-      title: "Sơn gỗ hoàn thiện",
-      body: "Cho đồ gỗ nội thất, cửa, lam, vách, trần và các chi tiết hoàn thiện trong nhà ở, showroom, công trình thương mại.",
-      image: projectWoodPaneling,
-      ratio: "aspect-[3/4]",
-    },
-    {
-      n: "02",
-      title: "Sơn giả gỗ trên tấm xi măng",
-      body: "Smartboard, conwood, cemboard và các vật liệu thay thế gỗ — xử lý để bề mặt có chiều sâu, vân thật, dùng được ngoài trời.",
-      image: projectCementBoard,
-      ratio: "aspect-[4/3]",
-    },
-    {
-      n: "03",
-      title: "Hiệu ứng gỗ trên sắt",
-      body: "Cổng, hàng rào, lam trang trí, kết cấu sắt ngoại thất — tạo bề mặt giống gỗ thật, bám bền, chịu được nắng mưa.",
-      image: projectIronLouvers,
-      ratio: "aspect-[3/4]",
-    },
-  ];
-
   return (
     <section id="hang-muc" className="mt-24 md:mt-36">
       <div className="mx-auto max-w-[1320px] px-6 md:px-10">
         <div className="grid grid-cols-12 gap-x-6">
           <p className="eyebrow col-span-12 md:col-span-2">— Hạng mục</p>
           <h2 className="font-display col-span-12 mt-4 text-[clamp(2rem,4.2vw,3.25rem)] leading-[1.05] text-ink md:col-span-10 md:mt-0">
-            Chúng tôi thi công
-            <br className="hidden md:block" />
-            <span className="text-ink-soft"> ba nhóm bề mặt.</span>
+            Hai mảng thi công
+            <span className="text-ink-soft"> chuyên sâu.</span>
           </h2>
         </div>
 
-        <div className="mt-16 grid grid-cols-12 gap-x-6 gap-y-20 md:mt-24">
-          {/* 01 — left image, right text */}
-          <div className="col-span-12 md:col-span-5">
+        <div className="mt-16 grid grid-cols-12 gap-x-6 gap-y-24 md:mt-24">
+          {/* 01 — Metal */}
+          <div className="col-span-12 md:col-span-7">
             <figure>
               <img
-                src={services[0].image}
-                alt={services[0].title}
+                src={projectIronLouvers}
+                alt="Lam sắt hiệu ứng gỗ ngoài trời"
                 loading="lazy"
-                width={1080}
-                height={1440}
-                className={`${services[0].ratio} w-full object-cover`}
-              />
-            </figure>
-          </div>
-          <div className="col-span-12 md:col-span-6 md:col-start-7 md:flex md:flex-col md:justify-end md:pb-4">
-            <p className="font-display text-6xl text-ink-soft md:text-7xl">{services[0].n}</p>
-            <h3 className="font-display mt-4 text-3xl text-ink md:text-4xl">{services[0].title}</h3>
-            <p className="mt-5 max-w-md text-[15px] leading-relaxed text-ink-soft">
-              {services[0].body}
-            </p>
-          </div>
-
-          {/* 02 — full width image, text below right */}
-          <div className="col-span-12">
-            <figure>
-              <img
-                src={services[1].image}
-                alt={services[1].title}
-                loading="lazy"
-                width={1920}
+                width={1440}
                 height={1080}
-                className={`${services[1].ratio} w-full object-cover`}
+                className="aspect-[4/3] w-full object-cover"
               />
             </figure>
-            <div className="mt-8 grid grid-cols-12 gap-x-6">
-              <div className="col-span-12 md:col-span-5 md:col-start-7">
-                <p className="font-display text-6xl text-ink-soft md:text-7xl">{services[1].n}</p>
-                <h3 className="font-display mt-4 text-3xl text-ink md:text-4xl">
-                  {services[1].title}
-                </h3>
-                <p className="mt-5 max-w-md text-[15px] leading-relaxed text-ink-soft">
-                  {services[1].body}
-                </p>
-              </div>
-            </div>
+          </div>
+          <div className="col-span-12 md:col-span-5 md:flex md:flex-col md:justify-end md:pb-2">
+            <p className="font-display text-6xl text-ink-soft md:text-7xl">01</p>
+            <h3 className="font-display mt-4 text-3xl text-ink md:text-4xl">
+              Sơn giả gỗ trên kim loại
+            </h3>
+            <p className="mt-5 max-w-md text-[15px] leading-relaxed text-ink-soft">
+              Cho sắt, hộp, thép hộp ngoại thất. Xử lý nền chống gỉ, dựng vân và lên màu
+              gỗ thật — bám đúng bề mặt kim loại, chịu được nắng mưa.
+            </p>
+            <ul className="mt-6 grid grid-cols-2 gap-x-4 gap-y-2 text-[13px] text-ink">
+              <li>Cổng sắt</li>
+              <li>Hàng rào</li>
+              <li>Lam sắt</li>
+              <li>Cửa sắt</li>
+              <li>Khung, kết cấu</li>
+              <li>Pergola</li>
+            </ul>
           </div>
 
-          {/* 03 — right image, left text */}
-          <div className="col-span-12 md:col-span-6 md:flex md:flex-col md:justify-end md:pb-4">
-            <p className="font-display text-6xl text-ink-soft md:text-7xl">{services[2].n}</p>
-            <h3 className="font-display mt-4 text-3xl text-ink md:text-4xl">{services[2].title}</h3>
+          {/* 02 — Cement board */}
+          <div className="col-span-12 md:col-span-5 md:row-start-2 md:flex md:flex-col md:justify-end md:pb-2">
+            <p className="font-display text-6xl text-ink-soft md:text-7xl">02</p>
+            <h3 className="font-display mt-4 text-3xl text-ink md:text-4xl">
+              Sơn giả gỗ trên tấm xi măng
+            </h3>
             <p className="mt-5 max-w-md text-[15px] leading-relaxed text-ink-soft">
-              {services[2].body}
+              Smartboard, conwood, cemboard và các tấm thay thế gỗ. Hệ sơn chọn theo vị
+              trí trong nhà hay ngoài trời, kiểm soát chiều sâu vân và độ đều giữa các tấm.
             </p>
+            <ul className="mt-6 grid grid-cols-2 gap-x-4 gap-y-2 text-[13px] text-ink">
+              <li>Lam ngoài trời</li>
+              <li>Mặt dựng</li>
+              <li>Trần</li>
+              <li>Vách trang trí</li>
+              <li>Bảng hiệu</li>
+              <li>Mảng nhấn kiến trúc</li>
+            </ul>
           </div>
-          <div className="col-span-12 md:col-span-5 md:col-start-8">
+          <div className="col-span-12 md:col-span-7 md:row-start-2">
             <figure>
               <img
-                src={services[2].image}
-                alt={services[2].title}
+                src={projectCementFacade}
+                alt="Mặt dựng tấm xi măng sơn giả gỗ cho công trình ngoại thất"
                 loading="lazy"
-                width={1080}
-                height={1440}
-                className={`${services[2].ratio} w-full object-cover`}
+                width={1440}
+                height={1080}
+                className="aspect-[4/3] w-full object-cover"
               />
             </figure>
           </div>
@@ -274,31 +256,62 @@ function Services() {
   );
 }
 
-function ForWho() {
-  const groups = [
-    "Chủ đầu tư và chủ nhà có công trình cần hoàn thiện chỉn chu.",
-    "Xưởng nội thất cần một đội sơn gỗ làm việc được lâu dài.",
-    "Kiến trúc sư, đơn vị thiết kế và nhà thầu cần outsource hạng mục hoàn thiện bề mặt.",
+function WhyFauxWood() {
+  const reasons = [
+    {
+      n: "01",
+      t: "Khi hạng mục nằm ngoài trời",
+      b: "Gỗ thật ngoài trời nhanh xuống màu và cong vênh. Giả gỗ trên sắt hoặc tấm xi măng giữ được hình thức lâu hơn trong cùng điều kiện thời tiết.",
+    },
+    {
+      n: "02",
+      t: "Khi đã có kết cấu sắt hoặc tấm xi măng",
+      b: "Không cần đổi vật liệu nền. Giữ nguyên cổng, lam, mặt dựng đang có — chỉ thay phần hoàn thiện để có cảm giác gỗ.",
+    },
+    {
+      n: "03",
+      t: "Khi muốn giảm bảo trì",
+      b: "Bề mặt sơn ổn định, ít phải làm lại định kỳ như gỗ tự nhiên. Phù hợp công trình cần vận hành lâu dài.",
+    },
+    {
+      n: "04",
+      t: "Khi cần đồng đều cho kiến trúc hiện đại",
+      b: "Vân và tone gỗ được kiểm soát theo bản vẽ. Các mảng lam, mặt dựng, cổng nhìn ăn nhập với nhau thay vì chênh màu từng tấm.",
+    },
   ];
+
   return (
-    <section className="mt-32 md:mt-44">
+    <section id="vi-sao" className="mt-32 md:mt-44">
       <div className="mx-auto max-w-[1320px] px-6 md:px-10">
         <div className="grid grid-cols-12 gap-x-6">
-          <p className="eyebrow col-span-12 md:col-span-2">— Dành cho</p>
-          <div className="col-span-12 mt-4 md:col-span-10 md:mt-0">
-            <ul className="divide-y divide-rule border-y border-rule">
-              {groups.map((g, i) => (
-                <li key={i} className="flex items-baseline gap-6 py-8 md:gap-10 md:py-12">
-                  <span className="font-display text-xl text-ink-soft md:text-2xl">
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
-                  <p className="font-display text-balance text-[clamp(1.4rem,2.6vw,2.15rem)] leading-[1.2] text-ink">
-                    {g}
+          <p className="eyebrow col-span-12 md:col-span-2">— Khi nào chọn giả gỗ</p>
+          <h2 className="font-display col-span-12 mt-4 text-[clamp(1.9rem,3.8vw,2.85rem)] leading-[1.1] text-ink md:col-span-10 md:mt-0">
+            Bốn tình huống công trình
+            <span className="text-ink-soft"> hợp với giả gỗ hơn gỗ thật.</span>
+          </h2>
+        </div>
+
+        <div className="mt-14 grid grid-cols-12 gap-x-6 gap-y-0 md:mt-20">
+          {reasons.map((r, i) => (
+            <div
+              key={r.n}
+              className={`col-span-12 md:col-span-6 border-t border-rule py-10 md:py-12 ${
+                i >= 2 ? "md:border-t" : ""
+              }`}
+            >
+              <div className="grid grid-cols-[auto_1fr] items-baseline gap-6">
+                <span className="font-display text-sm tracking-wider text-ink-soft">{r.n}</span>
+                <div>
+                  <h3 className="font-display text-[22px] leading-snug text-ink md:text-2xl">
+                    {r.t}
+                  </h3>
+                  <p className="mt-4 max-w-md text-[15px] leading-relaxed text-ink-soft">
+                    {r.b}
                   </p>
-                </li>
-              ))}
-            </ul>
-          </div>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
@@ -307,10 +320,10 @@ function ForWho() {
 
 function Capability() {
   const principles = [
-    "Đọc vật liệu nền trước khi đề xuất hệ sơn.",
-    "Chọn quy trình theo điều kiện sử dụng, trong nhà hay ngoài trời.",
-    "Xử lý để bề mặt bám đúng, đều màu và giữ được lâu.",
-    "Mỗi công trình một phương án — không áp một công thức cho tất cả.",
+    "Đọc vật liệu nền — sắt khác với tấm xi măng, và mỗi loại tấm cũng khác nhau.",
+    "Xử lý nền đúng cách: chống gỉ cho kim loại, xử lý mép và bề mặt cho tấm xi măng.",
+    "Chọn hệ sơn theo vị trí ngoài trời, trong nhà, mức độ tiếp xúc nắng mưa.",
+    "Kiểm soát chiều sâu vân và độ đều giữa các tấm — không cố ép một công thức cho mọi công trình.",
   ];
   return (
     <section id="nang-luc" className="mt-32 md:mt-44">
@@ -319,13 +332,16 @@ function Capability() {
           <div className="col-span-12 md:col-span-5">
             <p className="eyebrow">— Năng lực</p>
             <h2 className="font-display mt-6 text-[clamp(1.9rem,3.6vw,2.85rem)] leading-[1.1] text-ink">
-              Năng lực không chỉ
+              Cùng một màu gỗ,
               <br />
-              nằm ở thi công.
+              hai vật liệu nền,
+              <br />
+              <span className="italic text-accent">hai kết quả khác nhau.</span>
             </h2>
             <p className="mt-8 max-w-md text-[15px] leading-relaxed text-ink-soft">
-              Cùng một màu sơn, đặt lên gỗ thật, tấm xi măng hay sắt sẽ cho ba kết quả khác nhau.
-              Việc của chúng tôi là đọc đúng bề mặt trước khi chọn quy trình.
+              Năng lực thật nằm ở chỗ chọn đúng hệ sơn cho từng bề mặt, xử lý nền đến nơi
+              và kiểm soát độ hoàn thiện giữa các tấm. Không có một công thức dùng được
+              cho mọi công trình.
             </p>
           </div>
           <div className="col-span-12 md:col-span-6 md:col-start-7">
@@ -349,42 +365,8 @@ function Capability() {
   );
 }
 
-function Aesthetic() {
-  return (
-    <section className="mt-32 md:mt-44">
-      <div className="relative">
-        <img
-          src={aestheticSamples}
-          alt="Các mẫu màu gỗ hoàn thiện xếp trên nền giấy ấm"
-          loading="lazy"
-          width={1920}
-          height={1080}
-          className="h-[70vh] max-h-[640px] w-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-background/30 to-transparent" />
-      </div>
-      <div className="mx-auto max-w-[1320px] px-6 md:px-10">
-        <div className="mt-16 grid grid-cols-12 gap-x-6">
-          <p className="eyebrow col-span-12 md:col-span-2">— Thẩm mỹ</p>
-          <div className="col-span-12 md:col-span-10">
-            <blockquote className="font-display text-[clamp(1.75rem,3.6vw,2.85rem)] leading-[1.15] text-ink">
-              Một bề mặt đẹp không nằm ở màu sơn.
-              <span className="italic text-accent"> Nó nằm ở độ mịn, chiều sâu, độ đều</span> và
-              cảm giác vật liệu khi chạm vào.
-            </blockquote>
-            <p className="mt-10 max-w-2xl text-[15px] leading-relaxed text-ink-soft">
-              Với các hạng mục giả gỗ và hiệu ứng gỗ, kỹ thuật là điều kiện cần. Mắt thẩm mỹ là điều
-              kiện đủ. Chúng tôi nhận những công trình cần cả hai.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
 function Projects() {
-  const items = [
+  const metalItems = [
     {
       img: projectIronLouvers,
       title: "Lam sắt hiệu ứng gỗ",
@@ -393,41 +375,78 @@ function Projects() {
       span: "md:col-span-5",
     },
     {
-      img: projectCementBoard,
-      title: "Tấm xi măng giả gỗ",
-      meta: "Ngoại thất quán café — Thủ Đức",
-      ratio: "aspect-[4/3]",
-      span: "md:col-span-7",
-    },
-    {
       img: projectSteelGate,
       title: "Cửa sắt hiệu ứng gỗ",
       meta: "Nhà phố — Bình Thạnh",
       ratio: "aspect-[4/3]",
       span: "md:col-span-7",
     },
+  ];
+  const cementItems = [
     {
-      img: projectWoodPaneling,
-      title: "Vách gỗ phòng khách",
-      meta: "Căn hộ duplex",
+      img: projectCementFacade,
+      title: "Mặt dựng tấm xi măng giả gỗ",
+      meta: "Nhà phố hiện đại — Thủ Đức",
+      ratio: "aspect-[4/3]",
+      span: "md:col-span-7",
+    },
+    {
+      img: projectCementBoard,
+      title: "Conwood ngoại thất quán café",
+      meta: "Quán café — Thủ Đức",
       ratio: "aspect-[4/5]",
       span: "md:col-span-5",
     },
     {
       img: projectSlatCeiling,
-      title: "Trần lam gỗ",
-      meta: "Showroom nội thất",
+      title: "Lam trần tấm xi măng",
+      meta: "Showroom — phía Nam",
       ratio: "aspect-[4/5]",
       span: "md:col-span-6",
     },
     {
       img: craftHand,
-      title: "Xử lý bề mặt thủ công",
-      meta: "Xưởng nội thất đối tác",
+      title: "Dựng vân tay, lên màu từng lớp",
+      meta: "Xưởng thi công",
       ratio: "aspect-[4/5]",
       span: "md:col-span-6",
     },
   ];
+
+  const renderGroup = (
+    items: typeof metalItems,
+    eyebrow: string,
+    title: string,
+    startIndex: number,
+  ) => (
+    <div className="mt-12 grid grid-cols-12 gap-x-6 gap-y-16 md:mt-16">
+      <div className="col-span-12 flex items-baseline justify-between border-t border-rule pt-6">
+        <p className="eyebrow">{eyebrow}</p>
+        <p className="font-display text-[18px] text-ink md:text-[20px]">{title}</p>
+      </div>
+      {items.map((it, i) => (
+        <figure key={i} className={`group col-span-12 ${it.span}`}>
+          <div className="overflow-hidden">
+            <img
+              src={it.img}
+              alt={it.title}
+              loading="lazy"
+              width={1280}
+              height={1600}
+              className={`${it.ratio} w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02]`}
+            />
+          </div>
+          <figcaption className="mt-5 flex items-baseline justify-between gap-4">
+            <div>
+              <p className="font-display text-xl text-ink">{it.title}</p>
+              <p className="mt-1 text-[13px] text-ink-soft">{it.meta}</p>
+            </div>
+            <span className="eyebrow">{String(startIndex + i + 1).padStart(2, "0")}</span>
+          </figcaption>
+        </figure>
+      ))}
+    </div>
+  );
 
   return (
     <section id="du-an" className="mt-32 md:mt-44">
@@ -436,38 +455,17 @@ function Projects() {
           <div>
             <p className="eyebrow">— Dự án</p>
             <h2 className="font-display mt-4 text-[clamp(2rem,4.2vw,3.25rem)] leading-[1.05] text-ink">
-              Hạng mục thực tế
+              Hạng mục đã thi công
               <span className="text-ink-soft">.</span>
             </h2>
           </div>
           <p className="hidden max-w-xs text-right text-[13px] leading-relaxed text-ink-soft md:block">
-            Một phần các công trình đã thi công cho chủ đầu tư, xưởng nội thất và nhà thầu.
+            Một phần các công trình đã làm cho chủ đầu tư, nhà thầu và đơn vị thiết kế.
           </p>
         </div>
 
-        <div className="mt-12 grid grid-cols-12 gap-x-6 gap-y-16">
-          {items.map((it, i) => (
-            <figure key={i} className={`group col-span-12 ${it.span}`}>
-              <div className="overflow-hidden">
-                <img
-                  src={it.img}
-                  alt={it.title}
-                  loading="lazy"
-                  width={1280}
-                  height={1600}
-                  className={`${it.ratio} w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02]`}
-                />
-              </div>
-              <figcaption className="mt-5 flex items-baseline justify-between gap-4">
-                <div>
-                  <p className="font-display text-xl text-ink">{it.title}</p>
-                  <p className="mt-1 text-[13px] text-ink-soft">{it.meta}</p>
-                </div>
-                <span className="eyebrow">{String(i + 1).padStart(2, "0")}</span>
-              </figcaption>
-            </figure>
-          ))}
-        </div>
+        {renderGroup(metalItems, "I — Kim loại giả gỗ", "Sắt ngoại thất", 0)}
+        {renderGroup(cementItems, "II — Tấm xi măng giả gỗ", "Smartboard · Conwood · Cemboard", metalItems.length)}
       </div>
     </section>
   );
@@ -477,23 +475,23 @@ function Process() {
   const steps = [
     {
       n: "01",
-      title: "Gửi ảnh qua Zalo.",
-      body: "Ảnh hiện trạng bề mặt và bối cảnh công trình. Càng rõ, tư vấn càng sát.",
+      title: "Gửi ảnh hạng mục qua Zalo.",
+      body: "Ảnh hiện trạng sắt hoặc tấm xi măng cần làm, kèm bối cảnh công trình và tone gỗ mong muốn nếu có.",
     },
     {
       n: "02",
-      title: "Đọc hiện trạng.",
-      body: "Chúng tôi xem vật liệu nền, tình trạng bề mặt và yêu cầu hoàn thiện.",
+      title: "Đọc vật liệu nền.",
+      body: "Xem loại nền, tình trạng bề mặt, vị trí trong nhà hay ngoài trời và mức độ hoàn thiện cần đạt.",
     },
     {
       n: "03",
-      title: "Báo giá theo hạng mục.",
-      body: "Tính theo vật liệu, khối lượng và mức độ hoàn thiện — minh bạch từng phần.",
+      title: "Tư vấn hướng làm & báo giá.",
+      body: "Đề xuất hệ sơn, quy trình xử lý nền và mức hoàn thiện. Báo giá theo từng hạng mục thực tế.",
     },
     {
       n: "04",
       title: "Khảo sát & triển khai.",
-      body: "Khi phương án đã thống nhất, đội thi công vào việc theo tiến độ công trình.",
+      body: "Khi đã thống nhất phương án, vào việc theo tiến độ công trình — phối hợp được với nhà thầu chủ trì.",
     },
   ];
   return (
@@ -502,13 +500,13 @@ function Process() {
         <div className="grid grid-cols-12 gap-x-6">
           <p className="eyebrow col-span-12 md:col-span-2">— Quy trình</p>
           <h2 className="font-display col-span-12 mt-4 text-[clamp(2rem,4.2vw,3.25rem)] leading-[1.05] text-ink md:col-span-10 md:mt-0">
-            Tiếp nhận và báo giá
+            Từ ảnh công trình đến báo giá
             <span className="text-ink-soft">.</span>
           </h2>
         </div>
 
         <div className="mt-16">
-          {steps.map((s, i) => (
+          {steps.map((s) => (
             <div
               key={s.n}
               className="grid grid-cols-12 gap-x-6 border-t border-rule py-10 last:border-b md:py-14"
@@ -536,40 +534,15 @@ function WhyPhoto() {
       <div className="mx-auto max-w-3xl px-6 md:px-10">
         <p className="eyebrow text-center">— Vì sao gửi ảnh trước</p>
         <p className="font-display mt-8 text-balance text-center text-[clamp(1.5rem,2.6vw,2rem)] leading-[1.3] text-ink">
-          Mỗi bề mặt một tình trạng. Mỗi vật liệu một quy trình.
+          Sắt và tấm xi măng không cùng một quy trình.
           <span className="text-ink-soft">
             {" "}
-            Mỗi mức độ hoàn thiện một mức giá khác nhau.
+            Xem ảnh trước giúp đề xuất đúng hệ sơn và báo giá sát công trình thật.
           </span>
         </p>
         <p className="mt-8 text-center text-[15px] leading-relaxed text-ink-soft">
-          Xem ảnh trước giúp tư vấn sát với công trình thật và đưa ra báo giá đúng — thay vì một
-          con số chung chung.
+          Không cần điền form. Một vài tấm ảnh hạng mục là đủ để bắt đầu cuộc trao đổi.
         </p>
-      </div>
-    </section>
-  );
-}
-
-function Clients() {
-  return (
-    <section className="mt-32 md:mt-44">
-      <div className="mx-auto max-w-[1320px] px-6 md:px-10">
-        <div className="grid grid-cols-12 gap-x-6 border-y border-rule py-16 md:py-24">
-          <p className="eyebrow col-span-12 md:col-span-2">— Đã phục vụ</p>
-          <div className="col-span-12 md:col-span-10">
-            <p className="font-display text-[clamp(1.5rem,2.8vw,2.15rem)] leading-[1.25] text-ink">
-              Đã thi công cho các xưởng nội thất, đơn vị thiết kế và chủ đầu tư
-              <span className="text-ink-soft"> tại TP.HCM và khu vực phía Nam.</span>
-            </p>
-            <div className="mt-10 grid grid-cols-2 gap-y-4 text-[13px] text-ink-soft md:grid-cols-4">
-              <span>Xưởng nội thất</span>
-              <span>Đơn vị thiết kế</span>
-              <span>Nhà thầu xây dựng</span>
-              <span>Chủ đầu tư cá nhân</span>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
@@ -578,32 +551,36 @@ function Clients() {
 function FAQ() {
   const items = [
     {
-      q: "Bên bạn có nhận thi công theo ảnh công trình không?",
-      a: "Có. Khách gửi ảnh hiện trạng qua Zalo, chúng tôi xem và tư vấn hướng xử lý trước khi báo giá.",
+      q: "Có nhận thi công giả gỗ trên sắt ngoài trời không?",
+      a: "Có. Đây là một trong hai mảng chính. Quy trình bao gồm xử lý nền chống gỉ và chọn hệ sơn chịu được nắng mưa dài hạn.",
     },
     {
-      q: "Có làm trên tấm xi măng, smartboard, conwood không?",
-      a: "Có. Đây là một trong ba nhóm hạng mục chính. Quy trình sẽ khác nhau tùy vật liệu và vị trí trong nhà hay ngoài trời.",
+      q: "Có làm trên smartboard, conwood, cemboard không?",
+      a: "Có. Cả ba loại tấm đều nằm trong mảng tấm xi măng. Hệ sơn và cách xử lý mép sẽ khác nhau tùy loại tấm và vị trí sử dụng.",
     },
     {
-      q: "Có thi công hiệu ứng gỗ trên sắt ngoài trời không?",
-      a: "Có. Sử dụng hệ sơn phù hợp cho sắt ngoại thất, đảm bảo độ bám và độ bền màu khi chịu nắng mưa.",
+      q: "Có làm theo ảnh mẫu hoặc tone gỗ khách gửi không?",
+      a: "Có. Gửi ảnh tone gỗ tham chiếu qua Zalo, chúng tôi pha mẫu và điều chỉnh cho phù hợp với vật liệu nền của công trình.",
     },
     {
-      q: "Có nhận công trình nhỏ không?",
-      a: "Có. Chúng tôi nhận từ hạng mục nhỏ như cửa, vách, lam đến các công trình lớn hơn — tùy phương án phù hợp.",
+      q: "Có cần khảo sát trực tiếp không hay gửi ảnh là đủ?",
+      a: "Phần lớn công trình có thể bắt đầu bằng ảnh. Khi khối lượng lớn hoặc bề mặt phức tạp, sẽ khảo sát trực tiếp trước khi chốt phương án.",
     },
     {
-      q: "Có làm việc trực tiếp với xưởng nội thất và nhà thầu không?",
-      a: "Có. Phối hợp được theo tiến độ và hồ sơ kỹ thuật của đơn vị chủ trì.",
+      q: "Có nhận hạng mục nhỏ không?",
+      a: "Có. Từ một cánh cổng, vài mảng lam đến mặt dựng nguyên căn. Báo giá tính theo hạng mục cụ thể, không có mức tối thiểu cứng.",
     },
     {
-      q: "Khi nào cần khảo sát trực tiếp thay vì xem ảnh?",
-      a: "Khi công trình lớn, bề mặt phức tạp, hoặc yêu cầu hoàn thiện cần xem trực tiếp để tư vấn chính xác.",
+      q: "Làm việc với nhà thầu và kiến trúc sư như thế nào?",
+      a: "Phối hợp được theo tiến độ và hồ sơ kỹ thuật của đơn vị chủ trì. Nhận outsource phần hoàn thiện bề mặt cho các mảng kim loại và tấm xi măng.",
     },
     {
-      q: "Gửi ảnh qua Zalo cần chụp những gì?",
-      a: "Ảnh tổng thể bề mặt cần sơn, ảnh cận cảnh tình trạng hiện tại, và nếu có thể, ảnh bối cảnh tổng thể của công trình.",
+      q: "Báo giá phụ thuộc vào những yếu tố nào?",
+      a: "Loại vật liệu nền, tình trạng bề mặt, vị trí trong nhà hay ngoài trời, mức độ hoàn thiện vân và tone gỗ, khối lượng tổng. Báo giá tách theo từng phần.",
+    },
+    {
+      q: "Có nhận sơn gỗ thật cho nội thất không?",
+      a: "Giai đoạn này tập trung vào hai mảng kim loại và tấm xi măng. Sơn gỗ nội thất chỉ nhận khi đi kèm hạng mục chính của công trình.",
     },
   ];
   const [open, setOpen] = useState<number | null>(0);
@@ -669,13 +646,14 @@ function FinalCTA() {
           <div className="col-span-12 md:col-span-10 md:col-start-2">
             <p className="eyebrow">— Bắt đầu</p>
             <h2 className="font-display mt-8 text-balance text-[clamp(2.4rem,5.5vw,4.5rem)] leading-[1.02] text-ink">
-              Bắt đầu từ
-              <span className="italic text-accent"> hiện trạng thật </span>
-              của công trình.
+              Công trình của bạn là
+              <span className="italic text-accent"> sắt </span>
+              hay
+              <span className="italic text-accent"> tấm xi măng?</span>
             </h2>
             <p className="mt-10 max-w-2xl text-[16px] leading-relaxed text-ink-soft">
-              Gửi ảnh hạng mục cần sơn qua Zalo — chúng tôi xem, tư vấn quy trình và báo giá sát
-              với thực tế. Không cần điền form.
+              Gửi ảnh hạng mục cần hoàn thiện hiệu ứng gỗ qua Zalo — chúng tôi xem hiện
+              trạng, đề xuất hướng làm và báo giá theo công trình thật.
             </p>
             <div className="mt-12 flex flex-wrap items-center gap-x-8 gap-y-4">
               <a
@@ -687,7 +665,7 @@ function FinalCTA() {
                 Gửi ảnh qua Zalo
               </a>
               <p className="text-[13px] text-ink-soft">
-                Tư vấn theo hiện trạng · Báo giá sát thực tế
+                Đọc hiện trạng · Báo giá theo hạng mục
               </p>
             </div>
           </div>
@@ -708,16 +686,16 @@ function Footer() {
               <span className="eyebrow">Studio</span>
             </div>
             <p className="mt-6 max-w-sm text-[14px] leading-relaxed text-ink-soft">
-              Studio thi công hoàn thiện bề mặt. Sơn gỗ, sơn giả gỗ trên tấm xi măng và hiệu ứng gỗ
-              trên sắt.
+              Chuyên thi công sơn giả gỗ trên kim loại và trên tấm xi măng cho công
+              trình ngoại thất và kiến trúc hiện đại.
             </p>
           </div>
           <div className="col-span-6 md:col-span-3">
             <p className="eyebrow">Hạng mục</p>
             <ul className="mt-5 space-y-3 text-[14px] text-ink">
-              <li>Sơn gỗ hoàn thiện</li>
+              <li>Sơn giả gỗ trên sắt, kim loại</li>
               <li>Sơn giả gỗ trên tấm xi măng</li>
-              <li>Hiệu ứng gỗ trên sắt</li>
+              <li>Smartboard · Conwood · Cemboard</li>
             </ul>
           </div>
           <div className="col-span-6 md:col-span-2">
@@ -740,8 +718,8 @@ function Footer() {
           </div>
         </div>
         <div className="mt-16 flex flex-wrap items-center justify-between gap-4 border-t border-rule pt-8 text-[12px] text-ink-soft">
-          <p>© {new Date().getFullYear()} Surface Studio. Hoàn thiện bề mặt.</p>
-          <p className="eyebrow">Đọc bề mặt — Chọn quy trình — Hoàn thiện</p>
+          <p>© {new Date().getFullYear()} Surface Studio. Sơn giả gỗ chuyên sâu.</p>
+          <p className="eyebrow">Đọc nền — Chọn hệ sơn — Hoàn thiện</p>
         </div>
       </div>
     </footer>
@@ -778,7 +756,6 @@ function MobileCTABar() {
 }
 
 function Index() {
-  // Subtle fade-in on scroll for figures
   const rootRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
     const els = rootRef.current?.querySelectorAll<HTMLElement>("figure, blockquote");
@@ -811,13 +788,11 @@ function Index() {
         <Hero />
         <PositioningStrip />
         <Services />
-        <ForWho />
+        <WhyFauxWood />
         <Capability />
-        <Aesthetic />
         <Projects />
         <Process />
         <WhyPhoto />
-        <Clients />
         <FAQ />
         <FinalCTA />
       </main>
