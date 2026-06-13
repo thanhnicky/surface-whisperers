@@ -104,8 +104,8 @@ function Hero() {
             Giả gỗ đẹp không chỉ ở màu — mà ở <span className="italic text-accent">xử lý nền.</span>
           </h1>
           <p className="mt-8 max-w-md text-[15px] leading-relaxed text-ink-soft">
-            Sơn giả gỗ trên kim loại và tấm xi măng cho cổng, lam, hàng rào, mặt dựng.
-            Đọc vật liệu nền, chọn hệ sơn theo vị trí, kiểm soát độ đều vân giữa các tấm.
+            Cho cổng, lam, hàng rào, mặt dựng trên kim loại và tấm xi măng. Đọc nền vật liệu,
+            chọn hệ sơn theo vị trí, dựng vân tay và kiểm soát độ đều giữa các tấm.
           </p>
           <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-4">
             <a
@@ -201,8 +201,8 @@ function Services() {
               Sơn giả gỗ trên kim loại
             </h3>
             <p className="mt-5 max-w-md text-[15px] leading-relaxed text-ink-soft">
-              Cho sắt, hộp, thép hộp ngoại thất. Xử lý nền chống gỉ, dựng vân tay, lên màu từng lớp.
-              Bám đúng bề mặt kim loại, chịu được nắng mưa dài hạn.
+              Cho sắt, hộp, thép hộp ngoại thất. Xử lý nền chống gỉ, dựng vân tay, lên màu từng lớp
+              để bám đúng bề mặt kim loại và chịu được nắng mưa dài hạn.
             </p>
             <ul className="mt-6 grid grid-cols-2 gap-x-4 gap-y-2 text-[13px] text-ink">
               <li>Cổng sắt</li>
@@ -454,7 +454,7 @@ function Projects() {
             </h2>
           </div>
           <p className="hidden max-w-xs text-right text-[13px] leading-relaxed text-ink-soft md:block">
-            Các công trình đã làm cho chủ đầu tư, nhà thầu và đơn vị thiết kế.
+            Cổng, lam, cửa sắt, mặt dựng, trần tấm xi măng — các hạng mục đã triển khai.
           </p>
         </div>
 
@@ -480,7 +480,7 @@ function Process() {
     {
       n: "03",
       title: "Tư vấn hướng làm & báo giá",
-      body: "Đề xuất hệ sơn, quy trình xử lý nền và mức hoàn thiện. Báo giá theo từng hạng mục thực tế.",
+      body: "Sau khi xem nền vật liệu, vị trí sử dụng và mức hoàn thiện mong muốn, đề xuất phương án và báo giá.",
     },
     {
       n: "04",
@@ -637,7 +637,7 @@ function FinalCTA() {
               Công trình của bạn là <span className="italic text-accent">sắt</span> hay <span className="italic text-accent">tấm xi măng?</span>
             </h2>
             <p className="mt-10 max-w-2xl text-[16px] leading-relaxed text-ink-soft">
-              Gửi ảnh hạng mục qua Zalo — chúng tôi xem hiện trạng, đề xuất hướng làm và báo giá theo công trình thật.
+              Chỉ cần gửi vài ảnh hiện trạng qua Zalo — chúng tôi xem và trao đổi hướng làm ngay.
             </p>
             <div className="mt-12 flex flex-wrap items-center gap-x-8 gap-y-4">
               <a
