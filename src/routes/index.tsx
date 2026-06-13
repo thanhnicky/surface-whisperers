@@ -15,7 +15,7 @@ export const Route = createFileRoute("/")({
     meta: [
       {
         title:
-          "Surface Studio — Thi công sơn giả gỗ trên kim loại và tấm xi măng",
+          "Mộc Diện — Thi công sơn giả gỗ trên kim loại và tấm xi măng",
       },
       {
         name: "description",
@@ -24,7 +24,7 @@ export const Route = createFileRoute("/")({
       },
       {
         property: "og:title",
-        content: "Surface Studio — Sơn giả gỗ cho kim loại & tấm xi măng",
+        content: "Mộc Diện — Sơn giả gỗ cho kim loại & tấm xi măng",
       },
       {
         property: "og:description",
@@ -67,8 +67,7 @@ function Header() {
     >
       <div className="mx-auto flex max-w-[1320px] items-center justify-between px-6 py-5 md:px-10 md:py-6">
         <a href="#top" className="flex items-baseline gap-2">
-          <span className="font-display text-xl tracking-tight text-ink">Surface</span>
-          <span className="eyebrow text-ink-soft">Studio</span>
+          <span className="font-display text-xl tracking-tight text-ink">Mộc Diện</span>
         </a>
         <nav className="hidden items-center gap-7 md:flex">
           {navItems.map((item) => (
@@ -99,10 +98,13 @@ function Hero() {
     <section id="top" className="relative pt-32 md:pt-36">
       <div className="mx-auto grid max-w-[1320px] grid-cols-12 gap-x-6 px-6 md:px-10">
         <div className="col-span-12 md:col-span-5 md:pt-16">
-          <p className="eyebrow">Chuyên sơn giả gỗ — Kim loại & Tấm xi măng</p>
+          <p className="eyebrow">CHUYÊN SƠN GIẢ GỖ — KIM LOẠI & TẤM XI MĂNG</p>
           <h1 className="font-display mt-8 text-balance text-[clamp(2.6rem,6vw,4.75rem)] font-400 leading-[0.98] text-ink">
-            Giả gỗ đẹp không chỉ ở màu — mà ở <span className="italic text-accent">xử lý nền.</span>
+            Mộc Diện
           </h1>
+          <p className="mt-4 text-[clamp(1.3rem,2.5vw,1.8rem)] font-display leading-[1.1] text-ink-soft">
+            Giả gỗ đẹp không chỉ ở màu — mà ở <span className="italic text-accent">xử lý nền.</span>
+          </p>
           <p className="mt-8 max-w-md text-[15px] leading-relaxed text-ink-soft">
             Cho cổng, lam, hàng rào, mặt dựng trên kim loại và tấm xi măng. Đọc nền vật liệu,
             chọn hệ sơn theo vị trí, dựng vân tay và kiểm soát độ đều giữa các tấm.
@@ -666,11 +668,13 @@ function Footer() {
         <div className="grid grid-cols-12 gap-x-6 gap-y-12">
           <div className="col-span-12 md:col-span-5">
             <div className="flex items-baseline gap-2">
-              <span className="font-display text-2xl text-ink">Surface</span>
-              <span className="eyebrow">Studio</span>
+              <span className="font-display text-2xl text-ink">Mộc Diện</span>
             </div>
             <p className="mt-6 max-w-sm text-[14px] leading-relaxed text-ink-soft">
-              Chuyên thi công sơn giả gỗ trên kim loại và tấm xi măng cho công trình ngoại thất và kiến trúc hiện đại.
+              Thi công sơn giả gỗ trên kim loại và tấm xi măng cho công trình ngoại thất và kiến trúc hiện đại.
+            </p>
+            <p className="mt-4 text-[13px] text-ink-soft">
+              Đúng vật liệu. Đúng quy trình. Đúng thẩm mỹ.
             </p>
           </div>
           <div className="col-span-6 md:col-span-3">
@@ -698,11 +702,19 @@ function Footer() {
             >
               Zalo →
             </a>
+            <a
+              href="https://mocdienstudio.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-3 inline-block text-[14px] text-ink underline decoration-rule underline-offset-4 transition-colors hover:text-accent hover:decoration-accent"
+            >
+              mocdienstudio.com
+            </a>
           </div>
         </div>
         <div className="mt-16 flex flex-wrap items-center justify-between gap-4 border-t border-rule pt-8 text-[12px] text-ink-soft">
-          <p>© {new Date().getFullYear()} Surface Studio. Sơn giả gỗ chuyên sâu.</p>
-          <p className="eyebrow">Đọc nền — Chọn hệ sơn — Hoàn thiện</p>
+          <p>© {new Date().getFullYear()} Mộc Diện. Sơn giả gỗ chuyên sâu.</p>
+          <p className="eyebrow">Đúng vật liệu. Đúng quy trình. Đúng thẩm mỹ.</p>
         </div>
       </div>
     </footer>
