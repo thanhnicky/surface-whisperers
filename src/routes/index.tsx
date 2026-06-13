@@ -108,9 +108,9 @@ function Hero() {
             <span className="italic text-accent">vật liệu nền.</span>
           </h1>
           <p className="mt-8 max-w-md text-[15px] leading-relaxed text-ink-soft">
-            Thi công hiệu ứng gỗ trên sắt, kim loại và trên tấm xi măng — smartboard,
-            conwood, cemboard. Cho cổng, lam, hàng rào, mặt dựng và các hạng mục ngoại thất
-            cần bền màu, đều vân.
+            Hiệu ứng gỗ trên sắt, kim loại và tấm xi măng — cho cổng, lam, hàng rào,
+            mặt dựng. Xử lý nền đúng cách, chọn hệ sơn theo vị trí, kiểm soát độ đều vân
+            giữa các tấm.
           </p>
           <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-4">
             <a
@@ -161,10 +161,10 @@ function PositioningStrip() {
         <div className="grid grid-cols-12 gap-x-6 py-12 md:py-20">
           <p className="eyebrow col-span-12 md:col-span-2">— Định vị</p>
           <p className="font-display col-span-12 mt-4 text-[clamp(1.55rem,3vw,2.5rem)] leading-[1.15] text-ink md:col-span-10 md:mt-0">
-            Chỉ làm một nhóm việc, và làm cho đúng.
+            Tập trung vào hai hệ bề mặt:
             <span className="text-ink-soft">
               {" "}
-              Sơn giả gỗ trên kim loại và trên tấm xi măng — không nhận tràn ra ngoài hai mảng này.
+              kim loại và tấm xi măng. Không nhận tràn ra ngoài hai mảng này.
             </span>
           </p>
         </div>
@@ -456,7 +456,6 @@ function Projects() {
             <p className="eyebrow">— Dự án</p>
             <h2 className="font-display mt-4 text-[clamp(2rem,4.2vw,3.25rem)] leading-[1.05] text-ink">
               Hạng mục đã thi công
-              <span className="text-ink-soft">.</span>
             </h2>
           </div>
           <p className="hidden max-w-xs text-right text-[13px] leading-relaxed text-ink-soft md:block">
@@ -501,7 +500,6 @@ function Process() {
           <p className="eyebrow col-span-12 md:col-span-2">— Quy trình</p>
           <h2 className="font-display col-span-12 mt-4 text-[clamp(2rem,4.2vw,3.25rem)] leading-[1.05] text-ink md:col-span-10 md:mt-0">
             Từ ảnh công trình đến báo giá
-            <span className="text-ink-soft">.</span>
           </h2>
         </div>
 
@@ -578,10 +576,6 @@ function FAQ() {
       q: "Báo giá phụ thuộc vào những yếu tố nào?",
       a: "Loại vật liệu nền, tình trạng bề mặt, vị trí trong nhà hay ngoài trời, mức độ hoàn thiện vân và tone gỗ, khối lượng tổng. Báo giá tách theo từng phần.",
     },
-    {
-      q: "Có nhận sơn gỗ thật cho nội thất không?",
-      a: "Giai đoạn này tập trung vào hai mảng kim loại và tấm xi măng. Sơn gỗ nội thất chỉ nhận khi đi kèm hạng mục chính của công trình.",
-    },
   ];
   const [open, setOpen] = useState<number | null>(0);
   return (
@@ -592,7 +586,6 @@ function FAQ() {
             <p className="eyebrow">— FAQ</p>
             <h2 className="font-display mt-4 text-[clamp(2rem,3.6vw,2.75rem)] leading-[1.05] text-ink">
               Câu hỏi thường gặp
-              <span className="text-ink-soft">.</span>
             </h2>
           </div>
           <div className="col-span-12 mt-10 md:col-span-7 md:col-start-6 md:mt-0">
