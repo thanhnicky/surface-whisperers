@@ -8,7 +8,7 @@ import projectSlatCeiling from "@/assets/project-slat-ceiling.jpg";
 import projectCementFacade from "@/assets/project-cement-facade.jpg";
 import craftHand from "@/assets/craft-hand.jpg";
 
-const ZALO_URL = "https://zalo.me/0000000000";
+const ZALO_URL = "https://zalo.me/0836977799";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -690,13 +690,16 @@ function Footer() {
           </div>
           <div className="col-span-12 md:col-span-2">
             <p className="eyebrow">Liên hệ</p>
+            <p className="mt-5 text-[14px] text-ink">
+              Đường XTT26-1, Ấp 2, Xã Bà Điểm, TP.HCM
+            </p>
             <a
               href={ZALO_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-5 inline-block text-[14px] text-ink underline decoration-rule underline-offset-4 transition-colors hover:text-accent hover:decoration-accent"
+              className="mt-3 inline-block text-[14px] text-ink underline decoration-rule underline-offset-4 transition-colors hover:text-accent hover:decoration-accent"
             >
-              Zalo →
+              0836 97 77 99
             </a>
             <a
               href="https://mocdienstudio.com"
