@@ -66,8 +66,9 @@ function Header() {
       }`}
     >
       <div className="mx-auto flex max-w-[1320px] items-center justify-between px-6 py-5 md:px-10 md:py-6">
-        <a href="#top">
-          <img src="/logo-mocdien.png" alt="Mộc Diện" className="h-11 w-auto" />
+        <a href="#top" className="flex flex-col">
+          <img src="/logo-mocdien.png" alt="Mộc Diện" className="h-14 w-auto" />
+          <span className="text-[10px] font-medium tracking-widest text-ink-soft mt-1">SƠN GIẢ GỖ CHUYÊN SÂU</span>
         </a>
         <nav className="hidden items-center gap-7 md:flex">
           {navItems.map((item) => (
