@@ -156,11 +156,7 @@ function PositioningStrip() {
         <div className="grid grid-cols-12 gap-x-6 py-12 md:py-20">
           <p className="eyebrow col-span-12 md:col-span-2">— Định vị</p>
           <p className="font-display col-span-12 mt-4 text-[clamp(1.55rem,3vw,2.5rem)] leading-[1.15] text-ink md:col-span-10 md:mt-0">
-            Chỉ làm hai hệ bề mặt:
-            <span className="text-ink-soft">
-              {" "}
-              kim loại và tấm xi măng. Đây là nơi chúng tôi hiểu sâu nhất.
-            </span>
+            Chỉ làm hai hệ bề mặt: <span className="text-ink-soft">kim loại và tấm xi măng. Đây là nơi chúng tôi hiểu sâu nhất.</span>
           </p>
         </div>
         <div className="rule" />
@@ -176,8 +172,7 @@ function Services() {
         <div className="grid grid-cols-12 gap-x-6">
           <p className="eyebrow col-span-12 md:col-span-2">— Hạng mục</p>
           <h2 className="font-display col-span-12 mt-4 text-[clamp(2rem,4.2vw,3.25rem)] leading-[1.05] text-ink md:col-span-10 md:mt-0">
-            Hai hệ bề mặt
-            <span className="text-ink-soft"> chúng tôi làm.</span>
+            Hai hệ bề mặt <span className="text-ink-soft">chúng tôi làm.</span>
           </h2>
         </div>
 
@@ -281,8 +276,7 @@ function WhyFauxWood() {
         <div className="grid grid-cols-12 gap-x-6">
           <p className="eyebrow col-span-12 md:col-span-2">— Khi nào chọn giả gỗ</p>
           <h2 className="font-display col-span-12 mt-4 text-[clamp(1.9rem,3.8vw,2.85rem)] leading-[1.1] text-ink md:col-span-10 md:mt-0">
-            Bốn tình huống
-            <span className="text-ink-soft"> giả gỗ phù hợp hơn gỗ thật.</span>
+            Bốn tình huống <span className="text-ink-soft">giả gỗ phù hợp hơn gỗ thật.</span>
           </h2>
         </div>
 
@@ -328,11 +322,7 @@ function Capability() {
           <div className="col-span-12 md:col-span-5">
             <p className="eyebrow">— Năng lực</p>
             <h2 className="font-display mt-6 text-[clamp(1.9rem,3.6vw,2.85rem)] leading-[1.1] text-ink">
-              Thực thi theo
-              <br />
-              vật liệu nền,
-              <br />
-              <span className="italic text-accent">không theo công thức chung.</span>
+              Thực thi theo vật liệu nền, <span className="italic text-accent">không theo công thức chung.</span>
             </h2>
             <p className="mt-8 max-w-md text-[15px] leading-relaxed text-ink-soft">
               Mỗi công trình có hiện trạng khác nhau. Đọc vật liệu nền, xử lý lớp nền đến nơi,
@@ -367,6 +357,7 @@ function Projects() {
       title: "Lam sắt hiệu ứng gỗ",
       meta: "Mặt tiền biệt thự — Quận 2",
       details: "Sắt hộp · Ngoại thất · Hiệu ứng gỗ óc chó",
+      cue: "Xử lý chống gỉ đa lớp, phối hợp màu theo kiến trúc mặt tiền",
       ratio: "aspect-[4/5]",
       span: "md:col-span-5",
     },
@@ -375,6 +366,7 @@ function Projects() {
       title: "Cửa sắt hiệu ứng gỗ",
       meta: "Nhà phố — Bình Thạnh",
       details: "Sắt · Ngoại thất · Cổng chính",
+      cue: "Công thức sơn chịu nắng mưa, độ bền dài hạn",
       ratio: "aspect-[4/3]",
       span: "md:col-span-7",
     },
@@ -385,6 +377,7 @@ function Projects() {
       title: "Mặt dựng tấm xi măng giả gỗ",
       meta: "Nhà phố hiện đại — Thủ Đức",
       details: "Smartboard · Ngoại thất · Mặt tiền",
+      cue: "Xử lý mép tấm, kiểm soát độ đều giữa các panel",
       ratio: "aspect-[4/3]",
       span: "md:col-span-7",
     },
@@ -393,6 +386,7 @@ function Projects() {
       title: "Conwood ngoại thất quán café",
       meta: "Quán café — Thủ Đức",
       details: "Conwood · Ngoại thất · Mảng trang trí",
+      cue: "Tone gỗ ấm, phù hợp không gian thương mại",
       ratio: "aspect-[4/5]",
       span: "md:col-span-5",
     },
@@ -401,6 +395,7 @@ function Projects() {
       title: "Lam trần tấm xi măng",
       meta: "Showroom — phía Nam",
       details: "Cemboard · Trong nhà · Trần",
+      cue: "Hệ sơn trong nhà, vân nhẹ và đều",
       ratio: "aspect-[4/5]",
       span: "md:col-span-6",
     },
@@ -409,6 +404,7 @@ function Projects() {
       title: "Cận cảnh dựng vân tay",
       meta: "Chi tiết bề mặt hoàn thiện",
       details: "Kỹ thuật dựng vân · Kiểm soát độ đều",
+      cue: "Dựng vân tay thủ công, kiểm soát độ sâu theo vật liệu",
       ratio: "aspect-[4/5]",
       span: "md:col-span-6",
     },
@@ -442,6 +438,7 @@ function Projects() {
               <p className="font-display text-xl text-ink">{it.title}</p>
               <p className="mt-1 text-[13px] text-ink-soft">{it.meta}</p>
               <p className="mt-1 text-[12px] text-ink-soft/70">{it.details}</p>
+              <p className="mt-1 text-[12px] text-ink-soft/50 italic">{it.cue}</p>
             </div>
             <span className="eyebrow">{String(startIndex + i + 1).padStart(2, "0")}</span>
           </figcaption>
@@ -681,9 +678,6 @@ function Footer() {
             <p className="mt-6 max-w-sm text-[14px] leading-relaxed text-ink-soft">
               Chuyên thi công sơn giả gỗ trên kim loại và tấm xi măng cho công trình ngoại thất và kiến trúc hiện đại.
             </p>
-            <p className="mt-4 text-[13px] text-ink-soft">
-              Đúng vật liệu. Đúng quy trình. Đúng thẩm mỹ.
-            </p>
           </div>
           <div className="col-span-6 md:col-span-2">
             <p className="eyebrow">Hạng mục</p>
@@ -727,7 +721,6 @@ function Footer() {
         </div>
         <div className="mt-16 flex flex-wrap items-center justify-between gap-4 border-t border-rule pt-8 text-[12px] text-ink-soft">
           <p>© {new Date().getFullYear()} Mộc Diện. Sơn giả gỗ chuyên sâu.</p>
-          <p className="eyebrow">Đúng vật liệu. Đúng quy trình. Đúng thẩm mỹ.</p>
         </div>
       </div>
     </footer>
