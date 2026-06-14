@@ -103,7 +103,7 @@ function Hero() {
             Mộc Diện
           </h1>
           <p className="mt-4 text-[clamp(1.3rem,2.5vw,1.8rem)] font-display leading-[1.1] text-ink-soft">
-            Giả gỗ đẹp không chỉ ở màu — mà ở <span className="italic text-accent">xử lý nền.</span>
+            Đúng vật liệu — Đúng quy trình — Đúng thẩm mỹ
           </p>
           <p className="mt-8 max-w-md text-[15px] leading-relaxed text-ink-soft">
             Cho cổng, lam, hàng rào, mặt dựng trên kim loại và tấm xi măng. Đọc nền vật liệu,
