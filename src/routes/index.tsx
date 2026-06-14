@@ -88,6 +88,14 @@ function Header() {
         >
           Gửi ảnh qua Zalo
         </a>
+        <a
+          href={ZALO_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="md:hidden bg-accent px-4 py-2 text-[11px] font-medium uppercase tracking-[0.14em] text-accent-foreground transition-colors hover:bg-ink"
+        >
+          Zalo
+        </a>
       </div>
     </header>
   );
@@ -783,7 +791,7 @@ function Index() {
   }, []);
 
   return (
-    <div ref={rootRef} className="min-h-screen bg-background pb-20 md:pb-0">
+    <div ref={rootRef} className="min-h-screen bg-background">
       <Header />
       <main>
         <Hero />
@@ -799,7 +807,6 @@ function Index() {
       </main>
       <Footer />
       <StickyZalo />
-      <MobileCTABar />
     </div>
   );
 }
