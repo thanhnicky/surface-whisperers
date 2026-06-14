@@ -154,9 +154,9 @@ function PositioningStrip() {
       <div className="mx-auto max-w-[1320px] px-6 md:px-10">
         <div className="rule" />
         <div className="grid grid-cols-12 gap-x-6 py-12 md:py-20">
-          <p className="eyebrow col-span-12 md:col-span-2">— Định vị</p>
+          <p className="eyebrow col-span-12 md:col-span-2">— Về Mộc Diện</p>
           <p className="font-display col-span-12 mt-4 text-[clamp(1.55rem,3vw,2.5rem)] leading-[1.15] text-ink md:col-span-10 md:mt-0">
-            Chỉ làm hai hệ bề mặt: <span className="text-ink-soft">kim loại và tấm xi măng. Đây là nơi chúng tôi hiểu sâu nhất.</span>
+            Mộc Diện hiện tập trung vào 2 nhóm thi công chính: <span className="text-ink-soft">kim loại và tấm xi măng.</span>
           </p>
         </div>
         <div className="rule" />
@@ -172,7 +172,7 @@ function Services() {
         <div className="grid grid-cols-12 gap-x-6">
           <p className="eyebrow col-span-12 md:col-span-2">— Hạng mục</p>
           <h2 className="font-display col-span-12 mt-4 text-[clamp(2rem,4.2vw,3.25rem)] leading-[1.05] text-ink md:col-span-10 md:mt-0">
-            Hai hệ bề mặt <span className="text-ink-soft">chúng tôi làm.</span>
+            2 nhóm bề mặt <span className="text-ink-soft">chúng tôi thi công.</span>
           </h2>
         </div>
 
@@ -274,9 +274,9 @@ function WhyFauxWood() {
     <section id="vi-sao" className="mt-32 md:mt-44">
       <div className="mx-auto max-w-[1320px] px-6 md:px-10">
         <div className="grid grid-cols-12 gap-x-6">
-          <p className="eyebrow col-span-12 md:col-span-2">— Khi nào chọn giả gỗ</p>
+          <p className="eyebrow col-span-12 md:col-span-2">— Khi nào dùng giả gỗ</p>
           <h2 className="font-display col-span-12 mt-4 text-[clamp(1.9rem,3.8vw,2.85rem)] leading-[1.1] text-ink md:col-span-10 md:mt-0">
-            Bốn tình huống <span className="text-ink-soft">giả gỗ phù hợp hơn gỗ thật.</span>
+            4 trường hợp <span className="text-ink-soft">giả gỗ phù hợp hơn gỗ thật.</span>
           </h2>
         </div>
 
@@ -322,7 +322,7 @@ function Capability() {
           <div className="col-span-12 md:col-span-5">
             <p className="eyebrow">— Năng lực</p>
             <h2 className="font-display mt-6 text-[clamp(1.9rem,3.6vw,2.85rem)] leading-[1.1] text-ink">
-              Thực thi theo vật liệu nền, <span className="italic text-accent">không theo công thức chung.</span>
+              Thi công theo từng loại nền, <span className="italic text-accent">không theo công thức chung.</span>
             </h2>
             <p className="mt-8 max-w-md text-[15px] leading-relaxed text-ink-soft">
               Mỗi công trình có hiện trạng khác nhau. Đọc vật liệu nền, xử lý lớp nền đến nơi,
@@ -454,11 +454,11 @@ function Projects() {
           <div>
             <p className="eyebrow">— Dự án</p>
             <h2 className="font-display mt-4 text-[clamp(2rem,4.2vw,3.25rem)] leading-[1.05] text-ink">
-              Hạng mục đã triển khai
+              Các hạng mục đã làm
             </h2>
           </div>
           <p className="hidden max-w-xs text-right text-[13px] leading-relaxed text-ink-soft md:block">
-            Cổng, lam, cửa sắt, mặt dựng, trần tấm xi măng — các hạng mục đã triển khai.
+            Cổng, lam, cửa sắt, mặt dựng, trần tấm xi măng — các hạng mục đã làm.
           </p>
         </div>
 
@@ -473,27 +473,27 @@ function Process() {
   const steps = [
     {
       n: "01",
-      title: "Nhận hồ sơ / ảnh hiện trạng",
+      title: "Tiếp nhận hồ sơ hoặc ảnh hiện trạng",
       body: "Ảnh hạng mục, bản vẽ hoặc thông tin hiện trạng vật liệu nền. Khảo sát trực tiếp khi khối lượng lớn hoặc bề mặt phức tạp.",
     },
     {
       n: "02",
-      title: "Đánh giá vật liệu & vị trí",
+      title: "Xem loại nền và vị trí thi công",
       body: "Xác định loại nền (sắt, thép, smartboard, conwood, cemboard), tình trạng bề mặt, vị trí trong nhà hay ngoài trời.",
     },
     {
       n: "03",
-      title: "Đề xuất phương án & mẫu",
+      title: "Đề xuất phương án và làm mẫu",
       body: "Chọn hệ sơn theo vị trí, pha mẫu tone gỗ, điều chỉnh cho phù hợp với vật liệu nền và yêu cầu kiến trúc.",
     },
     {
       n: "04",
-      title: "Báo giá & phối hợp tiến độ",
+      title: "Báo giá và thống nhất tiến độ",
       body: "Báo giá theo hạng mục cụ thể. Phối hợp với nhà thầu chủ trì, thi công theo giai đoạn công trình.",
     },
     {
       n: "05",
-      title: "Triển khai & bàn giao",
+      title: "Thi công và bàn giao",
       body: "Xử lý nền, dựng vân tay, hoàn thiện từng lớp. Bảo vệ công trình, bàn giao theo tiến độ thống nhất.",
     },
   ];
@@ -503,7 +503,7 @@ function Process() {
         <div className="grid grid-cols-12 gap-x-6">
           <p className="eyebrow col-span-12 md:col-span-2">— Quy trình</p>
           <h2 className="font-display col-span-12 mt-4 text-[clamp(2rem,4.2vw,3.25rem)] leading-[1.05] text-ink md:col-span-10 md:mt-0">
-            Từ hồ sơ đến bàn giao
+            Từ tiếp nhận hạng mục đến bàn giao
           </h2>
         </div>
 
@@ -534,7 +534,7 @@ function WhyPhoto() {
   return (
     <section className="mt-32 md:mt-44">
       <div className="mx-auto max-w-3xl px-6 md:px-10">
-        <p className="eyebrow text-center">— Vì sao gửi ảnh trước</p>
+        <p className="eyebrow text-center">— Vì sao cần gửi ảnh</p>
         <p className="font-display mt-8 text-balance text-center text-[clamp(1.5rem,2.6vw,2rem)] leading-[1.3] text-ink">
           Sắt và tấm xi măng không cùng một quy trình.
           <span className="text-ink-soft">
@@ -553,31 +553,31 @@ function WhyPhoto() {
 function FAQ() {
   const items = [
     {
-      q: "Có khảo sát trực tiếp hiện trạng công trình không?",
+      q: "Có đến xem hiện trạng công trình không?",
       a: "Có. Khảo sát trực tiếp khi khối lượng lớn, bề mặt phức tạp, hoặc theo yêu cầu của nhà thầu chủ trì. Phần lớn công trình có thể bắt đầu bằng ảnh hiện trạng.",
     },
     {
-      q: "Có làm theo bản vẽ kiến trúc hoặc mẫu tone gửi không?",
+      q: "Có làm theo bản vẽ hoặc mẫu màu gửi không?",
       a: "Có. Nhận bản vẽ, ảnh mẫu hoặc tone gỗ tham chiếu. Pha mẫu và điều chỉnh cho phù hợp với vật liệu nền và yêu cầu kiến trúc của công trình.",
     },
     {
-      q: "Những loại kim loại và tấm xi măng nào phù hợp?",
+      q: "Những loại sắt và tấm xi măng nào phù hợp?",
       a: "Kim loại: sắt hộp, thép, cổng, lam, hàng rào. Tấm xi măng: smartboard, conwood, cemboard cho lam, mặt dựng, trần, vách trang trí.",
     },
     {
-      q: "Phối hợp tiến độ với nhà thầu chủ trì như thế nào?",
-      a: "Làm việc theo tiến độ công trình, nhận outsource phần hoàn thiện bề mặt. Phối hợp với các đội thi công khác, bảo vệ công trình trong quá trình làm việc.",
+      q: "Làm việc với nhà thầu chủ trì như thế nào?",
+      a: "Làm việc theo tiến độ công trình, nhận gia công phần hoàn thiện bề mặt. Phối hợp với các đội thi công khác, bảo vệ công trình trong quá trình làm việc.",
     },
     {
-      q: "Báo giá thay đổi khi hiện trạng thực tế khác như thế nào?",
+      q: "Báo giá thay đổi khi hiện trạng khác như thế nào?",
       a: "Báo giá dựa trên thông tin hiện trạng ban đầu. Khi hiện trạng thực tế khác, điều chỉnh báo giá theo hạng mục cụ thể trước khi triển khai.",
     },
     {
-      q: "Có nhận hạng mục nhỏ hoặc outsource không?",
-      a: "Có. Từ một cánh cổng, vài mảng lam đến mặt dựng nguyên căn. Nhận outsource phần hoàn thiện bề mặt cho nhà thầu chủ trì.",
+      q: "Có nhận hạng mục nhỏ hoặc gia công không?",
+      a: "Có. Từ một cánh cổng, vài mảng lam đến mặt dựng nguyên căn. Nhận gia công phần hoàn thiện bề mặt cho nhà thầu chủ trì.",
     },
     {
-      q: "Quy trình xử lý nền cho kim loại và tấm xi măng khác nhau như thế nào?",
+      q: "Xử lý nền cho sắt và tấm xi măng khác nhau như thế nào?",
       a: "Kim loại: xử lý chống gỉ đa lớp. Tấm xi măng: xử lý mép và bề mặt tấm. Hệ sơn chọn theo vị trí ngoài trời, trong nhà, mức độ tiếp xúc nắng mưa.",
     },
   ];
@@ -641,7 +641,7 @@ function FinalCTA() {
       <div className="mx-auto max-w-[1320px] px-6 md:px-10">
         <div className="grid grid-cols-12 gap-x-6 border-t border-rule pt-24 md:pt-32">
           <div className="col-span-12 md:col-span-10 md:col-start-2">
-            <p className="eyebrow">— Bắt đầu</p>
+            <p className="eyebrow">— Liên hệ</p>
             <h2 className="font-display mt-8 max-w-3xl text-balance text-[clamp(2.4rem,5.5vw,4.5rem)] leading-[1.02] text-ink">
               Công trình của bạn là <span className="italic text-accent">sắt</span> hay <span className="italic text-accent">tấm xi măng?</span>
             </h2>
@@ -658,7 +658,7 @@ function FinalCTA() {
                 Gửi ảnh qua Zalo
               </a>
               <p className="text-[13px] text-ink-soft">
-                Đọc hiện trạng · Báo giá theo hạng mục
+                Xem hiện trạng · Báo giá theo hạng mục
               </p>
             </div>
           </div>
