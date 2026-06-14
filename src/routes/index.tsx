@@ -691,7 +691,7 @@ function Footer() {
             <p className="eyebrow">Khu vực</p>
             <ul className="mt-5 space-y-3 text-[14px] text-ink">
               <li>TP.HCM</li>
-              <li>Khu vực phía Nam</li>
+              <li>Và các tỉnh lân cận</li>
             </ul>
           </div>
           <div className="col-span-12 md:col-span-4">
