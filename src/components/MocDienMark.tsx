@@ -8,13 +8,13 @@ export function MocDienMark({ className = "" }: { className?: string }) {
       xmlns="http://www.w3.org/2000/svg"
       className={className}
     >
-      {/* Stepped horizontal bars - descending widths */}
-      <rect x="4" y="28" width="32" height="8" fill="#1a1a1a" />
-      <rect x="4" y="18" width="24" height="8" fill="#1a1a1a" />
-      <rect x="4" y="8" width="16" height="8" fill="#1a1a1a" />
+      {/* Stepped horizontal bars - refined proportions based on brand reference */}
+      <rect x="6" y="26" width="28" height="6" fill="#1a1a1a" />
+      <rect x="6" y="17" width="20" height="6" fill="#1a1a1a" />
+      <rect x="6" y="8" width="12" height="6" fill="#1a1a1a" />
       
-      {/* Ochre accent as cut-edge detail */}
-      <rect x="4" y="8" width="2" height="28" fill="#c9a66b" />
+      {/* Ochre accent as subtle cut-edge detail */}
+      <rect x="6" y="8" width="1.5" height="24" fill="#c9a66b" />
     </svg>
   );
 }
