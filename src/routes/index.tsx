@@ -65,9 +65,9 @@ function Header() {
           : "bg-transparent border-b border-transparent"
       }`}
     >
-      <div className="mx-auto flex max-w-[1320px] items-center justify-between px-6 py-3 md:px-10 md:py-4">
+      <div className="mx-auto flex max-w-[1320px] items-center justify-between px-6 py-2 md:px-10 md:py-3">
         <a href="#top">
-          <img src="/logo-mocdien.png" alt="Mộc Diện" className="h-14 w-auto" />
+          <img src="/logo-mocdien.png" alt="Mộc Diện" className="h-11 w-auto" />
         </a>
         <nav className="hidden items-center gap-7 md:flex">
           {navItems.map((item) => (
