@@ -99,9 +99,7 @@ function Hero() {
       <div className="mx-auto grid max-w-[1320px] grid-cols-12 gap-x-6 px-6 md:px-10">
         <div className="col-span-12 md:col-span-5 md:pt-16">
           <p className="eyebrow">SƠN GIẢ GỖ CHUYÊN SÂU</p>
-          <h1 className="font-display mt-8 text-balance text-[clamp(2.6rem,6vw,4.75rem)] font-400 leading-[0.98] text-ink">
-            Mộc Diện
-          </h1>
+          <img src="/logo-mocdien-text.png" alt="Mộc Diện" className="mt-8 w-full max-w-[600px] h-auto" />
           <p className="mt-4 text-[clamp(1.3rem,2.5vw,1.8rem)] font-display leading-[1.1] text-ink-soft">
             Đúng vật liệu — Đúng quy trình — Đúng thẩm mỹ
           </p>
