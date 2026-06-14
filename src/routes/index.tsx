@@ -768,7 +768,7 @@ function Footer() {
           <div className="col-span-12 md:col-span-4">
             <img src="/logo-mocdien.png" alt="Mộc Diện" className="h-14 w-auto" />
             <p className="mt-6 max-w-sm text-[14px] leading-relaxed text-ink-soft">
-              Sơn giả gỗ trên kim loại và tấm xi măng cho công trình ngoại thất.
+              Mộc Diện là nhà thầu thi công sơn giả gỗ trên kim loại và tấm xi măng cho công trình.
             </p>
           </div>
           <div className="col-span-6 md:col-span-2">
