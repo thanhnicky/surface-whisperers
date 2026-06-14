@@ -98,7 +98,7 @@ function Hero() {
     <section id="top" className="relative pt-32 md:pt-36">
       <div className="mx-auto grid max-w-[1320px] grid-cols-12 gap-x-6 px-6 md:px-10">
         <div className="col-span-12 md:col-span-5 md:pt-16">
-          <p className="eyebrow">CHUYÊN SƠN GIẢ GỖ — KIM LOẠI & TẤM XI MĂNG</p>
+          <p className="eyebrow">SƠN GIẢ GỖ CHUYÊN SÂU</p>
           <h1 className="font-display mt-8 text-balance text-[clamp(2.6rem,6vw,4.75rem)] font-400 leading-[0.98] text-ink">
             Mộc Diện
           </h1>
