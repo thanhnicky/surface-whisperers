@@ -112,8 +112,8 @@ function Hero() {
             Đúng vật liệu — Đúng quy trình — Đúng thẩm mỹ
           </p>
           <p className="mt-8 max-w-md text-[15px] leading-relaxed text-ink-soft">
-            Cho cổng, lam, hàng rào, mặt dựng trên kim loại và tấm xi măng. Xử lý nền theo vật liệu,
-            chọn hệ sơn theo vị trí, phối hợp tiến độ với nhà thầu chủ trì.
+            Cho cổng, lam, hàng rào, mặt dựng trên kim loại và tấm xi măng. Xử lý nền đúng loại,
+            chọn sơn theo vị trí, làm việc theo tiến độ với nhà thầu.
           </p>
           <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-4">
             <a
@@ -651,7 +651,7 @@ function FinalCTA() {
           <div className="col-span-12 md:col-span-10 md:col-start-2">
             <p className="eyebrow">— Liên hệ</p>
             <h2 className="font-display mt-8 max-w-3xl text-balance text-[clamp(2.4rem,5.5vw,4.5rem)] leading-[1.02] text-ink">
-              Công trình của bạn là <span className="italic text-accent">sắt</span> hay <span className="italic text-accent">tấm xi măng?</span>
+              Công trình của bạn làm bằng <span className="italic text-accent">sắt</span> hay <span className="italic text-accent">tấm xi măng?</span>
             </h2>
             <p className="mt-10 max-w-2xl text-[16px] leading-relaxed text-ink-soft">
               Chỉ cần gửi vài ảnh hiện trạng qua Zalo — chúng tôi xem và trao đổi hướng làm ngay.
@@ -684,7 +684,7 @@ function Footer() {
           <div className="col-span-12 md:col-span-4">
             <img src="/logo-mocdien.png" alt="Mộc Diện" className="h-14 w-auto" />
             <p className="mt-6 max-w-sm text-[14px] leading-relaxed text-ink-soft">
-              Chuyên thi công sơn giả gỗ trên kim loại và tấm xi măng cho công trình ngoại thất và kiến trúc hiện đại.
+              Sơn giả gỗ trên kim loại và tấm xi măng cho công trình ngoại thất.
             </p>
           </div>
           <div className="col-span-6 md:col-span-2">
