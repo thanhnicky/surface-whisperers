@@ -10,31 +10,115 @@ import craftHand from "@/assets/craft-hand.jpg";
 
 const ZALO_URL = "https://zalo.me/0836977799";
 
+/*
+ * FUTURE GEO PAGE SLUG STRUCTURE
+ * ===============================
+ * Recommended URL structure for location/service landing pages:
+ *
+ * 1. Contractor + City:
+ *    /nha-thau-son-gia-go-tphcm
+ *    /nha-thau-son-gia-go-binh-duong
+ *    /nha-thau-son-gia-go-dong-nai
+ *
+ * 2. Service + City:
+ *    /son-gia-go-tren-kim-loai-tphcm
+ *    /son-gia-go-tren-tam-xi-mang-tphcm
+ *    /son-gia-go-cong-sat-tphcm
+ *    /son-gia-go-lam-sat-tphcm
+ *
+ * 3. Metal Faux Wood + City:
+ *    /son-gia-go-kim-loai-tphcm
+ *    /son-gia-go-sat-tphcm
+ *    /cong-sat-gia-go-tphcm
+ *    /lam-sat-gia-go-tphcm
+ *
+ * 4. Cement Board Faux Wood + City:
+ *    /son-gia-go-tam-xi-mang-tphcm
+ *    /son-gia-go-smartboard-tphcm
+ *    /son-gia-go-conwood-tphcm
+ *    /son-gia-go-cemboard-tphcm
+ *    /mat-dung-tam-xi-mang-gia-go-tphcm
+ *
+ * Implementation notes:
+ * - Use hyphenated Vietnamese slugs for better local SEO
+ * - Keep city names consistent (tphcm, binh-duong, dong-nai, etc.)
+ * - Link from homepage footer/service section to these pages when created
+ * - Add breadcrumb navigation on GEO pages
+ * - Include local schema markup on each GEO page
+ */
+
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       {
         title:
-          "Mộc Diện — Thi công sơn giả gỗ trên kim loại và tấm xi măng",
+          "Sơn giả gỗ trên kim loại và tấm xi măng | Mộc Diện — Nhà thầu TP.HCM",
       },
       {
         name: "description",
         content:
-          "Chuyên thi công sơn giả gỗ trên sắt, kim loại và trên tấm xi măng (smartboard, conwood, cemboard) cho công trình ngoại thất và kiến trúc hiện đại. Gửi ảnh công trình qua Zalo để được tư vấn và báo giá.",
+          "Mộc Diện chuyên thi công sơn giả gỗ trên sắt, kim loại và tấm xi măng (smartboard, conwood, cemboard) cho cổng, lam, mặt dựng công trình ngoại thất. Phục vụ TP.HCM và các tỉnh lân cận. Gửi ảnh công trình qua Zalo để được tư vấn và báo giá.",
       },
       {
         property: "og:title",
-        content: "Mộc Diện — Sơn giả gỗ cho kim loại & tấm xi măng",
+        content: "Sơn giả gỗ trên kim loại và tấm xi măng | Mộc Diện TP.HCM",
       },
       {
         property: "og:description",
         content:
-          "Chuyên một nhóm hạng mục: sơn giả gỗ trên sắt và trên tấm xi măng. Gửi ảnh công trình qua Zalo để được tư vấn và báo giá theo hiện trạng thật.",
+          "Mộc Diện chuyên thi công sơn giả gỗ trên sắt và tấm xi măng cho công trình ngoại thất. Phục vụ TP.HCM và các tỉnh lân cận. Gửi ảnh công trình qua Zalo để được tư vấn và báo giá.",
       },
       { property: "og:image", content: heroFauxWoodMetal },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:image", content: heroFauxWoodMetal },
+      { name: "geo.region", content: "VN-HCM" },
+      { name: "geo.placename", content: "Thành phố Hồ Chí Minh" },
     ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        innerHTML: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "HomeAndConstructionBusiness",
+          "name": "Mộc Diện",
+          "description": "Chuyên thi công sơn giả gỗ trên kim loại và tấm xi măng cho công trình ngoại thất",
+          "url": "https://mocdienstudio.com",
+          "telephone": "+84836977799",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Đường XTT26-1, Ấp 2, Xã Bà Điểm",
+            "addressLocality": "Hóc Môn",
+            "addressRegion": "TP.HCM",
+            "addressCountry": "VN"
+          },
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "Thành phố Hồ Chí Minh"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Các tỉnh lân cận TP.HCM"
+            }
+          ],
+          "priceRange": "$$",
+          "serviceType": [
+            "Sơn giả gỗ trên kim loại",
+            "Sơn giả gỗ trên tấm xi măng",
+            "Thi công cổng sắt giả gỗ",
+            "Thi công lam sắt giả gỗ",
+            "Thi công mặt dựng tấm xi măng giả gỗ"
+          ],
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+84836977799",
+            "contactType": "customer service",
+            "areaServed": "VN",
+            "availableLanguage": "Vietnamese"
+          }
+        })
+      }
+    ]
   }),
   component: Index,
 });
@@ -106,7 +190,7 @@ function Hero() {
     <section id="top" className="relative pt-32 md:pt-36">
       <div className="mx-auto grid max-w-[1320px] grid-cols-12 gap-x-6 px-6 md:px-10">
         <div className="col-span-12 md:col-span-5 md:pt-16">
-          <p className="eyebrow">SƠN GIẢ GỖ CHUYÊN SÂU</p>
+          <h1 className="eyebrow">SƠN GIẢ GỖ CHUYÊN SÂU</h1>
           <img src="/logo-mocdien-text.png" alt="Mộc Diện" className="mt-8 w-full max-w-[600px] h-auto" />
           <p className="mt-4 text-[clamp(1.3rem,2.5vw,1.8rem)] font-display leading-[1.1] text-ink-soft">
             Đúng vật liệu — Đúng quy trình — Đúng thẩm mỹ
