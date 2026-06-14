@@ -65,7 +65,7 @@ function Header() {
           : "bg-transparent border-b border-transparent"
       }`}
     >
-      <div className="mx-auto flex max-w-[1320px] items-center justify-between px-6 py-5 md:px-10 md:py-6">
+      <div className="mx-auto flex max-w-[1320px] items-center justify-between px-6 py-3 md:px-10 md:py-4">
         <a href="#top">
           <img src="/logo-mocdien.png" alt="Mộc Diện" className="h-14 w-auto" />
         </a>
