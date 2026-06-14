@@ -104,8 +104,8 @@ function Hero() {
             Đúng vật liệu — Đúng quy trình — Đúng thẩm mỹ
           </p>
           <p className="mt-8 max-w-md text-[15px] leading-relaxed text-ink-soft">
-            Cho cổng, lam, hàng rào, mặt dựng trên kim loại và tấm xi măng. Đọc nền vật liệu,
-            chọn hệ sơn theo vị trí, dựng vân tay và kiểm soát độ đều giữa các tấm.
+            Cho cổng, lam, hàng rào, mặt dựng trên kim loại và tấm xi măng. Xử lý nền theo vật liệu,
+            chọn hệ sơn theo vị trí, phối hợp tiến độ với nhà thầu chủ trì.
           </p>
           <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-4">
             <a
@@ -315,10 +315,11 @@ function WhyFauxWood() {
 
 function Capability() {
   const principles = [
-    "Đọc vật liệu nền — sắt khác với tấm xi măng, và mỗi loại tấm cũng khác nhau.",
-    "Xử lý nền đúng cách: chống gỉ cho kim loại, xử lý mép và bề mặt cho tấm xi măng.",
-    "Chọn hệ sơn theo vị trí ngoài trời, trong nhà, mức độ tiếp xúc nắng mưa.",
-    "Kiểm soát chiều sâu vân và độ đều giữa các tấm — không ép một công thức cho mọi công trình.",
+    "Đọc vật liệu nền — sắt hộp, thép, smartboard, conwood, cemboard: mỗi loại yêu cầu xử lý nền khác nhau.",
+    "Xử lý nền theo hiện trạng: chống gỉ đa lớp cho kim loại, xử lý mép và bề mặt cho tấm xi măng.",
+    "Chọn hệ sơn theo vị trí: ngoài trời chịu nắng mưa, trong nhà, mức độ tiếp xúc ẩm, vị trí tường.",
+    "Kiểm soát độ hoàn thiện: chiều sâu vân, độ đều giữa các tấm, phối hợp màu theo bản vẽ kiến trúc.",
+    "Phối hợp tiến độ: làm việc với nhà thầu chủ trì, thi công theo giai đoạn công trình, bảo vệ công trình.",
   ];
   return (
     <section id="nang-luc" className="mt-32 md:mt-44">
@@ -327,16 +328,15 @@ function Capability() {
           <div className="col-span-12 md:col-span-5">
             <p className="eyebrow">— Năng lực</p>
             <h2 className="font-display mt-6 text-[clamp(1.9rem,3.6vw,2.85rem)] leading-[1.1] text-ink">
-              Cùng một màu gỗ,
+              Thực thi theo
               <br />
-              hai vật liệu nền,
+              vật liệu nền,
               <br />
-              <span className="italic text-accent">hai kết quả khác nhau.</span>
+              <span className="italic text-accent">không theo công thức chung.</span>
             </h2>
             <p className="mt-8 max-w-md text-[15px] leading-relaxed text-ink-soft">
-              Năng lực thật nằm ở chỗ đọc vật liệu nền, xử lý lớp nền đến nơi,
-              chọn hệ sơn theo vị trí và kiểm soát độ hoàn thiện giữa các tấm.
-              Không có công thức dùng được cho mọi công trình.
+              Mỗi công trình có hiện trạng khác nhau. Đọc vật liệu nền, xử lý lớp nền đến nơi,
+              chọn hệ sơn theo vị trí, phối hợp tiến độ với nhà thầu chủ trì.
             </p>
           </div>
           <div className="col-span-12 md:col-span-6 md:col-start-7">
@@ -366,6 +366,7 @@ function Projects() {
       img: projectIronLouvers,
       title: "Lam sắt hiệu ứng gỗ",
       meta: "Mặt tiền biệt thự — Quận 2",
+      details: "Sắt hộp · Ngoại thất · Hiệu ứng gỗ óc chó",
       ratio: "aspect-[4/5]",
       span: "md:col-span-5",
     },
@@ -373,6 +374,7 @@ function Projects() {
       img: projectSteelGate,
       title: "Cửa sắt hiệu ứng gỗ",
       meta: "Nhà phố — Bình Thạnh",
+      details: "Sắt · Ngoại thất · Cổng chính",
       ratio: "aspect-[4/3]",
       span: "md:col-span-7",
     },
@@ -382,6 +384,7 @@ function Projects() {
       img: projectCementFacade,
       title: "Mặt dựng tấm xi măng giả gỗ",
       meta: "Nhà phố hiện đại — Thủ Đức",
+      details: "Smartboard · Ngoại thất · Mặt tiền",
       ratio: "aspect-[4/3]",
       span: "md:col-span-7",
     },
@@ -389,6 +392,7 @@ function Projects() {
       img: projectCementBoard,
       title: "Conwood ngoại thất quán café",
       meta: "Quán café — Thủ Đức",
+      details: "Conwood · Ngoại thất · Mảng trang trí",
       ratio: "aspect-[4/5]",
       span: "md:col-span-5",
     },
@@ -396,6 +400,7 @@ function Projects() {
       img: projectSlatCeiling,
       title: "Lam trần tấm xi măng",
       meta: "Showroom — phía Nam",
+      details: "Cemboard · Trong nhà · Trần",
       ratio: "aspect-[4/5]",
       span: "md:col-span-6",
     },
@@ -403,6 +408,7 @@ function Projects() {
       img: craftHand,
       title: "Cận cảnh dựng vân tay",
       meta: "Chi tiết bề mặt hoàn thiện",
+      details: "Kỹ thuật dựng vân · Kiểm soát độ đều",
       ratio: "aspect-[4/5]",
       span: "md:col-span-6",
     },
@@ -435,6 +441,7 @@ function Projects() {
             <div>
               <p className="font-display text-xl text-ink">{it.title}</p>
               <p className="mt-1 text-[13px] text-ink-soft">{it.meta}</p>
+              <p className="mt-1 text-[12px] text-ink-soft/70">{it.details}</p>
             </div>
             <span className="eyebrow">{String(startIndex + i + 1).padStart(2, "0")}</span>
           </figcaption>
@@ -469,23 +476,28 @@ function Process() {
   const steps = [
     {
       n: "01",
-      title: "Gửi ảnh hạng mục qua Zalo",
-      body: "Ảnh hiện trạng sắt hoặc tấm xi măng cần làm, kèm bối cảnh công trình và tone gỗ mong muốn nếu có.",
+      title: "Nhận hồ sơ / ảnh hiện trạng",
+      body: "Ảnh hạng mục, bản vẽ hoặc thông tin hiện trạng vật liệu nền. Khảo sát trực tiếp khi khối lượng lớn hoặc bề mặt phức tạp.",
     },
     {
       n: "02",
-      title: "Đọc vật liệu nền",
-      body: "Xem loại nền, tình trạng bề mặt, vị trí trong nhà hay ngoài trời và mức độ hoàn thiện cần đạt.",
+      title: "Đánh giá vật liệu & vị trí",
+      body: "Xác định loại nền (sắt, thép, smartboard, conwood, cemboard), tình trạng bề mặt, vị trí trong nhà hay ngoài trời.",
     },
     {
       n: "03",
-      title: "Tư vấn hướng làm & báo giá",
-      body: "Sau khi xem nền vật liệu, vị trí sử dụng và mức hoàn thiện mong muốn, đề xuất phương án và báo giá.",
+      title: "Đề xuất phương án & mẫu",
+      body: "Chọn hệ sơn theo vị trí, pha mẫu tone gỗ, điều chỉnh cho phù hợp với vật liệu nền và yêu cầu kiến trúc.",
     },
     {
       n: "04",
-      title: "Khảo sát & triển khai",
-      body: "Khi đã thống nhất phương án, vào việc theo tiến độ công trình — phối hợp được với nhà thầu chủ trì.",
+      title: "Báo giá & phối hợp tiến độ",
+      body: "Báo giá theo hạng mục cụ thể. Phối hợp với nhà thầu chủ trì, thi công theo giai đoạn công trình.",
+    },
+    {
+      n: "05",
+      title: "Triển khai & bàn giao",
+      body: "Xử lý nền, dựng vân tay, hoàn thiện từng lớp. Bảo vệ công trình, bàn giao theo tiến độ thống nhất.",
     },
   ];
   return (
@@ -494,7 +506,7 @@ function Process() {
         <div className="grid grid-cols-12 gap-x-6">
           <p className="eyebrow col-span-12 md:col-span-2">— Quy trình</p>
           <h2 className="font-display col-span-12 mt-4 text-[clamp(2rem,4.2vw,3.25rem)] leading-[1.05] text-ink md:col-span-10 md:mt-0">
-            Từ ảnh đến báo giá
+            Từ hồ sơ đến bàn giao
           </h2>
         </div>
 
@@ -544,32 +556,32 @@ function WhyPhoto() {
 function FAQ() {
   const items = [
     {
-      q: "Có nhận thi công giả gỗ trên sắt ngoài trời không?",
-      a: "Có. Đây là mảng chính. Quy trình bao gồm xử lý nền chống gỉ, dựng vân tay và chọn hệ sơn chịu được nắng mưa dài hạn.",
+      q: "Có khảo sát trực tiếp hiện trạng công trình không?",
+      a: "Có. Khảo sát trực tiếp khi khối lượng lớn, bề mặt phức tạp, hoặc theo yêu cầu của nhà thầu chủ trì. Phần lớn công trình có thể bắt đầu bằng ảnh hiện trạng.",
     },
     {
-      q: "Có làm trên smartboard, conwood, cemboard không?",
-      a: "Có. Cả ba loại tấm đều nằm trong mảng tấm xi măng. Hệ sơn và cách xử lý mép sẽ khác nhau tùy loại tấm và vị trí sử dụng.",
+      q: "Có làm theo bản vẽ kiến trúc hoặc mẫu tone gửi không?",
+      a: "Có. Nhận bản vẽ, ảnh mẫu hoặc tone gỗ tham chiếu. Pha mẫu và điều chỉnh cho phù hợp với vật liệu nền và yêu cầu kiến trúc của công trình.",
     },
     {
-      q: "Có làm theo ảnh mẫu hoặc tone gỗ khách gửi không?",
-      a: "Có. Gửi ảnh tone gỗ tham chiếu qua Zalo, chúng tôi pha mẫu và điều chỉnh cho phù hợp với vật liệu nền của công trình.",
+      q: "Những loại kim loại và tấm xi măng nào phù hợp?",
+      a: "Kim loại: sắt hộp, thép, cổng, lam, hàng rào. Tấm xi măng: smartboard, conwood, cemboard cho lam, mặt dựng, trần, vách trang trí.",
     },
     {
-      q: "Có cần khảo sát trực tiếp không hay gửi ảnh là đủ?",
-      a: "Phần lớn công trình có thể bắt đầu bằng ảnh. Khi khối lượng lớn hoặc bề mặt phức tạp, sẽ khảo sát trực tiếp trước khi chốt phương án.",
+      q: "Phối hợp tiến độ với nhà thầu chủ trì như thế nào?",
+      a: "Làm việc theo tiến độ công trình, nhận outsource phần hoàn thiện bề mặt. Phối hợp với các đội thi công khác, bảo vệ công trình trong quá trình làm việc.",
     },
     {
-      q: "Có nhận hạng mục nhỏ không?",
-      a: "Có. Từ một cánh cổng, vài mảng lam đến mặt dựng nguyên căn. Báo giá tính theo hạng mục cụ thể, không có mức tối thiểu cứng.",
+      q: "Báo giá thay đổi khi hiện trạng thực tế khác như thế nào?",
+      a: "Báo giá dựa trên thông tin hiện trạng ban đầu. Khi hiện trạng thực tế khác, điều chỉnh báo giá theo hạng mục cụ thể trước khi triển khai.",
     },
     {
-      q: "Làm việc với nhà thầu và kiến trúc sư như thế nào?",
-      a: "Phối hợp được theo tiến độ và hồ sơ kỹ thuật của đơn vị chủ trì. Nhận outsource phần hoàn thiện bề mặt cho các mảng kim loại và tấm xi măng.",
+      q: "Có nhận hạng mục nhỏ hoặc outsource không?",
+      a: "Có. Từ một cánh cổng, vài mảng lam đến mặt dựng nguyên căn. Nhận outsource phần hoàn thiện bề mặt cho nhà thầu chủ trì.",
     },
     {
-      q: "Báo giá phụ thuộc vào những yếu tố nào?",
-      a: "Loại vật liệu nền, tình trạng bề mặt, vị trí trong nhà hay ngoài trời, mức độ hoàn thiện vân và tone gỗ, khối lượng tổng. Báo giá tách theo từng phần.",
+      q: "Quy trình xử lý nền cho kim loại và tấm xi măng khác nhau như thế nào?",
+      a: "Kim loại: xử lý chống gỉ đa lớp. Tấm xi măng: xử lý mép và bề mặt tấm. Hệ sơn chọn theo vị trí ngoài trời, trong nhà, mức độ tiếp xúc nắng mưa.",
     },
   ];
   const [open, setOpen] = useState<number | null>(0);
@@ -664,20 +676,20 @@ function Footer() {
     <footer className="mt-32 border-t border-rule pt-16 pb-12 md:mt-44">
       <div className="mx-auto max-w-[1320px] px-6 md:px-10">
         <div className="grid grid-cols-12 gap-x-6 gap-y-12">
-          <div className="col-span-12 md:col-span-5">
+          <div className="col-span-12 md:col-span-4">
             <img src="/logo-mocdien.png" alt="Mộc Diện" className="h-14 w-auto" />
             <p className="mt-6 max-w-sm text-[14px] leading-relaxed text-ink-soft">
-              Thi công sơn giả gỗ trên kim loại và tấm xi măng cho công trình ngoại thất và kiến trúc hiện đại.
+              Chuyên thi công sơn giả gỗ trên kim loại và tấm xi măng cho công trình ngoại thất và kiến trúc hiện đại.
             </p>
             <p className="mt-4 text-[13px] text-ink-soft">
               Đúng vật liệu. Đúng quy trình. Đúng thẩm mỹ.
             </p>
           </div>
-          <div className="col-span-6 md:col-span-3">
+          <div className="col-span-6 md:col-span-2">
             <p className="eyebrow">Hạng mục</p>
             <ul className="mt-5 space-y-3 text-[14px] text-ink">
-              <li>Sơn giả gỗ trên sắt, kim loại</li>
-              <li>Sơn giả gỗ trên tấm xi măng</li>
+              <li>Sơn giả gỗ kim loại</li>
+              <li>Sơn giả gỗ tấm xi măng</li>
               <li>Smartboard · Conwood · Cemboard</li>
             </ul>
           </div>
@@ -688,27 +700,29 @@ function Footer() {
               <li>Khu vực phía Nam</li>
             </ul>
           </div>
-          <div className="col-span-12 md:col-span-2">
+          <div className="col-span-12 md:col-span-4">
             <p className="eyebrow">Liên hệ</p>
-            <p className="mt-5 text-[14px] text-ink">
-              Đường XTT26-1, Ấp 2, Xã Bà Điểm, TP.HCM
-            </p>
-            <a
-              href={ZALO_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-3 inline-block text-[14px] text-ink underline decoration-rule underline-offset-4 transition-colors hover:text-accent hover:decoration-accent"
-            >
-              0836 97 77 99
-            </a>
-            <a
-              href="https://mocdienstudio.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-3 inline-block text-[14px] text-ink underline decoration-rule underline-offset-4 transition-colors hover:text-accent hover:decoration-accent"
-            >
-              mocdienstudio.com
-            </a>
+            <div className="mt-5 space-y-3">
+              <p className="text-[14px] text-ink">
+                Đường XTT26-1, Ấp 2, Xã Bà Điểm, TP.HCM
+              </p>
+              <a
+                href={ZALO_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-[14px] text-ink underline decoration-rule underline-offset-4 transition-colors hover:text-accent hover:decoration-accent"
+              >
+                0836 97 77 99 · Zalo
+              </a>
+              <a
+                href="https://mocdienstudio.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-[14px] text-ink underline decoration-rule underline-offset-4 transition-colors hover:text-accent hover:decoration-accent"
+              >
+                mocdienstudio.com
+              </a>
+            </div>
           </div>
         </div>
         <div className="mt-16 flex flex-wrap items-center justify-between gap-4 border-t border-rule pt-8 text-[12px] text-ink-soft">
