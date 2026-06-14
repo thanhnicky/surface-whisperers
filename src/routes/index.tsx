@@ -67,7 +67,7 @@ function Header() {
     >
       <div className="mx-auto flex max-w-[1320px] items-center justify-between px-6 py-5 md:px-10 md:py-6">
         <a href="#top">
-          <img src="/logo-mocdien.png" alt="Mộc Diện" className="h-14 w-auto" />
+          <img src="/logo-mocdien.png" alt="Mộc Diện" className="h-18 w-auto" />
         </a>
         <nav className="hidden items-center gap-7 md:flex">
           {navItems.map((item) => (
@@ -667,7 +667,7 @@ function Footer() {
       <div className="mx-auto max-w-[1320px] px-6 md:px-10">
         <div className="grid grid-cols-12 gap-x-6 gap-y-12">
           <div className="col-span-12 md:col-span-5">
-            <img src="/logo-mocdien.png" alt="Mộc Diện" className="h-13 w-auto" />
+            <img src="/logo-mocdien.png" alt="Mộc Diện" className="h-17 w-auto" />
             <p className="mt-6 max-w-sm text-[14px] leading-relaxed text-ink-soft">
               Thi công sơn giả gỗ trên kim loại và tấm xi măng cho công trình ngoại thất và kiến trúc hiện đại.
             </p>
