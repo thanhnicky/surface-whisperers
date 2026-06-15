@@ -527,18 +527,30 @@ function TechnicalFoundation() {
         <div className="rule" />
         <div className="grid grid-cols-12 gap-x-6 py-12 md:py-20">
           <p className="eyebrow col-span-12 md:col-span-2">— Nền tảng kỹ thuật</p>
-          <div className="col-span-12 mt-4 md:col-span-10 md:mt-0">
+          <div className="col-span-12 mt-4 md:col-span-8 md:mt-0">
             <h2 className="font-display text-[clamp(1.55rem,3vw,2.5rem)] leading-[1.15] text-ink">
               Thi công trên hệ sơn có nền tảng kỹ thuật rõ ràng
             </h2>
             <p className="mt-6 max-w-2xl text-[15px] leading-relaxed text-ink-soft">
               Mộc Diện sử dụng sơn giả gỗ cao cấp Lotus cho các hạng mục kim loại và tấm xi măng. Trong quá trình thi công, đội ngũ bám theo hướng dẫn kỹ thuật từ chuyên gia Lotus để lựa chọn hệ sơn, xử lý nền và hoàn thiện hiệu ứng phù hợp với từng loại bề mặt.
             </p>
+            <img 
+              src="/logo-lotus.jpg" 
+              alt="Lotus" 
+              className="mt-8 h-8 w-auto opacity-60 md:hidden"
+            />
             <ul className="mt-8 grid grid-cols-1 gap-3 text-[14px] text-ink md:grid-cols-3">
               <li>• Sử dụng hệ sơn giả gỗ cao cấp Lotus</li>
               <li>• Có hướng dẫn kỹ thuật từ đội ngũ chuyên gia Lotus</li>
               <li>• Thi công theo đúng đặc tính từng loại nền và vị trí sử dụng</li>
             </ul>
+          </div>
+          <div className="hidden md:col-span-2 md:flex md:items-end md:justify-end md:pb-2">
+            <img 
+              src="/logo-lotus.jpg" 
+              alt="Lotus" 
+              className="h-10 w-auto opacity-50"
+            />
           </div>
         </div>
         <div className="rule" />
