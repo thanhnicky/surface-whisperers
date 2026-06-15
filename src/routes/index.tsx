@@ -8,7 +8,7 @@ import projectSlatCeiling from "@/assets/project-slat-ceiling.jpg";
 import projectCementFacade from "@/assets/project-cement-facade.jpg";
 import craftHand from "@/assets/craft-hand.jpg";
 
-const ZALO_URL = "https://zalo.me/0836977799";
+const ZALO_URL = "https://zalo.me/0914599988";
 
 /*
  * FUTURE GEO PAGE SLUG STRUCTURE
@@ -83,7 +83,7 @@ export const Route = createFileRoute("/")({
           "name": "Mộc Diện",
           "description": "Chuyên thi công sơn giả gỗ trên kim loại và tấm xi măng cho công trình ngoại thất",
           "url": "https://mocdienstudio.com",
-          "telephone": "+84836977799",
+          "telephone": "+84914599888",
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "Đường XTT26-1, Ấp 2, Xã Bà Điểm",
@@ -111,7 +111,7 @@ export const Route = createFileRoute("/")({
           ],
           "contactPoint": {
             "@type": "ContactPoint",
-            "telephone": "+84836977799",
+            "telephone": "+84914599888",
             "contactType": "customer service",
             "areaServed": "VN",
             "availableLanguage": "Vietnamese"
@@ -798,7 +798,7 @@ function Footer() {
                 rel="noopener noreferrer"
                 className="block text-[14px] text-ink underline decoration-rule underline-offset-4 transition-colors hover:text-accent hover:decoration-accent"
               >
-                0836 97 77 99 · Zalo
+                0914 59 99 88 · Zalo
               </a>
               <a
                 href="https://mocdienstudio.com"
