@@ -73,13 +73,14 @@ export const Route = createFileRoute("/")({
       { name: "twitter:image", content: heroFauxWoodMetal },
       { name: "geo.region", content: "VN-HCM" },
       { name: "geo.placename", content: "Thành phố Hồ Chí Minh" },
+      { rel: "canonical", href: "https://mocdienstudio.com" },
     ],
     scripts: [
       {
         type: "application/ld+json",
         innerHTML: JSON.stringify({
           "@context": "https://schema.org",
-          "@type": "HomeAndConstructionBusiness",
+          "@type": "LocalBusiness",
           "name": "Mộc Diện",
           "description": "Chuyên thi công sơn giả gỗ trên kim loại và tấm xi măng cho công trình ngoại thất",
           "url": "https://mocdienstudio.com",
@@ -98,10 +99,19 @@ export const Route = createFileRoute("/")({
             },
             {
               "@type": "AdministrativeArea",
-              "name": "Các tỉnh lân cận TP.HCM"
+              "name": "Đồng Nai"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Long An"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Bình Dương"
             }
           ],
-          "priceRange": "$$",
+          "priceRange": "300,000 đ/m2 - 500,000 đ/m2",
+          "openingHours": "Mo-Su 08:00-17:00",
           "serviceType": [
             "Sơn giả gỗ trên kim loại",
             "Sơn giả gỗ trên tấm xi măng",
@@ -115,7 +125,75 @@ export const Route = createFileRoute("/")({
             "contactType": "customer service",
             "areaServed": "VN",
             "availableLanguage": "Vietnamese"
-          }
+          },
+          "sameAs": [
+            "https://zalo.me/0914599988"
+          ]
+        })
+      },
+      {
+        type: "application/ld+json",
+        innerHTML: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Có đến xem hiện trạng công trình không?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Có. Khảo sát trực tiếp khi khối lượng lớn, bề mặt phức tạp, hoặc theo yêu cầu của nhà thầu chủ trì. Phần lớn công trình có thể bắt đầu bằng ảnh hiện trạng."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Có làm theo bản vẽ hoặc mẫu màu gửi không?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Có. Nhận bản vẽ, ảnh mẫu hoặc tone gỗ tham chiếu. Pha mẫu và điều chỉnh cho phù hợp với vật liệu nền và yêu cầu kiến trúc của công trình."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Những loại sắt và tấm xi măng nào phù hợp?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Kim loại: sắt hộp, thép, cổng, lam, hàng rào. Tấm xi măng: smartboard, conwood, cemboard cho lam, mặt dựng, trần, vách trang trí."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Làm việc với nhà thầu chủ trì như thế nào?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Làm việc theo tiến độ công trình, nhận gia công phần hoàn thiện bề mặt. Phối hợp với các đội thi công khác, bảo vệ công trình trong quá trình làm việc."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Báo giá thay đổi khi hiện trạng khác như thế nào?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Báo giá dựa trên thông tin hiện trạng ban đầu. Khi hiện trạng thực tế khác, điều chỉnh báo giá theo hạng mục cụ thể trước khi triển khai."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Có nhận hạng mục nhỏ hoặc gia công không?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Có. Từ một cánh cổng, vài mảng lam đến mặt dựng nguyên căn. Nhận gia công phần hoàn thiện bề mặt cho nhà thầu chủ trì."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Xử lý nền cho sắt và tấm xi măng khác nhau như thế nào?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Kim loại: xử lý chống gỉ đa lớp. Tấm xi măng: xử lý mép và bề mặt tấm. Hệ sơn chọn theo vị trí ngoài trời, trong nhà, mức độ tiếp xúc nắng mưa."
+              }
+            }
+          ]
         })
       }
     ]
