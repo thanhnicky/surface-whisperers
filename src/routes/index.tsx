@@ -57,7 +57,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Mộc Diện chuyên thi công sơn giả gỗ trên sắt, kim loại và tấm xi măng (smartboard, conwood, cemboard) cho cổng, lam, mặt dựng công trình ngoại thất. Phục vụ TP.HCM và các tỉnh lân cận. Gửi ảnh công trình qua Zalo để được tư vấn và báo giá.",
+          "Nhà thầu thi công sơn giả gỗ chuyên sâu trên kim loại và tấm xi măng tại TP.HCM",
       },
       {
         property: "og:title",
