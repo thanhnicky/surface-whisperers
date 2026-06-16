@@ -324,18 +324,18 @@ function PositioningStrip() {
       <div className="mx-auto max-w-[1320px] px-6 md:px-10">
         <div className="rule" />
         <div className="grid grid-cols-12 gap-x-6 py-12 md:py-20">
-          <p className="eyebrow col-span-12 md:col-span-2">— Về Mộc Diện</p>
+          <p className="eyebrow col-span-12 md:col-span-2">— Mộc Diện trong công trình</p>
           <div className="col-span-12 mt-4 md:col-span-10 md:mt-0">
             <h2 className="font-display text-[clamp(1.55rem,3vw,2.5rem)] leading-[1.15] text-ink">
-              Nhà thầu thi công sơn giả gỗ cho hạng mục công trình
+              Nhà thầu thi công sơn giả gỗ cho hạng mục kim loại và tấm xi măng
             </h2>
             <p className="mt-6 max-w-2xl text-[15px] leading-relaxed text-ink-soft">
-              Mộc Diện làm việc trực tiếp với tổng thầu, chủ đầu tư và đơn vị chủ trì để thi công hoàn thiện giả gỗ cho hạng mục kim loại và tấm xi măng. Mỗi phương án được xem theo hiện trạng vật liệu, vị trí sử dụng và yêu cầu thẩm mỹ cụ thể của công trình.
+              Mộc Diện làm việc trực tiếp với tổng thầu, chủ đầu tư và đơn vị chủ trì để thi công hoàn thiện giả gỗ cho hạng mục công trình. Phương án thi công được xác định theo loại nền vật liệu, vị trí sử dụng và yêu cầu hoàn thiện cụ thể của từng công trình.
             </p>
             <ul className="mt-8 grid grid-cols-1 gap-3 text-[14px] text-ink md:grid-cols-3">
-              <li>• Làm việc với tổng thầu, chủ đầu tư, đơn vị chủ trì</li>
-              <li>• Thi công hoàn thiện giả gỗ cho kim loại và tấm xi măng</li>
-              <li>• Xem phương án theo hiện trạng, vị trí, yêu cầu thẩm mỹ</li>
+              <li>• Làm việc trực tiếp theo hạng mục và tiến độ công trình</li>
+              <li>• Thi công đúng theo từng loại nền: kim loại và tấm xi măng</li>
+              <li>• Phối hợp theo yêu cầu kỹ thuật và hoàn thiện của dự án</li>
             </ul>
           </div>
         </div>
