@@ -743,6 +743,11 @@ function Process() {
               </p>
             </div>
           ))}
+          <div className="mt-12 border-t border-rule pt-8">
+            <p className="text-[14px] tracking-[0.05em]" style={{ color: "#96774C" }}>
+              Thi công hoàn thành — bề mặt được bảo hành 5 năm cho bong tróc và phai màu.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -798,6 +803,10 @@ function FAQ() {
     {
       q: "Xử lý nền cho sắt và tấm xi măng khác nhau như thế nào?",
       a: "Kim loại: xử lý chống gỉ đa lớp. Tấm xi măng: xử lý mép và bề mặt tấm. Hệ sơn chọn theo vị trí ngoài trời, trong nhà, mức độ tiếp xúc nắng mưa.",
+    },
+    {
+      q: "Có bảo hành sau khi thi công không?",
+      a: "Có. Mộc Diện bảo hành 5 năm cho bong tróc và phai màu với hạng mục được thi công đúng quy trình — từ xử lý nền đến lớp hoàn thiện cuối. Điều kiện cụ thể được xác nhận theo từng hạng mục trước khi thi công.",
     },
   ];
   const [open, setOpen] = useState<number | null>(0);
@@ -866,6 +875,9 @@ function FinalCTA() {
             </h2>
             <p className="mt-10 max-w-2xl text-[16px] leading-relaxed text-ink-soft">
               Chỉ cần gửi vài ảnh hiện trạng qua Zalo — chúng tôi xem và trao đổi hướng làm ngay.
+            </p>
+            <p className="mt-8 text-[14px] tracking-[0.05em]" style={{ color: "#96774C" }}>
+              Thi công đúng quy trình — bảo hành 5 năm cho bong tróc và phai màu.
             </p>
             <div className="mt-12 flex flex-wrap items-center gap-x-8 gap-y-4">
               <a
