@@ -274,8 +274,8 @@ function Hero() {
             Đúng vật liệu — Đúng quy trình — Đúng thẩm mỹ
           </p>
           <p className="mt-8 max-w-md text-[15px] leading-relaxed text-ink-soft">
-            Cho cổng, lam, hàng rào, mặt dựng trên kim loại và tấm xi măng. Xử lý nền đúng loại,
-            chọn sơn theo vị trí, làm việc theo tiến độ với nhà thầu.
+            Thi công sơn giả gỗ cho hạng mục kim loại và tấm xi măng. Xử lý nền theo từng loại vật liệu,
+            chọn hệ sơn theo vị trí sử dụng, phối hợp tiến độ theo công trình.
           </p>
           <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-4">
             <a
@@ -342,7 +342,7 @@ function Services() {
         <div className="grid grid-cols-12 gap-x-6">
           <p className="eyebrow col-span-12 md:col-span-2">— Hạng mục</p>
           <h2 className="font-display col-span-12 mt-4 text-[clamp(2rem,4.2vw,3.25rem)] leading-[1.05] text-ink md:col-span-10 md:mt-0">
-            2 nhóm bề mặt <span className="text-ink-soft">chúng tôi thi công.</span>
+            2 nhóm hạng mục Mộc Diện tập trung thi công.
           </h2>
         </div>
 
@@ -446,7 +446,7 @@ function WhyFauxWood() {
         <div className="grid grid-cols-12 gap-x-6">
           <p className="eyebrow col-span-12 md:col-span-2">— Khi nào dùng giả gỗ</p>
           <h2 className="font-display col-span-12 mt-4 text-[clamp(1.9rem,3.8vw,2.85rem)] leading-[1.1] text-ink md:col-span-10 md:mt-0">
-            4 trường hợp <span className="text-ink-soft">giả gỗ phù hợp hơn gỗ thật.</span>
+            4 trường hợp nên chọn giả gỗ thay vì gỗ thật.
           </h2>
         </div>
 
@@ -492,7 +492,7 @@ function Capability() {
           <div className="col-span-12 md:col-span-5">
             <p className="eyebrow">— Năng lực</p>
             <h2 className="font-display mt-6 text-[clamp(1.9rem,3.6vw,2.85rem)] leading-[1.1] text-ink">
-              Thi công theo từng loại nền, <span className="italic text-accent">không theo công thức chung.</span>
+              Thi công theo từng loại nền, <span className="italic text-accent">không làm theo một công thức chung.</span>
             </h2>
             <p className="mt-8 max-w-md text-[15px] leading-relaxed text-ink-soft">
               Mỗi công trình có hiện trạng khác nhau. Đọc vật liệu nền, xử lý lớp nền đến nơi,
@@ -529,7 +529,7 @@ function TechnicalFoundation() {
           <p className="eyebrow col-span-12 md:col-span-2">— Nền tảng kỹ thuật</p>
           <div className="col-span-12 mt-4 md:col-span-8 md:mt-0">
             <h2 className="font-display text-[clamp(1.55rem,3vw,2.5rem)] leading-[1.15] text-ink">
-              Thi công trên hệ sơn có nền tảng kỹ thuật rõ ràng
+              Vật liệu rõ ràng, thi công có cơ sở kỹ thuật
             </h2>
             <p className="mt-6 max-w-2xl text-[15px] leading-relaxed text-ink-soft">
               Mộc Diện sử dụng sơn giả gỗ cao cấp Lotus cho các hạng mục kim loại và tấm xi măng. Trong quá trình thi công, đội ngũ bám theo hướng dẫn kỹ thuật từ chuyên gia Lotus để lựa chọn hệ sơn, xử lý nền và hoàn thiện hiệu ứng phù hợp với từng loại bề mặt.
@@ -667,7 +667,7 @@ function Projects() {
             </h2>
           </div>
           <p className="hidden max-w-xs text-right text-[13px] leading-relaxed text-ink-soft md:block">
-            Cổng, lam, cửa sắt, mặt dựng, trần tấm xi măng — các hạng mục đã làm.
+            Một số hạng mục Mộc Diện đã thực hiện trên kim loại và tấm xi măng.
           </p>
         </div>
 
@@ -752,7 +752,7 @@ function WhyPhoto() {
           </span>
         </p>
         <p className="mt-8 text-center text-[15px] leading-relaxed text-ink-soft">
-          Không cần điền form. Một vài tấm ảnh hạng mục là đủ để bắt đầu trao đổi.
+          Không cần điền form. Chỉ cần vài ảnh hiện trạng là có thể bắt đầu trao đổi phương án.
         </p>
       </div>
     </section>
@@ -852,7 +852,7 @@ function FinalCTA() {
           <div className="col-span-12 md:col-span-10 md:col-start-2">
             <p className="eyebrow">— Liên hệ</p>
             <h2 className="font-display mt-8 max-w-3xl text-balance text-[clamp(2.4rem,5.5vw,4.5rem)] leading-[1.02] text-ink">
-              Công trình của bạn làm bằng <span className="italic text-accent">sắt</span> hay <span className="italic text-accent">tấm xi măng?</span>
+              Hạng mục của bạn là kim loại hay tấm xi măng?
             </h2>
             <p className="mt-10 max-w-2xl text-[16px] leading-relaxed text-ink-soft">
               Chỉ cần gửi vài ảnh hiện trạng qua Zalo — chúng tôi xem và trao đổi hướng làm ngay.
