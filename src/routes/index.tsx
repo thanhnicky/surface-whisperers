@@ -318,23 +318,6 @@ function Hero() {
   );
 }
 
-function PositioningStrip() {
-  return (
-    <section className="mt-28 md:mt-40">
-      <div className="mx-auto max-w-[1320px] px-6 md:px-10">
-        <div className="rule" />
-        <div className="grid grid-cols-12 gap-x-6 py-12 md:py-20">
-          <p className="eyebrow col-span-12 md:col-span-2">— Về Mộc Diện</p>
-          <p className="font-display col-span-12 mt-4 text-[clamp(1.55rem,3vw,2.5rem)] leading-[1.15] text-ink md:col-span-10 md:mt-0">
-            Mộc Diện hiện tập trung vào 2 nhóm thi công chính: <span className="text-ink-soft">kim loại và tấm xi măng.</span>
-          </p>
-        </div>
-        <div className="rule" />
-      </div>
-    </section>
-  );
-}
-
 function Services() {
   return (
     <section id="hang-muc" className="mt-24 md:mt-36">
@@ -967,7 +950,6 @@ function Index() {
       <Header />
       <main>
         <Hero />
-        <PositioningStrip />
         <Services />
         <WhyFauxWood />
         <Capability />
