@@ -318,6 +318,28 @@ function Hero() {
   );
 }
 
+function PositioningStrip() {
+  return (
+    <section className="mt-28 md:mt-40">
+      <div className="mx-auto max-w-[1320px] px-6 md:px-10">
+        <div className="rule" />
+        <div className="grid grid-cols-12 gap-x-6 py-12 md:py-20">
+          <p className="eyebrow col-span-12 md:col-span-2">— Về Mộc Diện</p>
+          <div className="col-span-12 mt-4 md:col-span-10 md:mt-0">
+            <h2 className="font-display text-[clamp(1.55rem,3vw,2.5rem)] leading-[1.15] text-ink">
+              Nhà thầu chuyên thi công sơn giả gỗ
+            </h2>
+            <p className="mt-6 max-w-2xl text-[15px] leading-relaxed text-ink-soft">
+              Làm việc trực tiếp với nhà thầu chủ trì, nhận gia công phần hoàn thiện bề mặt cho các hạng mục kim loại và tấm xi măng. Đọc hiện trạng, xử lý nền đúng loại, chọn hệ sơn theo vị trí sử dụng.
+            </p>
+          </div>
+        </div>
+        <div className="rule" />
+      </div>
+    </section>
+  );
+}
+
 function Services() {
   return (
     <section id="hang-muc" className="mt-24 md:mt-36">
@@ -950,6 +972,7 @@ function Index() {
       <Header />
       <main>
         <Hero />
+        <PositioningStrip />
         <Services />
         <WhyFauxWood />
         <Capability />
