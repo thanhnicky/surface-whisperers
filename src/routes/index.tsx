@@ -327,11 +327,16 @@ function PositioningStrip() {
           <p className="eyebrow col-span-12 md:col-span-2">— Về Mộc Diện</p>
           <div className="col-span-12 mt-4 md:col-span-10 md:mt-0">
             <h2 className="font-display text-[clamp(1.55rem,3vw,2.5rem)] leading-[1.15] text-ink">
-              Nhà thầu chuyên thi công sơn giả gỗ
+              Nhà thầu thi công sơn giả gỗ cho hạng mục công trình
             </h2>
             <p className="mt-6 max-w-2xl text-[15px] leading-relaxed text-ink-soft">
-              Làm việc trực tiếp với nhà thầu chủ trì, nhận gia công phần hoàn thiện bề mặt cho các hạng mục kim loại và tấm xi măng. Đọc hiện trạng, xử lý nền đúng loại, chọn hệ sơn theo vị trí sử dụng.
+              Mộc Diện làm việc trực tiếp với tổng thầu, chủ đầu tư và đơn vị chủ trì để thi công hoàn thiện giả gỗ cho hạng mục kim loại và tấm xi măng. Mỗi phương án được xem theo hiện trạng vật liệu, vị trí sử dụng và yêu cầu thẩm mỹ cụ thể của công trình.
             </p>
+            <ul className="mt-8 grid grid-cols-1 gap-3 text-[14px] text-ink md:grid-cols-3">
+              <li>• Làm việc với tổng thầu, chủ đầu tư, đơn vị chủ trì</li>
+              <li>• Thi công hoàn thiện giả gỗ cho kim loại và tấm xi măng</li>
+              <li>• Xem phương án theo hiện trạng, vị trí, yêu cầu thẩm mỹ</li>
+            </ul>
           </div>
         </div>
         <div className="rule" />
