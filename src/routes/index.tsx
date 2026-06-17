@@ -217,6 +217,7 @@ function Header() {
     { href: "#vi-sao", label: "Vì sao giả gỗ" },
     { href: "#nang-luc", label: "Năng lực" },
     { href: "#du-an", label: "Dự án" },
+    { href: "#bang-mau", label: "Bảng màu" },
     { href: "#quy-trinh", label: "Quy trình" },
     { href: "#faq", label: "FAQ" },
   ];
@@ -685,6 +686,131 @@ function Projects() {
   );
 }
 
+function ColorPalette() {
+  const [activeTab, setActiveTab] = useState<"metal" | "cement">("metal");
+  const [expanded, setExpanded] = useState(false);
+
+  const metalColors = [
+    { name: "Gỗ óc chó đậm", desc: "Tone trầm, hợp lam sắt ngoại thất", image: "https://picsum.photos/seed/mocdien-walnut-dark/400/300" },
+    { name: "Gỗ teak ấm", desc: "Vân rõ, hợp cổng và hàng rào", image: "https://picsum.photos/seed/mocdien-teak-warm/400/300" },
+    { name: "Gỗ sồi nâu nhạt", desc: "Tông ấm, phù hợp nhà phố hiện đại", image: "https://picsum.photos/seed/mocdien-oak-light/400/300" },
+    { name: "Gỗ lim trầm", desc: "Độ tương phản vân vừa phải", image: "https://picsum.photos/seed/mocdien-lim-dark/400/300" },
+    { name: "Gỗ cà phê", desc: "Tone trung tính, dễ phối", image: "https://picsum.photos/seed/mocdien-coffee/400/300" },
+    { name: "Gỗ cánh gián", desc: "Vân mềm, hợp pergola", image: "https://picsum.photos/seed/mocdien-gian/400/300" },
+    { name: "Gỗ nâu đỏ", desc: "Tone ấm, hợp cổng biệt thự", image: "https://picsum.photos/seed/mocdien-red-brown/400/300" },
+    { name: "Gỗ mun nhạt", desc: "Độ sâu vân tốt", image: "https://picsum.photos/seed/mocdien-mun-light/400/300" },
+    { name: "Gỗ hổ phách", desc: "Tone sáng, hợp hàng rào", image: "https://picsum.photos/seed/mocdien-amber/400/300" },
+    { name: "Gỗ walnut ánh xám", desc: "Phong cách hiện đại", image: "https://picsum.photos/seed/mocdien-walnut-grey/400/300" },
+  ];
+
+  const cementColors = [
+    { name: "Sồi sáng hiện đại", desc: "Hợp mặt dựng và lam ngoài trời", image: "https://picsum.photos/seed/mocdien-cement-oak/400/300" },
+    { name: "Teak vàng nhạt", desc: "Tone sáng, hợp mảng nhấn kiến trúc", image: "https://picsum.photos/seed/mocdien-cement-teak/400/300" },
+    { name: "Walnut trung tính", desc: "Đều màu, dễ phối tổng thể", image: "https://picsum.photos/seed/mocdien-cement-walnut/400/300" },
+    { name: "Nâu hạt dẻ", desc: "Phù hợp phong cách hiện đại tối giản", image: "https://picsum.photos/seed/mocdien-cement-chestnut/400/300" },
+    { name: "Gỗ óc chó mềm", desc: "Vân nhẹ, hợp trần", image: "https://picsum.photos/seed/mocdien-cement-walnut-soft/400/300" },
+    { name: "Cedar ấm", desc: "Tone ấm, hợp vách trang trí", image: "https://picsum.photos/seed/mocdien-cement-cedar/400/300" },
+    { name: "Ash nâu xám", desc: "Phong cách tối giản", image: "https://picsum.photos/seed/mocdien-cement-ash/400/300" },
+    { name: "Gỗ mật ong", desc: "Tone vàng ấm", image: "https://picsum.photos/seed/mocdien-cement-honey/400/300" },
+    { name: "Nâu đất kiến trúc", desc: "Hợp mặt dựng", image: "https://picsum.photos/seed/mocdien-cement-earth/400/300" },
+    { name: "Driftwood xám ấm", desc: "Tone xám ấm, hiện đại", image: "https://picsum.photos/seed/mocdien-cement-driftwood/400/300" },
+  ];
+
+  const currentColors = activeTab === "metal" ? metalColors : cementColors;
+  const displayColors = expanded ? currentColors : currentColors.slice(0, 6);
+
+  const handleTabChange = (tab: "metal" | "cement") => {
+    setActiveTab(tab);
+    setExpanded(false);
+  };
+
+  return (
+    <section id="bang-mau" className="mt-32 md:mt-44">
+      <div className="mx-auto max-w-[1320px] px-6 md:px-10">
+        <div className="grid grid-cols-12 gap-x-6">
+          <div className="col-span-12 md:col-span-4">
+            <p className="eyebrow">— Bảng màu</p>
+            <h2 className="font-display mt-4 text-[clamp(2rem,3.6vw,2.75rem)] leading-[1.05] text-ink">
+              Tone màu giả gỗ tiêu biểu
+            </h2>
+            <p className="mt-6 max-w-md text-[15px] leading-relaxed text-ink-soft">
+              Cùng một hệ giả gỗ, cảm giác hoàn thiện trên kim loại và tấm xi măng có thể khác nhau theo nền vật liệu, vị trí sử dụng và cách dựng vân. Dưới đây là một số tone tham khảo để dễ hình dung trước khi trao đổi phương án.
+            </p>
+          </div>
+          <div className="col-span-12 mt-10 md:col-span-7 md:col-start-6 md:mt-0">
+            <div className="flex gap-4 border-b border-rule pb-4">
+              <button
+                onClick={() => handleTabChange("metal")}
+                className={`px-4 py-2 text-[13px] font-medium uppercase tracking-[0.1em] transition-colors ${
+                  activeTab === "metal"
+                    ? "text-accent border-b-2 border-accent"
+                    : "text-ink-soft hover:text-ink"
+                }`}
+              >
+                Kim loại / sắt
+              </button>
+              <button
+                onClick={() => handleTabChange("cement")}
+                className={`px-4 py-2 text-[13px] font-medium uppercase tracking-[0.1em] transition-colors ${
+                  activeTab === "cement"
+                    ? "text-accent border-b-2 border-accent"
+                    : "text-ink-soft hover:text-ink"
+                }`}
+              >
+                Tấm xi măng
+              </button>
+            </div>
+
+            <div className="mt-8 grid grid-cols-2 gap-4 md:grid-cols-3">
+              {displayColors.map((color, i) => (
+                <figure key={i} className="group">
+                  <div className="overflow-hidden bg-secondary/30">
+                    <img
+                      src={color.image}
+                      alt={color.name}
+                      loading="lazy"
+                      width={400}
+                      height={300}
+                      className="aspect-[4/3] w-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03]"
+                    />
+                  </div>
+                  <figcaption className="mt-3">
+                    <p className="font-display text-[15px] text-ink">{color.name}</p>
+                    <p className="mt-1 text-[12px] text-ink-soft">{color.desc}</p>
+                  </figcaption>
+                </figure>
+              ))}
+            </div>
+
+            {currentColors.length > 6 && (
+              <button
+                onClick={() => setExpanded(!expanded)}
+                className="mt-8 text-[13px] font-medium text-ink underline decoration-rule underline-offset-4 transition-colors hover:text-accent hover:decoration-accent"
+              >
+                {expanded ? "Thu gọn" : "Xem thêm bảng màu"}
+              </button>
+            )}
+
+            <div className="mt-10 border-t border-rule pt-8">
+              <p className="text-[13px] text-ink-soft">
+                Gửi ảnh công trình qua Zalo để được tư vấn tone phù hợp với hiện trạng và yêu cầu kiến trúc.
+              </p>
+              <a
+                href={ZALO_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-3 inline-block text-[13px] font-medium text-ink underline decoration-rule underline-offset-4 transition-colors hover:text-accent hover:decoration-accent"
+              >
+                Gửi ảnh qua Zalo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function Process() {
   const steps = [
     {
@@ -1035,6 +1161,7 @@ function Index() {
         <Capability />
         <TechnicalFoundation />
         <Projects />
+        <ColorPalette />
         <Process />
         <WhyPhoto />
         <FAQ />
