@@ -218,6 +218,7 @@ function Header() {
     { href: "#nang-luc", label: "Năng lực" },
     { href: "#du-an", label: "Dự án" },
     { href: "#bang-mau", label: "Bảng màu" },
+    { href: "#du-toan", label: "Dự toán" },
     { href: "#quy-trinh", label: "Quy trình" },
     { href: "#faq", label: "FAQ" },
   ];
@@ -811,6 +812,211 @@ function ColorPalette() {
   );
 }
 
+function CostEstimator() {
+  const [environment, setEnvironment] = useState<"indoor" | "outdoor" | "">("");
+  const [material, setMaterial] = useState<"metal" | "cement" | "">("");
+  const [area, setArea] = useState<string>("");
+  const [showResult, setShowResult] = useState(false);
+
+  const pricingData = {
+    indoor: {
+      min: 320000,
+      max: 370000,
+      process: "Sơn 3 lớp",
+      layers: "1 lớp lót + 2 lớp phủ vân gỗ",
+    },
+    outdoor: {
+      min: 400000,
+      max: 460000,
+      process: "Sơn 4 lớp",
+      layers: "1 lớp lót + 2 lớp phủ vân gỗ + 1 lớp phủ trong suốt bảo vệ",
+    },
+  };
+
+  const formatCurrency = (amount: number) => {
+    return new Intl.NumberFormat("vi-VN").format(amount);
+  };
+
+  const handleCalculate = () => {
+    if (environment && material && area && parseFloat(area) > 0) {
+      setShowResult(true);
+    }
+  };
+
+  const currentPricing = environment ? pricingData[environment] : null;
+  const areaNum = parseFloat(area) || 0;
+  const minTotal = currentPricing ? areaNum * currentPricing.min : 0;
+  const maxTotal = currentPricing ? areaNum * currentPricing.max : 0;
+
+  return (
+    <section id="du-toan" className="mt-32 md:mt-44">
+      <div className="mx-auto max-w-[1320px] px-6 md:px-10">
+        <div className="grid grid-cols-12 gap-x-6">
+          <div className="col-span-12 md:col-span-4">
+            <p className="eyebrow">— Dự toán sơ bộ</p>
+            <h2 className="font-display mt-4 text-[clamp(2rem,3.6vw,2.75rem)] leading-[1.05] text-ink">
+              Ước tính chi phí cho hạng mục của bạn
+            </h2>
+            <p className="mt-6 max-w-md text-[15px] leading-relaxed text-ink-soft">
+              Chọn môi trường sử dụng và nhập diện tích để tham khảo khoảng ngân sách thường gặp trước khi gửi ảnh hiện trạng.
+            </p>
+          </div>
+          <div className="col-span-12 mt-10 md:col-span-7 md:col-start-6 md:mt-0">
+            <div className="space-y-6">
+              <div>
+                <label className="block text-[13px] font-medium text-ink mb-2">
+                  Môi trường sử dụng
+                </label>
+                <div className="grid grid-cols-2 gap-3">
+                  <button
+                    type="button"
+                    onClick={() => { setEnvironment("indoor"); setShowResult(false); }}
+                    className={`px-4 py-3 text-[13px] font-medium border transition-colors ${
+                      environment === "indoor"
+                        ? "border-accent bg-accent/5 text-accent"
+                        : "border-rule text-ink-soft hover:border-ink/40"
+                    }`}
+                  >
+                    Trong nhà
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => { setEnvironment("outdoor"); setShowResult(false); }}
+                    className={`px-4 py-3 text-[13px] font-medium border transition-colors ${
+                      environment === "outdoor"
+                        ? "border-accent bg-accent/5 text-accent"
+                        : "border-rule text-ink-soft hover:border-ink/40"
+                    }`}
+                  >
+                    Ngoài trời
+                  </button>
+                </div>
+              </div>
+
+              <div>
+                <label className="block text-[13px] font-medium text-ink mb-2">
+                  Loại hạng mục
+                </label>
+                <div className="grid grid-cols-2 gap-3">
+                  <button
+                    type="button"
+                    onClick={() => { setMaterial("metal"); setShowResult(false); }}
+                    className={`px-4 py-3 text-[13px] font-medium border transition-colors ${
+                      material === "metal"
+                        ? "border-accent bg-accent/5 text-accent"
+                        : "border-rule text-ink-soft hover:border-ink/40"
+                    }`}
+                  >
+                    Kim loại / sắt
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => { setMaterial("cement"); setShowResult(false); }}
+                    className={`px-4 py-3 text-[13px] font-medium border transition-colors ${
+                      material === "cement"
+                        ? "border-accent bg-accent/5 text-accent"
+                        : "border-rule text-ink-soft hover:border-ink/40"
+                    }`}
+                  >
+                    Tấm xi măng
+                  </button>
+                </div>
+              </div>
+
+              <div>
+                <label className="block text-[13px] font-medium text-ink mb-2">
+                  Diện tích cần thi công (m²)
+                </label>
+                <input
+                  type="number"
+                  value={area}
+                  onChange={(e) => { setArea(e.target.value); setShowResult(false); }}
+                  placeholder="25"
+                  min="1"
+                  step="0.1"
+                  className="w-full px-4 py-3 text-[15px] border border-rule bg-background text-ink placeholder:text-ink-soft/40 focus:border-accent focus:outline-none transition-colors"
+                />
+                <p className="mt-2 text-[12px] text-ink-soft">
+                  Nếu chưa có số chính xác, hãy nhập diện tích ước lượng.
+                </p>
+              </div>
+
+              <button
+                type="button"
+                onClick={handleCalculate}
+                disabled={!environment || !material || !area || parseFloat(area) <= 0}
+                className="w-full px-6 py-4 text-[13px] font-medium uppercase tracking-[0.1em] bg-accent text-accent-foreground transition-colors hover:bg-ink disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                Xem dự toán sơ bộ
+              </button>
+
+              {showResult && currentPricing && (
+                <div className="mt-8 border-t border-rule pt-8">
+                  <div className="space-y-4">
+                    <div>
+                      <p className="text-[12px] uppercase tracking-[0.1em] text-ink-soft">
+                        Quy trình áp dụng
+                      </p>
+                      <p className="mt-1 text-[15px] text-ink">{currentPricing.process}</p>
+                      <p className="mt-1 text-[13px] text-ink-soft">{currentPricing.layers}</p>
+                    </div>
+
+                    <div className="grid grid-cols-2 gap-4 pt-4 border-t border-rule">
+                      <div>
+                        <p className="text-[12px] uppercase tracking-[0.1em] text-ink-soft">
+                          Diện tích
+                        </p>
+                        <p className="mt-1 text-[15px] text-ink">{areaNum} m²</p>
+                      </div>
+                      <div>
+                        <p className="text-[12px] uppercase tracking-[0.1em] text-ink-soft">
+                          Đơn giá tham khảo
+                        </p>
+                        <p className="mt-1 text-[15px] text-ink">
+                          {formatCurrency(currentPricing.min)} – {formatCurrency(currentPricing.max)} đ/m²
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="pt-4 border-t border-rule">
+                      <p className="text-[12px] uppercase tracking-[0.1em] text-ink-soft">
+                        Khoảng chi phí tham khảo
+                      </p>
+                      <p className="mt-2 font-display text-[clamp(1.8rem,3vw,2.4rem)] leading-[1.1] text-accent">
+                        {formatCurrency(minTotal)} – {formatCurrency(maxTotal)} đ
+                      </p>
+                    </div>
+
+                    <div className="pt-4 border-t border-rule">
+                      <p className="text-[13px] text-ink-soft leading-relaxed">
+                        Kết quả trên dùng để tham khảo ban đầu. Mộc Diện sẽ xem ảnh hiện trạng để đề xuất đúng phương án và báo giá sát thực tế hơn.
+                      </p>
+                    </div>
+
+                    <div className="pt-4">
+                      <a
+                        href={ZALO_URL}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center bg-accent px-6 py-4 text-[12px] font-medium uppercase tracking-[0.16em] text-accent-foreground transition-colors hover:bg-ink"
+                      >
+                        Gửi ảnh công trình để chốt phương án
+                      </a>
+                      <p className="mt-3 text-[13px] text-ink-soft">
+                        Chỉ cần vài ảnh hiện trạng, Mộc Diện sẽ xem và tư vấn hướng làm phù hợp.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function Process() {
   const steps = [
     {
@@ -1162,6 +1368,7 @@ function Index() {
         <TechnicalFoundation />
         <Projects />
         <ColorPalette />
+        <CostEstimator />
         <Process />
         <WhyPhoto />
         <FAQ />
