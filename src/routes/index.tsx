@@ -931,7 +931,7 @@ function CostEstimator() {
                   type="number"
                   value={area}
                   onChange={(e) => { setArea(e.target.value); setShowResult(false); }}
-                  placeholder="25"
+                  placeholder="189"
                   min="1"
                   step="0.1"
                   className="w-full px-4 py-3 text-[15px] border border-rule bg-background text-ink placeholder:text-ink-soft/40 focus:border-accent focus:outline-none transition-colors"
