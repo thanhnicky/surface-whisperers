@@ -952,44 +952,35 @@ function CostEstimator() {
 
               {showResult && currentPricing && (
                 <div className="mt-8 border-t border-rule pt-8">
-                  <div className="space-y-4">
-                    <div>
-                      <p className="text-[12px] uppercase tracking-[0.1em] text-ink-soft">
-                        Quy trình áp dụng
-                      </p>
-                      <p className="mt-1 text-[15px] text-ink">{currentPricing.process}</p>
-                      <p className="mt-1 text-[13px] text-ink-soft">{currentPricing.layers}</p>
-                    </div>
-
-                    <div className="grid grid-cols-2 gap-4 pt-4 border-t border-rule">
+                  <div className="space-y-6">
+                    <div className="grid grid-cols-2 gap-4">
+                      <div>
+                        <p className="text-[12px] uppercase tracking-[0.1em] text-ink-soft">
+                          Quy trình áp dụng
+                        </p>
+                        <p className="mt-1 text-[15px] text-ink">{currentPricing.process}</p>
+                        <p className="mt-1 text-[13px] text-ink-soft">{currentPricing.layers}</p>
+                      </div>
                       <div>
                         <p className="text-[12px] uppercase tracking-[0.1em] text-ink-soft">
                           Diện tích
                         </p>
                         <p className="mt-1 text-[15px] text-ink">{areaNum} m²</p>
                       </div>
-                      <div>
-                        <p className="text-[12px] uppercase tracking-[0.1em] text-ink-soft">
-                          Đơn giá tham khảo
-                        </p>
-                        <p className="mt-1 text-[15px] text-ink">
-                          {formatCurrency(currentPricing.min)} – {formatCurrency(currentPricing.max)} đ/m²
-                        </p>
-                      </div>
                     </div>
 
-                    <div className="pt-4 border-t border-rule">
+                    <div className="pt-6 border-t border-rule">
                       <p className="text-[12px] uppercase tracking-[0.1em] text-ink-soft">
                         Khoảng chi phí tham khảo
                       </p>
-                      <p className="mt-2 font-display text-[clamp(1.8rem,3vw,2.4rem)] leading-[1.1] text-accent">
+                      <p className="mt-3 font-display text-[clamp(2rem,3.5vw,2.8rem)] leading-[1.1] text-accent">
                         {formatCurrency(minTotal)} – {formatCurrency(maxTotal)} đ
                       </p>
                     </div>
 
-                    <div className="pt-4 border-t border-rule">
+                    <div className="pt-4">
                       <p className="text-[13px] text-ink-soft leading-relaxed">
-                        Kết quả trên dùng để tham khảo ban đầu. Mộc Diện sẽ xem ảnh hiện trạng để đề xuất đúng phương án và báo giá sát thực tế hơn.
+                        Kết quả trên dùng để tham khảo ban đầu. Chi phí thực tế có thể thay đổi theo hiện trạng nền, độ khó bề mặt, tone màu và khối lượng cụ thể. Mộc Diện sẽ xem ảnh để đề xuất đúng phương án và báo giá sát thực tế hơn.
                       </p>
                     </div>
 
