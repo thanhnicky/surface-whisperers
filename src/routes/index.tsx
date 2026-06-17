@@ -833,6 +833,8 @@ function CostEstimator() {
     },
   };
 
+  const cementDiscount = 0.85; // Giảm 15% cho tấm xi măng
+
   const formatCurrency = (amount: number) => {
     return new Intl.NumberFormat("vi-VN").format(amount);
   };
@@ -845,8 +847,9 @@ function CostEstimator() {
 
   const currentPricing = environment ? pricingData[environment] : null;
   const areaNum = parseFloat(area) || 0;
-  const minTotal = currentPricing ? areaNum * currentPricing.min : 0;
-  const maxTotal = currentPricing ? areaNum * currentPricing.max : 0;
+  const discount = material === "cement" ? cementDiscount : 1;
+  const minTotal = currentPricing ? areaNum * currentPricing.min * discount : 0;
+  const maxTotal = currentPricing ? areaNum * currentPricing.max * discount : 0;
 
   return (
     <section id="du-toan" className="mt-32 md:mt-44">
