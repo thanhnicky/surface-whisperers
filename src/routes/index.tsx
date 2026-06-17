@@ -9,6 +9,8 @@ import projectCementFacade from "@/assets/project-cement-facade.jpg";
 import craftHand from "@/assets/craft-hand.jpg";
 
 const ZALO_URL = "https://zalo.me/0914599988";
+const PHONE_NUMBER = "0914599988";
+const PHONE_URL = `tel:${PHONE_NUMBER}`;
 
 /*
  * FUTURE GEO PAGE SLUG STRUCTURE
@@ -296,6 +298,9 @@ function Hero() {
               <span className="transition-transform group-hover:translate-x-1">↓</span>
             </a>
           </div>
+          <p className="mt-4 text-[13px] text-ink-soft md:hidden">
+            Hoặc gọi <a href={PHONE_URL} className="underline decoration-rule underline-offset-2 hover:text-accent hover:decoration-accent transition-colors">0914 59 99 88</a>
+          </p>
         </div>
 
         <div className="col-span-12 mt-12 md:col-span-7 md:mt-0">
@@ -932,12 +937,18 @@ function Footer() {
                 Đường XTT26-1, Ấp 2, Xã Bà Điểm, TP.HCM
               </p>
               <a
+                href={PHONE_URL}
+                className="block text-[14px] text-ink underline decoration-rule underline-offset-4 transition-colors hover:text-accent hover:decoration-accent"
+              >
+                0914 59 99 88
+              </a>
+              <a
                 href={ZALO_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block text-[14px] text-ink underline decoration-rule underline-offset-4 transition-colors hover:text-accent hover:decoration-accent"
               >
-                0914 59 99 88 · Zalo
+                Zalo
               </a>
               <a
                 href="https://mocdienstudio.com"
@@ -955,6 +966,43 @@ function Footer() {
         </div>
       </div>
     </footer>
+  );
+}
+
+function MobileStickyBar() {
+  return (
+    <div className="mobile-sticky-bar flex md:hidden">
+      <a
+        href={ZALO_URL}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex-[0.65] flex items-center justify-center bg-accent px-4 text-[13px] font-medium uppercase tracking-[0.12em] text-accent-foreground transition-colors hover:bg-ink"
+        aria-label="Gửi ảnh công trình qua Zalo cho Mộc Diện"
+      >
+        Gửi ảnh qua Zalo
+      </a>
+      <a
+        href={PHONE_URL}
+        className="flex-[0.35] flex items-center justify-center bg-secondary px-4 text-[13px] font-medium uppercase tracking-[0.12em] text-secondary-foreground transition-colors hover:bg-ink-soft"
+        aria-label="Gọi Mộc Diện qua số 0914 59 99 88"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="18"
+          height="18"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className="mr-2"
+        >
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+        </svg>
+        Gọi ngay
+      </a>
+    </div>
   );
 }
 
@@ -987,7 +1035,7 @@ function Index() {
   return (
     <div ref={rootRef} className="min-h-screen bg-background">
       <Header />
-      <main>
+      <main className="mobile-bottom-padding">
         <Hero />
         <PositioningStrip />
         <Services />
@@ -1001,6 +1049,7 @@ function Index() {
         <FinalCTA />
       </main>
       <Footer />
+      <MobileStickyBar />
     </div>
   );
 }
