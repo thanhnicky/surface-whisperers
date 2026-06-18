@@ -7,6 +7,23 @@ import projectSteelGate from "@/assets/project-steel-gate.jpg";
 import projectSlatCeiling from "@/assets/project-slat-ceiling.jpg";
 import projectCementFacade from "@/assets/project-cement-facade.jpg";
 import craftHand from "@/assets/craft-hand.jpg";
+import cementColor1 from "@/assets/Bang-mau/tam-xi-mang/mau-son-gia-go-tam-xi-mang-lotus-1.png";
+import cementColor2 from "@/assets/Bang-mau/tam-xi-mang/mau-son-gia-go-tam-xi-mang-lotus-2.png";
+import cementColor3 from "@/assets/Bang-mau/tam-xi-mang/mau-son-gia-go-tam-xi-mang-lotus-3.png";
+import cementColor4 from "@/assets/Bang-mau/tam-xi-mang/mau-son-gia-go-tam-xi-mang-lotus-4.png";
+import cementColor5 from "@/assets/Bang-mau/tam-xi-mang/mau-son-gia-go-tam-xi-mang-lotus-5.png";
+import cementColor6 from "@/assets/Bang-mau/tam-xi-mang/mau-son-gia-go-tam-xi-mang-lotus-6.png";
+import cementColor7 from "@/assets/Bang-mau/tam-xi-mang/mau-son-gia-go-tam-xi-mang-lotus-7.png";
+import cementColor8 from "@/assets/Bang-mau/tam-xi-mang/mau-son-gia-go-tam-xi-mang-lotus-8.png";
+import cementColor9 from "@/assets/Bang-mau/tam-xi-mang/mau-son-gia-go-tam-xi-mang-lotus-9.png";
+import cementColor10 from "@/assets/Bang-mau/tam-xi-mang/mau-son-gia-go-tam-xi-mang-lotus-10.png";
+import cementColor11 from "@/assets/Bang-mau/tam-xi-mang/mau-son-gia-go-tam-xi-mang-lotus-11.png";
+import cementColor12 from "@/assets/Bang-mau/tam-xi-mang/mau-son-gia-go-tam-xi-mang-lotus-12.png";
+import cementColor13 from "@/assets/Bang-mau/tam-xi-mang/mau-son-gia-go-tam-xi-mang-lotus-13.png";
+import cementColor14 from "@/assets/Bang-mau/tam-xi-mang/mau-son-gia-go-tam-xi-mang-lotus-14.png";
+import cementColor15 from "@/assets/Bang-mau/tam-xi-mang/mau-son-gia-go-tam-xi-mang-lotus-15.png";
+import cementColor16 from "@/assets/Bang-mau/tam-xi-mang/mau-son-gia-go-tam-xi-mang-lotus-16.png";
+import cementColor17 from "@/assets/Bang-mau/tam-xi-mang/mau-son-gia-go-tam-xi-mang-lotus-17.png";
 
 const ZALO_URL = "https://zalo.me/0914599988";
 const PHONE_NUMBER = "0914599988";
@@ -705,23 +722,23 @@ function ColorPalette() {
   ];
 
   const cementColors = [
-    { name: "Màu 1", desc: "Mô tả màu 1", image: "/Bang-mau/tam-xi-mang/mau-son-gia-go-tam-xi-mang-lotus-1.png" },
-    { name: "Màu 2", desc: "Mô tả màu 2", image: "/Bang-mau/tam-xi-mang/mau-son-gia-go-tam-xi-mang-lotus-2.png" },
-    { name: "Màu 3", desc: "Mô tả màu 3", image: "/Bang-mau/tam-xi-mang/mau-son-gia-go-tam-xi-mang-lotus-3.png" },
-    { name: "Màu 4", desc: "Mô tả màu 4", image: "/Bang-mau/tam-xi-mang/mau-son-gia-go-tam-xi-mang-lotus-4.png" },
-    { name: "Màu 5", desc: "Mô tả màu 5", image: "/Bang-mau/tam-xi-mang/mau-son-gia-go-tam-xi-mang-lotus-5.png" },
-    { name: "Màu 6", desc: "Mô tả màu 6", image: "/Bang-mau/tam-xi-mang/mau-son-gia-go-tam-xi-mang-lotus-6.png" },
-    { name: "Màu 7", desc: "Mô tả màu 7", image: "/Bang-mau/tam-xi-mang/mau-son-gia-go-tam-xi-mang-lotus-7.png" },
-    { name: "Màu 8", desc: "Mô tả màu 8", image: "/Bang-mau/tam-xi-mang/mau-son-gia-go-tam-xi-mang-lotus-8.png" },
-    { name: "Màu 9", desc: "Mô tả màu 9", image: "/Bang-mau/tam-xi-mang/mau-son-gia-go-tam-xi-mang-lotus-9.png" },
-    { name: "Màu 10", desc: "Mô tả màu 10", image: "/Bang-mau/tam-xi-mang/mau-son-gia-go-tam-xi-mang-lotus-10.png" },
-    { name: "Màu 11", desc: "Mô tả màu 11", image: "/Bang-mau/tam-xi-mang/mau-son-gia-go-tam-xi-mang-lotus-11.png" },
-    { name: "Màu 12", desc: "Mô tả màu 12", image: "/Bang-mau/tam-xi-mang/mau-son-gia-go-tam-xi-mang-lotus-12.png" },
-    { name: "Màu 13", desc: "Mô tả màu 13", image: "/Bang-mau/tam-xi-mang/mau-son-gia-go-tam-xi-mang-lotus-13.png" },
-    { name: "Màu 14", desc: "Mô tả màu 14", image: "/Bang-mau/tam-xi-mang/mau-son-gia-go-tam-xi-mang-lotus-14.png" },
-    { name: "Màu 15", desc: "Mô tả màu 15", image: "/Bang-mau/tam-xi-mang/mau-son-gia-go-tam-xi-mang-lotus-15.png" },
-    { name: "Màu 16", desc: "Mô tả màu 16", image: "/Bang-mau/tam-xi-mang/mau-son-gia-go-tam-xi-mang-lotus-16.png" },
-    { name: "Màu 17", desc: "Mô tả màu 17", image: "/Bang-mau/tam-xi-mang/mau-son-gia-go-tam-xi-mang-lotus-17.png" },
+    { name: "Màu 1", desc: "Mô tả màu 1", image: cementColor1 },
+    { name: "Màu 2", desc: "Mô tả màu 2", image: cementColor2 },
+    { name: "Màu 3", desc: "Mô tả màu 3", image: cementColor3 },
+    { name: "Màu 4", desc: "Mô tả màu 4", image: cementColor4 },
+    { name: "Màu 5", desc: "Mô tả màu 5", image: cementColor5 },
+    { name: "Màu 6", desc: "Mô tả màu 6", image: cementColor6 },
+    { name: "Màu 7", desc: "Mô tả màu 7", image: cementColor7 },
+    { name: "Màu 8", desc: "Mô tả màu 8", image: cementColor8 },
+    { name: "Màu 9", desc: "Mô tả màu 9", image: cementColor9 },
+    { name: "Màu 10", desc: "Mô tả màu 10", image: cementColor10 },
+    { name: "Màu 11", desc: "Mô tả màu 11", image: cementColor11 },
+    { name: "Màu 12", desc: "Mô tả màu 12", image: cementColor12 },
+    { name: "Màu 13", desc: "Mô tả màu 13", image: cementColor13 },
+    { name: "Màu 14", desc: "Mô tả màu 14", image: cementColor14 },
+    { name: "Màu 15", desc: "Mô tả màu 15", image: cementColor15 },
+    { name: "Màu 16", desc: "Mô tả màu 16", image: cementColor16 },
+    { name: "Màu 17", desc: "Mô tả màu 17", image: cementColor17 },
   ];
 
   const currentColors = activeTab === "metal" ? metalColors : cementColors;
