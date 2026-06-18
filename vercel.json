@@ -1,16 +1,4 @@
 {
   "buildCommand": "npm run build",
-  "installCommand": "npm install --legacy-peer-deps",
-  "redirects": [
-    {
-      "source": "/",
-      "destination": "https://www.mocdienstudio.com",
-      "statusCode": 301
-    },
-    {
-      "source": "/:path*",
-      "destination": "https://www.mocdienstudio.com/:path*",
-      "statusCode": 301
-    }
-  ]
+  "installCommand": "npm install --legacy-peer-deps"
 }
