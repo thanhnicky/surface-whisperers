@@ -783,7 +783,6 @@ function ColorPalette() {
                   </div>
                   <figcaption className="mt-3">
                     <p className="font-display text-[15px] text-ink">{color.name}</p>
-                    <p className="mt-1 text-[12px] text-ink-soft">{color.desc}</p>
                   </figcaption>
                 </figure>
               ))}
