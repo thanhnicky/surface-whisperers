@@ -24,6 +24,15 @@ import cementColor14 from "@/assets/mau-son-gia-go-tam-xi-mang-lotus-14.png";
 import cementColor15 from "@/assets/mau-son-gia-go-tam-xi-mang-lotus-15.png";
 import cementColor16 from "@/assets/mau-son-gia-go-tam-xi-mang-lotus-16.png";
 import cementColor17 from "@/assets/mau-son-gia-go-tam-xi-mang-lotus-17.png";
+import metalColor1 from "@/assets/son-gia-go-tren-sat-mocdien-1.png";
+import metalColor2 from "@/assets/son-gia-go-tren-sat-mocdien-2.png";
+import metalColor3 from "@/assets/son-gia-go-tren-sat-mocdien-3.png";
+import metalColor4 from "@/assets/son-gia-go-tren-sat-mocdien-4.png";
+import metalColor5 from "@/assets/son-gia-go-tren-sat-mocdien-5.png";
+import metalColor6 from "@/assets/son-gia-go-tren-sat-mocdien-6.png";
+import metalColor7 from "@/assets/son-gia-go-tren-sat-mocdien-7.png";
+import metalColor8 from "@/assets/son-gia-go-tren-sat-mocdien-8.png";
+import metalColor9 from "@/assets/son-gia-go-tren-sat-mocdien-9.png";
 
 const ZALO_URL = "https://zalo.me/0914599988";
 const PHONE_NUMBER = "0914599988";
@@ -709,16 +718,15 @@ function ColorPalette() {
   const [expanded, setExpanded] = useState(false);
 
   const metalColors = [
-    { name: "Gỗ óc chó đậm", desc: "Tone trầm, hợp lam sắt ngoại thất", image: "https://picsum.photos/seed/mocdien-walnut-dark/400/300" },
-    { name: "Gỗ teak ấm", desc: "Vân rõ, hợp cổng và hàng rào", image: "https://picsum.photos/seed/mocdien-teak-warm/400/300" },
-    { name: "Gỗ sồi nâu nhạt", desc: "Tông ấm, phù hợp nhà phố hiện đại", image: "https://picsum.photos/seed/mocdien-oak-light/400/300" },
-    { name: "Gỗ lim trầm", desc: "Độ tương phản vân vừa phải", image: "https://picsum.photos/seed/mocdien-lim-dark/400/300" },
-    { name: "Gỗ cà phê", desc: "Tone trung tính, dễ phối", image: "https://picsum.photos/seed/mocdien-coffee/400/300" },
-    { name: "Gỗ cánh gián", desc: "Vân mềm, hợp pergola", image: "https://picsum.photos/seed/mocdien-gian/400/300" },
-    { name: "Gỗ nâu đỏ", desc: "Tone ấm, hợp cổng biệt thự", image: "https://picsum.photos/seed/mocdien-red-brown/400/300" },
-    { name: "Gỗ mun nhạt", desc: "Độ sâu vân tốt", image: "https://picsum.photos/seed/mocdien-mun-light/400/300" },
-    { name: "Gỗ hổ phách", desc: "Tone sáng, hợp hàng rào", image: "https://picsum.photos/seed/mocdien-amber/400/300" },
-    { name: "Gỗ walnut ánh xám", desc: "Phong cách hiện đại", image: "https://picsum.photos/seed/mocdien-walnut-grey/400/300" },
+    { name: "Màu 1", desc: "Mô tả màu 1", image: metalColor1 },
+    { name: "Màu 2", desc: "Mô tả màu 2", image: metalColor2 },
+    { name: "Màu 3", desc: "Mô tả màu 3", image: metalColor3 },
+    { name: "Màu 4", desc: "Mô tả màu 4", image: metalColor4 },
+    { name: "Màu 5", desc: "Mô tả màu 5", image: metalColor5 },
+    { name: "Màu 6", desc: "Mô tả màu 6", image: metalColor6 },
+    { name: "Màu 7", desc: "Mô tả màu 7", image: metalColor7 },
+    { name: "Màu 8", desc: "Mô tả màu 8", image: metalColor8 },
+    { name: "Màu 9", desc: "Mô tả màu 9", image: metalColor9 },
   ];
 
   const cementColors = [
