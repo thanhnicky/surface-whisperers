@@ -705,16 +705,23 @@ function ColorPalette() {
   ];
 
   const cementColors = [
-    { name: "Sồi sáng hiện đại", desc: "Hợp mặt dựng và lam ngoài trời", image: "https://picsum.photos/seed/mocdien-cement-oak/400/300" },
-    { name: "Teak vàng nhạt", desc: "Tone sáng, hợp mảng nhấn kiến trúc", image: "https://picsum.photos/seed/mocdien-cement-teak/400/300" },
-    { name: "Walnut trung tính", desc: "Đều màu, dễ phối tổng thể", image: "https://picsum.photos/seed/mocdien-cement-walnut/400/300" },
-    { name: "Nâu hạt dẻ", desc: "Phù hợp phong cách hiện đại tối giản", image: "https://picsum.photos/seed/mocdien-cement-chestnut/400/300" },
-    { name: "Gỗ óc chó mềm", desc: "Vân nhẹ, hợp trần", image: "https://picsum.photos/seed/mocdien-cement-walnut-soft/400/300" },
-    { name: "Cedar ấm", desc: "Tone ấm, hợp vách trang trí", image: "https://picsum.photos/seed/mocdien-cement-cedar/400/300" },
-    { name: "Ash nâu xám", desc: "Phong cách tối giản", image: "https://picsum.photos/seed/mocdien-cement-ash/400/300" },
-    { name: "Gỗ mật ong", desc: "Tone vàng ấm", image: "https://picsum.photos/seed/mocdien-cement-honey/400/300" },
-    { name: "Nâu đất kiến trúc", desc: "Hợp mặt dựng", image: "https://picsum.photos/seed/mocdien-cement-earth/400/300" },
-    { name: "Driftwood xám ấm", desc: "Tone xám ấm, hiện đại", image: "https://picsum.photos/seed/mocdien-cement-driftwood/400/300" },
+    { name: "Màu 1", desc: "Mô tả màu 1", image: "/Bang-mau/tam-xi-mang/mau-son-gia-go-tam-xi-mang-lotus-1.png" },
+    { name: "Màu 2", desc: "Mô tả màu 2", image: "/Bang-mau/tam-xi-mang/mau-son-gia-go-tam-xi-mang-lotus-2.png" },
+    { name: "Màu 3", desc: "Mô tả màu 3", image: "/Bang-mau/tam-xi-mang/mau-son-gia-go-tam-xi-mang-lotus-3.png" },
+    { name: "Màu 4", desc: "Mô tả màu 4", image: "/Bang-mau/tam-xi-mang/mau-son-gia-go-tam-xi-mang-lotus-4.png" },
+    { name: "Màu 5", desc: "Mô tả màu 5", image: "/Bang-mau/tam-xi-mang/mau-son-gia-go-tam-xi-mang-lotus-5.png" },
+    { name: "Màu 6", desc: "Mô tả màu 6", image: "/Bang-mau/tam-xi-mang/mau-son-gia-go-tam-xi-mang-lotus-6.png" },
+    { name: "Màu 7", desc: "Mô tả màu 7", image: "/Bang-mau/tam-xi-mang/mau-son-gia-go-tam-xi-mang-lotus-7.png" },
+    { name: "Màu 8", desc: "Mô tả màu 8", image: "/Bang-mau/tam-xi-mang/mau-son-gia-go-tam-xi-mang-lotus-8.png" },
+    { name: "Màu 9", desc: "Mô tả màu 9", image: "/Bang-mau/tam-xi-mang/mau-son-gia-go-tam-xi-mang-lotus-9.png" },
+    { name: "Màu 10", desc: "Mô tả màu 10", image: "/Bang-mau/tam-xi-mang/mau-son-gia-go-tam-xi-mang-lotus-10.png" },
+    { name: "Màu 11", desc: "Mô tả màu 11", image: "/Bang-mau/tam-xi-mang/mau-son-gia-go-tam-xi-mang-lotus-11.png" },
+    { name: "Màu 12", desc: "Mô tả màu 12", image: "/Bang-mau/tam-xi-mang/mau-son-gia-go-tam-xi-mang-lotus-12.png" },
+    { name: "Màu 13", desc: "Mô tả màu 13", image: "/Bang-mau/tam-xi-mang/mau-son-gia-go-tam-xi-mang-lotus-13.png" },
+    { name: "Màu 14", desc: "Mô tả màu 14", image: "/Bang-mau/tam-xi-mang/mau-son-gia-go-tam-xi-mang-lotus-14.png" },
+    { name: "Màu 15", desc: "Mô tả màu 15", image: "/Bang-mau/tam-xi-mang/mau-son-gia-go-tam-xi-mang-lotus-15.png" },
+    { name: "Màu 16", desc: "Mô tả màu 16", image: "/Bang-mau/tam-xi-mang/mau-son-gia-go-tam-xi-mang-lotus-16.png" },
+    { name: "Màu 17", desc: "Mô tả màu 17", image: "/Bang-mau/tam-xi-mang/mau-son-gia-go-tam-xi-mang-lotus-17.png" },
   ];
 
   const currentColors = activeTab === "metal" ? metalColors : cementColors;
