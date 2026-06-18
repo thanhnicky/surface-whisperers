@@ -688,7 +688,7 @@ function Projects() {
 }
 
 function ColorPalette() {
-  const [activeTab, setActiveTab] = useState<"metal" | "cement">("metal");
+  const [activeTab, setActiveTab] = useState<"metal" | "cement">("cement");
   const [expanded, setExpanded] = useState(false);
 
   const metalColors = [
