@@ -54,21 +54,21 @@ export const Route = createFileRoute("/")({
     meta: [
       {
         title:
-          "Sơn giả gỗ trên kim loại và tấm xi măng | Mộc Diện — Nhà thầu TP.HCM",
+          "Nhà Thầu Thi Công Sơn Giả Gỗ Kim Loại & Cemboard | Mộc Diện",
       },
       {
         name: "description",
         content:
-          "Nhà thầu thi công sơn giả gỗ chuyên sâu trên kim loại và tấm xi măng tại TP.HCM",
+          "Đơn vị thi công sơn giả gỗ chuyên nghiệp trên tấm xi măng và kim loại. Bảo hành 5 năm không bong tróc. Nhận dự án từ tổng thầu tại TP.HCM & Miền Nam.",
       },
       {
         property: "og:title",
-        content: "Sơn giả gỗ trên kim loại và tấm xi măng | Mộc Diện TP.HCM",
+        content: "Nhà Thầu Thi Công Sơn Giả Gỗ Kim Loại & Cemboard | Mộc Diện",
       },
       {
         property: "og:description",
         content:
-          "Mộc Diện chuyên thi công sơn giả gỗ trên sắt và tấm xi măng cho công trình ngoại thất. Phục vụ TP.HCM và các tỉnh lân cận. Gửi ảnh công trình qua Zalo để được tư vấn và báo giá.",
+          "Đơn vị thi công sơn giả gỗ chuyên nghiệp trên tấm xi măng và kim loại. Bảo hành 5 năm không bong tróc. Nhận dự án từ tổng thầu tại TP.HCM & Miền Nam.",
       },
       { property: "og:image", content: heroFauxWoodMetal },
       { name: "twitter:card", content: "summary_large_image" },
