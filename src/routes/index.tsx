@@ -181,14 +181,6 @@ export const Route = createFileRoute("/")({
             },
             {
               "@type": "Question",
-              "name": "Có nhận hạng mục nhỏ hoặc gia công không?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Có. Từ một cánh cổng, vài mảng lam đến mặt dựng nguyên căn. Nhận gia công phần hoàn thiện bề mặt cho nhà thầu chủ trì."
-              }
-            },
-            {
-              "@type": "Question",
               "name": "Xử lý nền cho sắt và tấm xi măng khác nhau như thế nào?",
               "acceptedAnswer": {
                 "@type": "Answer",
@@ -1123,10 +1115,6 @@ function FAQ() {
     {
       q: "Báo giá thay đổi khi hiện trạng khác như thế nào?",
       a: "Báo giá dựa trên thông tin hiện trạng ban đầu. Khi hiện trạng thực tế khác, điều chỉnh báo giá theo hạng mục cụ thể trước khi triển khai.",
-    },
-    {
-      q: "Có nhận hạng mục nhỏ hoặc gia công không?",
-      a: "Có. Từ một cánh cổng, vài mảng lam đến mặt dựng nguyên căn. Nhận gia công phần hoàn thiện bề mặt cho nhà thầu chủ trì.",
     },
     {
       q: "Xử lý nền cho sắt và tấm xi măng khác nhau như thế nào?",
