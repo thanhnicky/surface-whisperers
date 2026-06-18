@@ -692,15 +692,15 @@ function ColorPalette() {
   const [expanded, setExpanded] = useState(false);
 
   const metalColors = [
-    { name: "Màu 1", desc: "Mô tả màu 1", image: "/bang-mau/son-gia-go-tren-sat-mocdien-1.png" },
-    { name: "Màu 2", desc: "Mô tả màu 2", image: "/bang-mau/son-gia-go-tren-sat-mocdien-2.png" },
-    { name: "Màu 3", desc: "Mô tả màu 3", image: "/bang-mau/son-gia-go-tren-sat-mocdien-3.png" },
-    { name: "Màu 4", desc: "Mô tả màu 4", image: "/bang-mau/son-gia-go-tren-sat-mocdien-4.png" },
-    { name: "Màu 5", desc: "Mô tả màu 5", image: "/bang-mau/son-gia-go-tren-sat-mocdien-5.png" },
-    { name: "Màu 6", desc: "Mô tả màu 6", image: "/bang-mau/son-gia-go-tren-sat-mocdien-6.png" },
-    { name: "Màu 7", desc: "Mô tả màu 7", image: "/bang-mau/son-gia-go-tren-sat-mocdien-7.png" },
-    { name: "Màu 8", desc: "Mô tả màu 8", image: "/bang-mau/son-gia-go-tren-sat-mocdien-8.png" },
-    { name: "Màu 9", desc: "Mô tả màu 9", image: "/bang-mau/son-gia-go-tren-sat-mocdien-9.png" },
+    { name: "MD - S1", desc: "Mô tả màu 1", image: "/bang-mau/son-gia-go-tren-sat-mocdien-1.png" },
+    { name: "MD - S2", desc: "Mô tả màu 2", image: "/bang-mau/son-gia-go-tren-sat-mocdien-2.png" },
+    { name: "MD - S3", desc: "Mô tả màu 3", image: "/bang-mau/son-gia-go-tren-sat-mocdien-3.png" },
+    { name: "MD - S4", desc: "Mô tả màu 4", image: "/bang-mau/son-gia-go-tren-sat-mocdien-4.png" },
+    { name: "MD - S5", desc: "Mô tả màu 5", image: "/bang-mau/son-gia-go-tren-sat-mocdien-5.png" },
+    { name: "MD - S6", desc: "Mô tả màu 6", image: "/bang-mau/son-gia-go-tren-sat-mocdien-6.png" },
+    { name: "MD - S7", desc: "Mô tả màu 7", image: "/bang-mau/son-gia-go-tren-sat-mocdien-7.png" },
+    { name: "MD - S8", desc: "Mô tả màu 8", image: "/bang-mau/son-gia-go-tren-sat-mocdien-8.png" },
+    { name: "MD - S9", desc: "Mô tả màu 9", image: "/bang-mau/son-gia-go-tren-sat-mocdien-9.png" },
   ];
 
   const cementColors = [
