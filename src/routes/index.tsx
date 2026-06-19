@@ -256,7 +256,7 @@ function Hero() {
     <section id="top" className="relative pt-32 md:pt-36">
       <div className="mx-auto grid max-w-[1320px] grid-cols-12 gap-x-6 px-6 md:px-10">
         <div className="col-span-12 md:col-span-5 md:pt-16">
-          <h1 className="eyebrow">SƠN GIẢ GỖ CHUYÊN SÂU</h1>
+          <h1 className="eyebrow">Nhà Thầu Thi Công Sơn Giả Gỗ Chuyên Sâu</h1>
           <img src="/logo-mocdien-text.png" alt="Mộc Diện" className="mt-8 w-full max-w-[600px] h-auto" />
           <p className="mt-4 text-[clamp(1.3rem,2.5vw,1.8rem)] font-display leading-[1.1] text-ink-soft">
             Đúng vật liệu — Đúng quy trình — Đúng thẩm mỹ
@@ -321,7 +321,7 @@ function PositioningStrip() {
               Nhà thầu thi công sơn giả gỗ cho hạng mục kim loại và tấm xi măng
             </h2>
             <p className="mt-6 max-w-2xl text-[15px] leading-relaxed text-ink-soft">
-              Mộc Diện làm việc trực tiếp với tổng thầu, chủ đầu tư và đơn vị chủ trì để thi công hoàn thiện giả gỗ cho hạng mục công trình. Phương án thi công được xác định theo loại nền vật liệu, vị trí sử dụng và yêu cầu hoàn thiện cụ thể của từng công trình.
+              Là đơn vị thi công sơn giả gỗ chuyên nghiệp, Mộc Diện làm việc trực tiếp với tổng thầu, chủ đầu tư và đơn vị chủ trì để thi công hoàn thiện giả gỗ cho hạng mục công trình. Phương án thi công được xác định theo loại nền vật liệu, vị trí sử dụng và yêu cầu hoàn thiện cụ thể của từng công trình.
             </p>
             <ul className="mt-8 grid grid-cols-1 gap-3 text-[14px] text-ink md:grid-cols-3">
               <li>• Làm việc trực tiếp theo hạng mục và tiến độ công trình</li>
