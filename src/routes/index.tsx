@@ -232,7 +232,7 @@ function Header() {
             <a
               key={item.href}
               href={item.href}
-              className="text-[13px] font-medium tracking-wide text-ink/80 transition-colors hover:text-accent"
+              className="text-[14px] font-medium tracking-wide text-ink/80 transition-colors hover:text-accent"
             >
               {item.label}
             </a>
@@ -242,7 +242,7 @@ function Header() {
           href={ZALO_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="hidden bg-accent px-5 py-2.5 text-[12px] font-medium uppercase tracking-[0.16em] text-accent-foreground transition-colors hover:bg-ink md:inline-flex"
+          className="hidden bg-accent px-5 py-2.5 text-[13px] font-medium uppercase tracking-[0.16em] text-accent-foreground transition-colors hover:bg-ink md:inline-flex"
         >
           Gửi ảnh qua Zalo
         </a>
@@ -270,13 +270,13 @@ function Hero() {
               href={ZALO_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center bg-accent px-7 py-4 text-[12px] font-medium uppercase tracking-[0.18em] text-accent-foreground transition-colors hover:bg-ink"
+              className="inline-flex items-center bg-accent px-7 py-4 text-[13px] font-medium uppercase tracking-[0.18em] text-accent-foreground transition-colors hover:bg-ink"
             >
               Gửi ảnh công trình qua Zalo
             </a>
             <a
               href="#hang-muc"
-              className="group inline-flex items-center gap-2 text-[13px] font-medium text-ink"
+              className="group inline-flex items-center gap-2 text-[14px] font-medium text-ink"
             >
               <span className="border-b border-ink/40 pb-0.5 transition-colors group-hover:border-accent group-hover:text-accent">
                 Xem hai mảng thi công
@@ -284,7 +284,7 @@ function Hero() {
               <span className="transition-transform group-hover:translate-x-1">↓</span>
             </a>
           </div>
-          <p className="mt-4 text-[13px] text-ink-soft md:hidden">
+          <p className="mt-4 text-[14px] text-ink-soft md:hidden">
             Hoặc gọi <a href={PHONE_URL} className="underline decoration-rule underline-offset-2 hover:text-accent hover:decoration-accent transition-colors">0914 59 99 88</a>
           </p>
         </div>
@@ -370,7 +370,7 @@ function Services() {
               Cho sắt, hộp, thép hộp ngoại thất. Xử lý nền chống gỉ, dựng vân tay, lên màu từng lớp
               để bám đúng bề mặt kim loại và chịu được nắng mưa dài hạn.
             </p>
-            <ul className="mt-6 grid grid-cols-2 gap-x-4 gap-y-2 text-[13px] text-ink">
+            <ul className="mt-6 grid grid-cols-2 gap-x-4 gap-y-2 text-[14px] text-ink">
               <li>Cổng sắt</li>
               <li>Hàng rào</li>
               <li>Lam sắt</li>
@@ -390,7 +390,7 @@ function Services() {
               Smartboard, conwood, cemboard và các tấm thay thế gỗ. Hệ sơn chọn theo vị trí,
               xử lý mép tấm, kiểm soát chiều sâu vân và độ đều giữa các tấm.
             </p>
-            <ul className="mt-6 grid grid-cols-2 gap-x-4 gap-y-2 text-[13px] text-ink">
+            <ul className="mt-6 grid grid-cols-2 gap-x-4 gap-y-2 text-[14px] text-ink">
               <li>Lam ngoài trời</li>
               <li>Mặt dựng</li>
               <li>Trần</li>
@@ -647,8 +647,8 @@ function Projects() {
             <div>
               <p className="font-display text-xl text-ink">{it.title}</p>
               <p className="mt-1 text-[13px] text-ink-soft">{it.meta}</p>
-              <p className="mt-1 text-[12px] text-ink-soft/70">{it.details}</p>
-              <p className="mt-1 text-[12px] text-ink-soft/50 italic">{it.cue}</p>
+              <p className="mt-1 text-[13px] text-ink-soft/70">{it.details}</p>
+              <p className="mt-1 text-[13px] text-ink-soft/50 italic">{it.cue}</p>
             </div>
             <span className="eyebrow">{String(startIndex + i + 1).padStart(2, "0")}</span>
           </figcaption>
@@ -667,7 +667,7 @@ function Projects() {
               Các hạng mục đã làm
             </h2>
           </div>
-          <p className="hidden max-w-xs text-right text-[13px] leading-relaxed text-ink-soft md:block">
+          <p className="hidden max-w-xs text-right text-[14px] leading-relaxed text-ink-soft md:block">
             Một số hạng mục Mộc Diện đã thực hiện trên kim loại và tấm xi măng.
           </p>
         </div>
@@ -740,7 +740,7 @@ function ColorPalette() {
             <div className="flex gap-4 border-b border-rule pb-4">
               <button
                 onClick={() => handleTabChange("metal")}
-                className={`px-4 py-2 text-[13px] font-medium uppercase tracking-[0.1em] transition-colors ${
+                className={`px-4 py-2 text-[14px] font-medium uppercase tracking-[0.1em] transition-colors ${
                   activeTab === "metal"
                     ? "text-accent border-b-2 border-accent"
                     : "text-ink-soft hover:text-ink"
@@ -750,7 +750,7 @@ function ColorPalette() {
               </button>
               <button
                 onClick={() => handleTabChange("cement")}
-                className={`px-4 py-2 text-[13px] font-medium uppercase tracking-[0.1em] transition-colors ${
+                className={`px-4 py-2 text-[14px] font-medium uppercase tracking-[0.1em] transition-colors ${
                   activeTab === "cement"
                     ? "text-accent border-b-2 border-accent"
                     : "text-ink-soft hover:text-ink"
@@ -783,21 +783,21 @@ function ColorPalette() {
             {currentColors.length > 6 && (
               <button
                 onClick={() => setExpanded(!expanded)}
-                className="mt-8 text-[13px] font-medium text-ink underline decoration-rule underline-offset-4 transition-colors hover:text-accent hover:decoration-accent"
+                className="mt-8 text-[14px] font-medium text-ink underline decoration-rule underline-offset-4 transition-colors hover:text-accent hover:decoration-accent"
               >
                 {expanded ? "Thu gọn" : "Xem thêm bảng màu"}
               </button>
             )}
 
             <div className="mt-10 border-t border-rule pt-8">
-              <p className="text-[13px] text-ink-soft">
+              <p className="text-[14px] text-ink-soft">
                 Gửi ảnh công trình qua Zalo để được tư vấn tone phù hợp với hiện trạng và yêu cầu kiến trúc.
               </p>
               <a
                 href={ZALO_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-3 inline-block text-[13px] font-medium text-ink underline decoration-rule underline-offset-4 transition-colors hover:text-accent hover:decoration-accent"
+                className="mt-3 inline-block text-[14px] font-medium text-ink underline decoration-rule underline-offset-4 transition-colors hover:text-accent hover:decoration-accent"
               >
                 Gửi ảnh qua Zalo
               </a>
@@ -864,14 +864,14 @@ function CostEstimator() {
           <div className="col-span-12 mt-10 md:col-span-7 md:col-start-6 md:mt-0">
             <div className="space-y-6">
               <div>
-                <label className="block text-[13px] font-medium text-ink mb-2">
+                <label className="block text-[14px] font-medium text-ink mb-2">
                   Môi trường sử dụng
                 </label>
                 <div className="grid grid-cols-2 gap-3">
                   <button
                     type="button"
                     onClick={() => { setEnvironment("indoor"); setShowResult(false); }}
-                    className={`px-4 py-3 text-[13px] font-medium border transition-colors ${
+                    className={`px-4 py-3 text-[14px] font-medium border transition-colors ${
                       environment === "indoor"
                         ? "border-accent bg-accent/5 text-accent"
                         : "border-rule text-ink-soft hover:border-ink/40"
@@ -882,7 +882,7 @@ function CostEstimator() {
                   <button
                     type="button"
                     onClick={() => { setEnvironment("outdoor"); setShowResult(false); }}
-                    className={`px-4 py-3 text-[13px] font-medium border transition-colors ${
+                    className={`px-4 py-3 text-[14px] font-medium border transition-colors ${
                       environment === "outdoor"
                         ? "border-accent bg-accent/5 text-accent"
                         : "border-rule text-ink-soft hover:border-ink/40"
@@ -894,14 +894,14 @@ function CostEstimator() {
               </div>
 
               <div>
-                <label className="block text-[13px] font-medium text-ink mb-2">
+                <label className="block text-[14px] font-medium text-ink mb-2">
                   Loại hạng mục
                 </label>
                 <div className="grid grid-cols-2 gap-3">
                   <button
                     type="button"
                     onClick={() => { setMaterial("metal"); setShowResult(false); }}
-                    className={`px-4 py-3 text-[13px] font-medium border transition-colors ${
+                    className={`px-4 py-3 text-[14px] font-medium border transition-colors ${
                       material === "metal"
                         ? "border-accent bg-accent/5 text-accent"
                         : "border-rule text-ink-soft hover:border-ink/40"
@@ -912,7 +912,7 @@ function CostEstimator() {
                   <button
                     type="button"
                     onClick={() => { setMaterial("cement"); setShowResult(false); }}
-                    className={`px-4 py-3 text-[13px] font-medium border transition-colors ${
+                    className={`px-4 py-3 text-[14px] font-medium border transition-colors ${
                       material === "cement"
                         ? "border-accent bg-accent/5 text-accent"
                         : "border-rule text-ink-soft hover:border-ink/40"
@@ -924,7 +924,7 @@ function CostEstimator() {
               </div>
 
               <div>
-                <label className="block text-[13px] font-medium text-ink mb-2">
+                <label className="block text-[14px] font-medium text-ink mb-2">
                   Diện tích cần thi công (m²)
                 </label>
                 <input
@@ -936,7 +936,7 @@ function CostEstimator() {
                   step="0.1"
                   className="w-full px-4 py-3 text-[15px] border border-rule bg-background text-ink placeholder:text-ink-soft/40 focus:border-accent focus:outline-none transition-colors"
                 />
-                <p className="mt-2 text-[12px] text-ink-soft">
+                <p className="mt-2 text-[13px] text-ink-soft">
                   Nếu chưa có số chính xác, hãy nhập diện tích ước lượng.
                 </p>
               </div>
@@ -945,7 +945,7 @@ function CostEstimator() {
                 type="button"
                 onClick={handleCalculate}
                 disabled={!environment || !material || !area || parseFloat(area) <= 0}
-                className="w-full px-6 py-4 text-[13px] font-medium uppercase tracking-[0.1em] bg-accent text-accent-foreground transition-colors hover:bg-ink disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full px-6 py-4 text-[14px] font-medium uppercase tracking-[0.1em] bg-accent text-accent-foreground transition-colors hover:bg-ink disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 Xem dự toán sơ bộ
               </button>
@@ -955,14 +955,14 @@ function CostEstimator() {
                   <div className="space-y-6">
                     <div className="grid grid-cols-2 gap-4">
                       <div>
-                        <p className="text-[12px] uppercase tracking-[0.1em] text-ink-soft">
+                        <p className="text-[13px] uppercase tracking-[0.1em] text-ink-soft">
                           Quy trình áp dụng
                         </p>
                         <p className="mt-1 text-[15px] text-ink">{currentPricing.process}</p>
                         <p className="mt-1 text-[13px] text-ink-soft">{currentPricing.layers}</p>
                       </div>
                       <div>
-                        <p className="text-[12px] uppercase tracking-[0.1em] text-ink-soft">
+                        <p className="text-[13px] uppercase tracking-[0.1em] text-ink-soft">
                           Diện tích
                         </p>
                         <p className="mt-1 text-[15px] text-ink">{areaNum} m²</p>
@@ -970,7 +970,7 @@ function CostEstimator() {
                     </div>
 
                     <div className="pt-6 border-t border-rule">
-                      <p className="text-[12px] uppercase tracking-[0.1em] text-ink-soft">
+                      <p className="text-[13px] uppercase tracking-[0.1em] text-ink-soft">
                         Khoảng chi phí tham khảo
                       </p>
                       <p className="mt-3 font-display text-[clamp(2rem,3.5vw,2.8rem)] leading-[1.1] text-accent">
@@ -989,7 +989,7 @@ function CostEstimator() {
                         href={ZALO_URL}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center bg-accent px-6 py-4 text-[12px] font-medium uppercase tracking-[0.16em] text-accent-foreground transition-colors hover:bg-ink"
+                        className="inline-flex items-center bg-accent px-6 py-4 text-[13px] font-medium uppercase tracking-[0.16em] text-accent-foreground transition-colors hover:bg-ink"
                       >
                         Gửi ảnh công trình để chốt phương án
                       </a>
@@ -1200,11 +1200,11 @@ function FinalCTA() {
                 href={ZALO_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center bg-accent px-8 py-5 text-[12px] font-medium uppercase tracking-[0.18em] text-accent-foreground transition-colors hover:bg-ink"
+                className="inline-flex items-center bg-accent px-8 py-5 text-[13px] font-medium uppercase tracking-[0.18em] text-accent-foreground transition-colors hover:bg-ink"
               >
                 Gửi ảnh qua Zalo
               </a>
-              <p className="text-[13px] text-ink-soft">
+              <p className="text-[14px] text-ink-soft">
                 Xem hiện trạng · Báo giá theo hạng mục
               </p>
             </div>
@@ -1272,7 +1272,7 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className="mt-16 flex flex-wrap items-center justify-between gap-4 border-t border-rule pt-8 text-[12px] text-ink-soft">
+        <div className="mt-16 flex flex-wrap items-center justify-between gap-4 border-t border-rule pt-8 text-[13px] text-ink-soft">
           <p>© {new Date().getFullYear()} Mộc Diện. Sơn giả gỗ chuyên sâu.</p>
         </div>
       </div>
@@ -1287,14 +1287,14 @@ function MobileStickyBar() {
         href={ZALO_URL}
         target="_blank"
         rel="noopener noreferrer"
-        className="flex-[0.65] flex items-center justify-center bg-accent px-4 text-[13px] font-medium uppercase tracking-[0.12em] text-accent-foreground transition-colors hover:bg-ink"
+        className="flex-[0.65] flex items-center justify-center bg-accent px-4 text-[14px] font-medium uppercase tracking-[0.12em] text-accent-foreground transition-colors hover:bg-ink"
         aria-label="Gửi ảnh công trình qua Zalo cho Mộc Diện"
       >
         Gửi ảnh qua Zalo
       </a>
       <a
         href={PHONE_URL}
-        className="flex-[0.35] flex items-center justify-center bg-secondary px-4 text-[13px] font-medium uppercase tracking-[0.12em] text-secondary-foreground transition-colors hover:bg-ink-soft"
+        className="flex-[0.35] flex items-center justify-center bg-secondary px-4 text-[14px] font-medium uppercase tracking-[0.12em] text-secondary-foreground transition-colors hover:bg-ink-soft"
         aria-label="Gọi Mộc Diện qua số 0914 59 99 88"
       >
         <svg
