@@ -1280,6 +1280,25 @@ function Footer() {
   );
 }
 
+function MapSection() {
+  return (
+    <section className="border-t border-rule">
+      <div className="mx-auto max-w-[1320px] px-6 py-12 md:px-10 md:py-16">
+        <div className="overflow-hidden rounded-lg">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.434389108234!2d106.5773316!3d10.8545282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbcaf568c71e9e59%3A0xbc3e5ed5c04a5eed!2zTeG7mWMgRGnhu4duIHwgTmjDoCBUaOG6p3UgVGhpIEPDtG5nIFPGoW4gR2nhuqMgR-G7lw!5e0!3m2!1svi!2s!4v1782559699180!5m2!1svi!2s"
+            className="h-[300px] w-full md:h-[400px]"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="strict-origin-when-cross-origin"
+          />
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function MobileStickyBar() {
   return (
     <div className="mobile-sticky-bar flex md:hidden">
@@ -1362,6 +1381,7 @@ function Index() {
         <FinalCTA />
       </main>
       <Footer />
+      <MapSection />
       <MobileStickyBar />
     </div>
   );
