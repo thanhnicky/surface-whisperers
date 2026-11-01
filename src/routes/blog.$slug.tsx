@@ -1,11 +1,11 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import ReactMarkdown from "react-markdown";
 import { Button } from "@/components/ui/button";
-import { formatPostDate, getPublishedPost, getPublishedPosts } from "@/content/blog";
+import { blogPosts, formatPostDate, getPublishedPost, getPublishedPosts } from "@/content/blog";
 
 export const Route = createFileRoute("/blog/$slug")({
   loader: ({ params }) => {
-    const post = getPublishedPost(params.slug);
+    const post = getPublishedPost(params.slug) ?? (import.meta.env.DEV ? blogPosts.find((item) => item.slug === params.slug) : undefined);
     if (!post) throw notFound();
     return post;
   },

@@ -17,7 +17,9 @@ export const Route = createFileRoute("/blog/")({
 
 function BlogIndex() {
   const [category, setCategory] = useState<BlogCategory | "Tất cả">("Tất cả");
-  const posts = getPublishedPosts().filter((post) => category === "Tất cả" || post.category === category);
+  const published = getPublishedPosts();
+  const usedCategories = blogCategories.filter((item) => published.some((post) => post.category === item));
+  const posts = published.filter((post) => category === "Tất cả" || post.category === category);
   return <main className="mobile-bottom-padding mx-auto max-w-[1320px] px-6 pt-32 md:px-10 md:pt-40">
     <p className="eyebrow">Mộc Diện / Blog</p>
     <div className="mt-6 grid gap-6 md:grid-cols-12 md:items-end">
@@ -25,7 +27,7 @@ function BlogIndex() {
       <p className="max-w-md text-[16px] leading-relaxed text-ink-soft md:col-span-5">Kinh nghiệm, góc nhìn kỹ thuật và câu chuyện công trình. Từ nền kim loại đến tấm xi măng, từ mẫu màu đến bề mặt hoàn thiện.</p>
     </div>
     <div role="group" aria-label="Chủ đề bài viết" className="mt-12 flex flex-wrap gap-x-6 gap-y-3 border-y border-rule py-5">
-      {(["Tất cả", ...blogCategories] as const).map((item) => <Button key={item} variant="link" onClick={() => setCategory(item)} aria-pressed={category === item} className={`h-auto rounded-none p-0 text-[14px] ${category === item ? "text-accent underline underline-offset-8" : "text-ink-soft"}`}>{item}</Button>)}
+      {(["Tất cả", ...usedCategories] as const).map((item) => <Button key={item} variant="link" onClick={() => setCategory(item)} aria-pressed={category === item} className={`h-auto rounded-none p-0 text-[14px] ${category === item ? "text-accent underline underline-offset-8" : "text-ink-soft"}`}>{item}</Button>)}
     </div>
     <div className="mt-12 grid gap-x-10 gap-y-16 md:grid-cols-2">
       {posts.map((post) => <article key={post.slug} className="group min-w-0">

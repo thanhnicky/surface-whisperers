@@ -1,7 +1,9 @@
 import metalCover from "@/assets/hero-faux-wood-metal.jpg";
 import cementCover from "@/assets/project-cement-board.jpg";
+import galvanizedCover from "@/assets/son-gia-go-tren-sat-mocdien-1.png";
 import metalContent from "./kiem-tra-be-mat-truoc-khi-son.md?raw";
 import cementContent from "./chon-mau-gia-go-cho-tam-xi-mang.md?raw";
+import galvanizedContent from "./son-gia-go-tren-sat-ma-kem-bong-troc.md?raw";
 import { publishedPost, publishedPosts } from "./publication";
 
 export const blogCategories = ["Case study", "Kinh nghiệm", "Hướng dẫn kỹ thuật"] as const;
@@ -20,6 +22,18 @@ export interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
+  {
+    slug: "son-gia-go-tren-sat-ma-kem-bong-troc",
+    title: "Sơn giả gỗ trên sắt mạ kẽm hay bong tróc — nguyên nhân và quy trình xử lý nền chuẩn",
+    excerpt: "Vì sao nền mạ kẽm dễ làm màng sơn bong, ba lỗi xử lý thường gặp và quy trình chuẩn gồm tẩy dầu, sơn lót chuyên cho kẽm cùng thời gian khô đúng kỹ thuật.",
+    category: "Hướng dẫn kỹ thuật",
+    date: "2026-11-01",
+    author: "Mộc Diện",
+    cover: galvanizedCover,
+    coverAlt: "Bề mặt sắt mạ kẽm hoàn thiện hiệu ứng vân gỗ, ảnh minh họa",
+    content: galvanizedContent,
+    status: "draft",
+  },
   {
     slug: "kiem-tra-be-mat-truoc-khi-son-gia-go-kim-loai",
     title: "Trước khi sơn giả gỗ kim loại: cần kiểm tra những gì?",
