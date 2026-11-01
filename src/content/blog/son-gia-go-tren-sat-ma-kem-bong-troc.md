@@ -39,7 +39,7 @@ Một điểm quan trọng: lớp lót này được tối ưu pha màu để l�
 - *Quét vân xước hai lớp:* dùng cọ quét vân gỗ lớp thứ nhất, chờ khoảng 2 giờ rồi quét lớp thứ hai. Hai lớp chồng lệch nhau tạo độ đậm nhạt tự nhiên và chiều sâu cho vân, gần với cảm giác gỗ thật.
 - *Quét vân rồi phủ nhẹ bằng súng phun:* sau khi lớp vân thứ nhất khô khoảng 2 giờ, dùng chính sơn phủ màu vân đó phun một lớp mỏng lên toàn bề mặt. Cách này cho màu tổng thể đồng đều hơn — hợp với hạng mục lớn, nhiều thanh cần màu thống nhất — mà vẫn giữ được chiều sâu của đường vân bên dưới.
 
-**Bước 4 — Phủ bóng bảo vệ.** Cuối cùng là lớp bóng trong suốt bảo vệ màng vân khỏi trầy xước, nắng mưa. Lớp bóng có thể dùng hệ 1K hoặc 2K tùy điều kiện sử dụng: hạng mục ngoài trời khắc nghiệt, thường xuyên va chạm sẽ cân nhắc hệ 2K cho độ cứng màng cao hơn. Toàn bộ màng sơn cần tới 48 giờ để đạt độ cứng.
+**Bước 4 — Phủ bóng bảo vệ.** Cuối cùng là lớp bóng trong suốt bảo vệ màng vân khỏi trầy xước, nắng mưa. Lớp bóng có thể dùng hệ 1K hoặc 2K tùy điều kiện sử dụng: hệ 2K cho màng cứng và chịu mài mòn cao hơn, thường dùng cho sàn đi lại nhiều hoặc công trình vùng ven biển. Toàn bộ màng sơn cần tới 48 giờ để đạt độ cứng.
 
 Tóm lại hệ màng sơn trên nền kẽm gồm: *lót chống gỉ pha màu nền → lớp tạo vân → phủ bóng bảo vệ*. Bỏ bớt bất kỳ lớp nào cũng làm giảm độ bền hoặc độ chân thực của vân gỗ.
 

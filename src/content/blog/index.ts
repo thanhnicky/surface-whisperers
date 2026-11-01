@@ -1,9 +1,11 @@
 import metalCover from "@/assets/hero-faux-wood-metal.jpg";
 import cementCover from "@/assets/project-cement-board.jpg";
 import galvanizedCover from "@/assets/son-gia-go-tren-sat-mocdien-1.png";
+import processCover from "@/assets/son-gia-go-tren-sat-mocdien-3.png";
 import metalContent from "./kiem-tra-be-mat-truoc-khi-son.md?raw";
 import cementContent from "./chon-mau-gia-go-cho-tam-xi-mang.md?raw";
 import galvanizedContent from "./son-gia-go-tren-sat-ma-kem-bong-troc.md?raw";
+import processContent from "./quy-trinh-thi-cong-son-gia-go-chuyen-nghiep.md?raw";
 import { publishedPost, publishedPosts } from "./publication";
 
 export const blogCategories = ["Case study", "Kinh nghiệm", "Hướng dẫn kỹ thuật"] as const;
@@ -32,6 +34,18 @@ export const blogPosts: BlogPost[] = [
     cover: galvanizedCover,
     coverAlt: "Bề mặt sắt mạ kẽm hoàn thiện hiệu ứng vân gỗ, ảnh minh họa",
     content: galvanizedContent,
+    status: "published",
+  },
+  {
+    slug: "quy-trinh-thi-cong-son-gia-go-chuyen-nghiep",
+    title: "Quy trình thi công sơn giả gỗ chuyên nghiệp gồm những bước nào?",
+    excerpt: "Từ khảo sát nền, xử lý bề mặt, lót pha màu nền đến tạo vân và phủ bóng bảo vệ — các bước một hệ sơn giả gỗ ngoài trời cần có, và câu hỏi nên hỏi trước khi thuê.",
+    category: "Hướng dẫn kỹ thuật",
+    date: "2026-11-01",
+    author: "Mộc Diện",
+    cover: processCover,
+    coverAlt: "Bề mặt hoàn thiện sơn giả gỗ vân óc chó, ảnh minh họa",
+    content: processContent,
     status: "published",
   },
   {
