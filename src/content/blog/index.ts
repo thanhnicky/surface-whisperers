@@ -3,11 +3,13 @@ import cementCover from "@/assets/project-cement-board.jpg";
 import galvanizedCover from "@/assets/son-gia-go-cho-cong-biet-thu-dep-moc-dien.jpg";
 import processCover from "@/assets/cong-hang-rao-gia-go-mocdien-hcm.jpg";
 import fadeCover from "@/assets/son-gia-go-ngoai-troi-mocdien-hcm.jpg";
+import pricingCover from "@/assets/thi-cong-son-gia-go-cua-sat-moc-dien-129.jpg";
 import metalContent from "./kiem-tra-be-mat-truoc-khi-son.md?raw";
 import cementContent from "./chon-mau-gia-go-cho-tam-xi-mang.md?raw";
 import galvanizedContent from "./son-gia-go-tren-sat-ma-kem-bong-troc.md?raw";
 import processContent from "./quy-trinh-thi-cong-son-gia-go-chuyen-nghiep.md?raw";
 import fadeContent from "./son-gia-go-ngoai-troi-chay-mau.md?raw";
+import pricingContent from "./bao-gia-thi-cong-son-gia-go-gom-nhung-gi.md?raw";
 import { publishedPost, publishedPosts } from "./publication";
 
 export const blogCategories = ["Case study", "Kinh nghiệm", "Hướng dẫn kỹ thuật"] as const;
@@ -60,6 +62,18 @@ export const blogPosts: BlogPost[] = [
     cover: fadeCover,
     coverAlt: "Công trình sơn giả gỗ ngoài trời do Mộc Diện thi công tại TP.HCM",
     content: fadeContent,
+    status: "published",
+  },
+  {
+    slug: "bao-gia-thi-cong-son-gia-go-gom-nhung-gi",
+    title: "Báo giá thi công sơn giả gỗ gồm những gì? Giá tham khảo theo m² và cách so sánh đúng",
+    excerpt: "Khung giá sơn giả gỗ theo m² cho hạng mục trong nhà và ngoài trời, phần công việc một báo giá đầy đủ phải liệt kê, và vì sao các đơn vị chênh nhau tới 30-40%.",
+    category: "Kinh nghiệm",
+    date: "2026-11-01",
+    author: "Mộc Diện",
+    cover: pricingCover,
+    coverAlt: "Thi công sơn giả gỗ cửa sắt trọn gói do Mộc Diện thực hiện",
+    content: pricingContent,
     status: "published",
   },
   {
