@@ -1,6 +1,6 @@
 import metalCover from "@/assets/hero-faux-wood-metal.jpg";
 import cementCover from "@/assets/project-cement-board.jpg";
-import galvanizedCover from "@/assets/son-gia-go-tren-sat-mocdien-1.png";
+import galvanizedCover from "@/assets/son-gia-go-cho-cong-biet-thu-dep-moc-dien.jpg";
 import processCover from "@/assets/son-gia-go-tren-sat-mocdien-3.png";
 import fadeCover from "@/assets/son-gia-go-tren-sat-mocdien-9.png";
 import metalContent from "./kiem-tra-be-mat-truoc-khi-son.md?raw";
@@ -34,7 +34,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-11-01",
     author: "Mộc Diện",
     cover: galvanizedCover,
-    coverAlt: "Bề mặt sắt mạ kẽm hoàn thiện hiệu ứng vân gỗ, ảnh minh họa",
+    coverAlt: "Cổng biệt thự hoàn thiện sơn giả gỗ trên nền kim loại do Mộc Diện thi công",
     content: galvanizedContent,
     status: "published",
   },
