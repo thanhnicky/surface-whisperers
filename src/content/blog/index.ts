@@ -2,6 +2,7 @@ import metalCover from "@/assets/hero-faux-wood-metal.jpg";
 import cementCover from "@/assets/project-cement-board.jpg";
 import metalContent from "./kiem-tra-be-mat-truoc-khi-son.md?raw";
 import cementContent from "./chon-mau-gia-go-cho-tam-xi-mang.md?raw";
+import { publishedPost, publishedPosts } from "./publication";
 
 export const blogCategories = ["Case study", "Kinh nghiệm", "Hướng dẫn kỹ thuật"] as const;
 export type BlogCategory = (typeof blogCategories)[number];
@@ -46,11 +47,11 @@ export const blogPosts: BlogPost[] = [
 ];
 
 export function getPublishedPosts() {
-  return blogPosts.filter((post) => post.status === "published").sort((a, b) => b.date.localeCompare(a.date));
+  return publishedPosts(blogPosts);
 }
 
 export function getPublishedPost(slug: string) {
-  return getPublishedPosts().find((post) => post.slug === slug);
+  return publishedPost(blogPosts, slug);
 }
 
 export function formatPostDate(date: string) {
