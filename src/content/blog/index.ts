@@ -2,7 +2,7 @@ import metalCover from "@/assets/hero-faux-wood-metal.jpg";
 import cementCover from "@/assets/project-cement-board.jpg";
 import galvanizedCover from "@/assets/son-gia-go-cho-cong-biet-thu-dep-moc-dien.jpg";
 import processCover from "@/assets/cong-hang-rao-gia-go-mocdien-hcm.jpg";
-import fadeCover from "@/assets/son-gia-go-tren-sat-mocdien-9.png";
+import fadeCover from "@/assets/son-gia-go-ngoai-troi-mocdien-hcm.jpg";
 import metalContent from "./kiem-tra-be-mat-truoc-khi-son.md?raw";
 import cementContent from "./chon-mau-gia-go-cho-tam-xi-mang.md?raw";
 import galvanizedContent from "./son-gia-go-tren-sat-ma-kem-bong-troc.md?raw";
@@ -58,7 +58,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-11-01",
     author: "Mộc Diện",
     cover: fadeCover,
-    coverAlt: "Sơn giả gỗ trên sắt hộp ngoài trời giữ màu bền nhờ lớp phủ bóng chống UV",
+    coverAlt: "Công trình sơn giả gỗ ngoài trời do Mộc Diện thi công tại TP.HCM",
     content: fadeContent,
     status: "published",
   },
