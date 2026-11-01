@@ -32,7 +32,7 @@ export const blogPosts: BlogPost[] = [
     cover: galvanizedCover,
     coverAlt: "Bề mặt sắt mạ kẽm hoàn thiện hiệu ứng vân gỗ, ảnh minh họa",
     content: galvanizedContent,
-    status: "draft",
+    status: "published",
   },
   {
     slug: "kiem-tra-be-mat-truoc-khi-son-gia-go-kim-loai",
