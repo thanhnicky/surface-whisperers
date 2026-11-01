@@ -48,9 +48,7 @@ function Header() {
               {item.label}
             </Link>
           ))}
-          <Button asChild variant="link" className="h-auto p-0 text-[14px] text-ink/80"><Link to="/blog" activeProps={{ className: "text-accent" }}>Blog</Link></Button>
         </nav>
-        <Button asChild variant="link" className="ml-auto mr-5 h-auto p-0 text-[14px] xl:hidden"><Link to="/blog" activeProps={{ className: "text-accent" }}>Blog</Link></Button>
         <a
           href={ZALO_URL}
           target="_blank"
