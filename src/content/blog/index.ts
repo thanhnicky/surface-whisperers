@@ -2,10 +2,12 @@ import metalCover from "@/assets/hero-faux-wood-metal.jpg";
 import cementCover from "@/assets/project-cement-board.jpg";
 import galvanizedCover from "@/assets/son-gia-go-tren-sat-mocdien-1.png";
 import processCover from "@/assets/son-gia-go-tren-sat-mocdien-3.png";
+import fadeCover from "@/assets/son-gia-go-tren-sat-mocdien-9.png";
 import metalContent from "./kiem-tra-be-mat-truoc-khi-son.md?raw";
 import cementContent from "./chon-mau-gia-go-cho-tam-xi-mang.md?raw";
 import galvanizedContent from "./son-gia-go-tren-sat-ma-kem-bong-troc.md?raw";
 import processContent from "./quy-trinh-thi-cong-son-gia-go-chuyen-nghiep.md?raw";
+import fadeContent from "./son-gia-go-ngoai-troi-chay-mau.md?raw";
 import { publishedPost, publishedPosts } from "./publication";
 
 export const blogCategories = ["Case study", "Kinh nghiệm", "Hướng dẫn kỹ thuật"] as const;
@@ -46,6 +48,18 @@ export const blogPosts: BlogPost[] = [
     cover: processCover,
     coverAlt: "Bề mặt hoàn thiện sơn giả gỗ vân óc chó, ảnh minh họa",
     content: processContent,
+    status: "published",
+  },
+  {
+    slug: "son-gia-go-ngoai-troi-chay-mau",
+    title: "Vì sao sơn giả gỗ ngoài trời hay cháy màu sau 1-2 năm — và cách nhận biết đơn vị dùng đúng hệ sơn",
+    excerpt: "Bốn nguyên nhân khiến màu vân phai sớm — sai hệ sơn, thiếu lớp phủ bóng, nền xử lý sai, điều kiện phơi — cùng cách kiểm tra đơn vị thi công trước khi thuê.",
+    category: "Kinh nghiệm",
+    date: "2026-11-01",
+    author: "Mộc Diện",
+    cover: fadeCover,
+    coverAlt: "Bề mặt sơn giả gỗ ngoài trời sau thời gian sử dụng, ảnh minh họa",
+    content: fadeContent,
     status: "published",
   },
   {
